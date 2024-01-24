@@ -57,6 +57,9 @@ return array(
     'info_submission_success' => 'Informationen erfolgreich übermittelt!',
     'recommendation_submission_success' => 'Empfehlungen erfolgreich eingereicht!',
     'order' => 'Bestellen',
+    'mail' => 'Mail',
+    'mail_address' => 'Mail Adresse',
+    'your_mail_address' => 'Ihre Mail Adresse',
 
 
 );

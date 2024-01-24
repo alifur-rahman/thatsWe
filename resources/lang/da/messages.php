@@ -57,5 +57,7 @@ return array(
   'info_submission_success' => 'Information Indsendt Med Succes!',
   'recommendation_submission_success' => 'Anbefalinger indsendt med succes!',
   'order' => 'Bestill',
-
+  'mail' => 'Mail',
+  'mail_address' => 'Mail Adresse',
+  'your_mail_address' => 'Din Mail Adresse',
 );

@@ -57,4 +57,7 @@ return array(
   'info_submission_success' => 'Informatie succesvol ingediend!',
   'recommendation_submission_success' => 'Aanbevelingen succesvol ingediend!',
   'order' => 'Bestellen',
+  'mail' => 'Mail',
+  'mail_address' => 'Mail Adres',
+  'your_mail_address' => 'Uw Mail Adres',
 );

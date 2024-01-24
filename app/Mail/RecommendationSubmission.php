@@ -25,8 +25,8 @@ class RecommendationSubmission extends Mailable
         $userLanguage = app()->getLocale();
 
         $subject = __('messages.new_rec', [], $userLanguage);
-        return $this->from('proliz@web.de', 'thatsWE')
-                    ->view('emails.recommendation-submission')
-                    ->subject($subject);
+        return $this->from(config('mail.from.address'), config('mail.from.name'))
+            ->view('emails.recommendation-submission')
+            ->subject($subject);
     }
 }
