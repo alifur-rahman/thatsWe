@@ -57,5 +57,8 @@ return array(
   'info_submission_success' => 'Bilgi Başarıyla Gönderildi!',
   'recommendation_submission_success' => 'Tavsiyeler başarıyla gönderildi!',
   'order' => 'Sipariş',
+  'mail' => 'Mail',
+  'mail_address' => 'Mail Adresi',
+  'your_mail_address' => 'Mail Adresiniz',
 
 );

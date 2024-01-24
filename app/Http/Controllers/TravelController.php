@@ -50,6 +50,7 @@ class TravelController extends Controller
             'address' => 'required|string|max:255',
             'city' => 'required|string|max:255',
             'postalCode' => 'required|string|max:20',
+            'your_mail' => 'required|email|max:255',
         ]);
 
         if ($validator->fails()) {
@@ -59,7 +60,7 @@ class TravelController extends Controller
         }
 
         // Send email to admin
-        // Mail::to('proliz@web.de')->send(new OfferSubmission($request->all()));
+        Mail::to('alifurcoder@gmail.com')->send(new OfferSubmission($request->all()));
         // proliz@web.de
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
@@ -76,6 +77,8 @@ class TravelController extends Controller
             'personEmail1' => 'sometimes|required|email|max:255',
             'personEmail2' => 'sometimes|nullable|email|max:255',
             'personEmail3' => 'sometimes|nullable|email|max:255',
+            'personEmail4' => 'sometimes|nullable|email|max:255',
+            'personEmail5' => 'sometimes|nullable|email|max:255',
             // Add more validation rules for additional email fields if needed
         ]);
 
@@ -90,14 +93,16 @@ class TravelController extends Controller
             $request->input('personEmail1'),
             $request->input('personEmail2'),
             $request->input('personEmail3'),
+            $request->input('personEmail4'),
+            $request->input('personEmail5'),
             // Add more email fields as needed
         ];
 
-        // foreach ($emails as $email) {
-        //     if (!empty($email)) {
-        //         Mail::to($email)->send(new RecommendationSubmission($request->all()));
-        //     }
-        // }
+        foreach ($emails as $email) {
+            if (!empty($email)) {
+                Mail::to($email)->send(new RecommendationSubmission($request->all()));
+            }
+        }
 
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.recommendation_submission_success', [], $userLanguage);
