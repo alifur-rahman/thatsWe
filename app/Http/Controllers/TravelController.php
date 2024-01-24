@@ -1,0 +1,111 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Mail\OfferSubmission;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\RecommendationSubmission;
+use Illuminate\Support\Facades\Validator;
+
+class TravelController extends Controller
+{
+    public function welcome()
+    {
+
+        return view('welcome');
+    }
+
+    public function about()
+    {
+
+        return view('about');
+    }
+
+    public function offer()
+    {
+        return view('offer');
+    }
+
+    public function recommendation()
+    {
+        return view('recommend');
+    }
+
+    public function policy()
+    {
+        return view('policy');
+    }
+
+    public function submitOffer(Request $request)
+    {
+        // Validate the form data (add more validation rules as needed)
+
+        $validator = Validator::make($request->all(), [
+            'companyName' => 'required|string|max:255',
+            'travelIndustry' => 'required|string|in:yes,no',
+            'telephone' => 'required|string|max:20',
+            'website' => 'nullable|string|max:255',
+            'contactPerson' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
+            'city' => 'required|string|max:255',
+            'postalCode' => 'required|string|max:20',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)  // Pass the validation errors to the view
+                ->withInput();           // Pass the old input data to the view
+        }
+
+        // Send email to admin
+        // Mail::to('proliz@web.de')->send(new OfferSubmission($request->all()));
+        // proliz@web.de
+        $userLanguage = app()->getLocale();
+        $successMessage = __('messages.info_submission_success', [], $userLanguage);
+
+        return redirect()->back()->with('success', $successMessage);
+    }
+
+
+    public function submitRecommendation(Request $request)
+    {
+        // Validate the form data
+        $validator = Validator::make($request->all(), [
+            'yourName' => 'required|string|max:255',
+            'personEmail1' => 'sometimes|required|email|max:255',
+            'personEmail2' => 'sometimes|nullable|email|max:255',
+            'personEmail3' => 'sometimes|nullable|email|max:255',
+            // Add more validation rules for additional email fields if needed
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        // Send email to each recommended person
+        $emails = [
+            $request->input('personEmail1'),
+            $request->input('personEmail2'),
+            $request->input('personEmail3'),
+            // Add more email fields as needed
+        ];
+
+        // foreach ($emails as $email) {
+        //     if (!empty($email)) {
+        //         Mail::to($email)->send(new RecommendationSubmission($request->all()));
+        //     }
+        // }
+
+        $userLanguage = app()->getLocale();
+        $successMessage = __('messages.recommendation_submission_success', [], $userLanguage);
+
+        // You can add a success message or redirect the user to a thank you page
+        return redirect()->back()->with('success', $successMessage);
+    }
+
+
+
+}
