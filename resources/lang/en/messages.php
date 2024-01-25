@@ -75,4 +75,11 @@ return array(
 
   'order_from_info_4' => 'The license invoices are payable without deductions within 14 days to an account specified in the invoice. The license amount is exempt from sales tax until revoked (date of founding of the GmbH) in accordance with Section 19 USTG.',
 
+  'managing_director' => 'Managing Director',
+  'contact' => 'Contact',
+  'street' => 'Street',
+  'zip' => "ZIP",
+  'country' => 'Country',
+  'app_name' => 'App Name',
+  'logo_no' => 'Logo No',
 );

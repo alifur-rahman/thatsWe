@@ -65,4 +65,23 @@ return array(
   'criticism_and_suggestions' => 'Critique et suggestions',
   'information_about_success' => 'Information sur le problème',
   'load_info' => 'Charger les informations',
+
+  'order_page_title' => "L'offre s'applique exclusivement aux agences de voyage !",
+  'order_page_sub_title' => 'Les tour-opérateurs bénéficient de conditions spéciales pour chaque agence de voyage connectée !',
+
+  'order_from_info_1' => "Une application Android (fichier APK) est fournie. L'acheteur ou le représentant de l'acheteur est responsable de l'installation de l'application sur les appareils Android.",
+
+  'order_from_info_2' => "Le nombre d'installations est illimité pendant la période de licence, mais ne s'applique qu'à l'agence de voyage qui a commandé l'application.",
+
+  'order_from_info_3' => "La licence est renouvelée de 12 mois chaque janvier de chaque année, sauf résiliation au moins 2 mois à l'avance (c'est-à-dire au plus tard le 1er novembre de l'année en cours). La résiliation par e-mail est suffisante et est acceptée. La redevance de licence est calculée au prorata mensuel pour la première année civile en cours.",
+
+  'order_from_info_4' => "Les factures de licence doivent être payées sans déduction dans les 14 jours sur un compte spécifié dans la facture. Le montant de la licence est exonéré de taxe sur les ventes jusqu'à révocation (date de fondation de la GmbH) conformément à l'article 19 de l'USTG.",
+
+  'managing_director' => 'Directeur Général',
+  'contact' => 'Contact',
+  'street' => 'Rue',
+  'zip' => 'Code Postal',
+  'country' => 'Pays',
+  'app_name' => 'Nom de l\'application',
+  'logo_no' => 'Numéro de Logo',
 );

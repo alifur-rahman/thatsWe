@@ -40,7 +40,7 @@
                                 <div class="card-body">
                                     <h2 class="text-center mb-2">{{ __('messages.criticism_and_suggestions') }}</h2>
 
-                                    <form action="{{ route('submit-offer') }}" method="POST">
+                                    <form action="#}" method="GET">
                                         @csrf
                                         <div class="mb-2 d-flex justify-content-between align-items-center">
                                             <label for="your_mail"
@@ -89,7 +89,8 @@
                                         </tbody>
                                     </table>
 
-                                    <form action="{{ route('submit-offer') }}" method="POST">
+                                    <form action="#" method="GET">
+                                        @csrf
                                         <div class="text-center al_card_footer">
                                             <div class="mt-2">
                                                 <button type="submit"

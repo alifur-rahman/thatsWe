@@ -66,4 +66,18 @@ return array(
   'information_about_success' => 'Informationer Om Succes',
   'load_info' => 'cargar información',
 
+  'order_page_title' => '¡La oferta se aplica exclusivamente a agencias de viajes!',
+  'order_page_sub_title' => '¡Los operadores turísticos reciben condiciones especiales para cada agencia de viajes conectada!',
+  'order_from_info_1' => "Se suministra una aplicación para Android (archivo APK). El comprador o el representante del comprador es responsable de instalar la aplicación en dispositivos Android.",
+  'order_from_info_2' => 'El número de instalaciones es ilimitado durante el período de la licencia, pero solo se aplica a la agencia de viajes que ordenó la aplicación.',
+  'order_from_info_3' => 'La licencia se renueva por 12 meses cada enero de cada año, a menos que se cancele con al menos 2 meses de anticipación (es decir, antes del 1 de noviembre del año en curso). La cancelación por correo electrónico es suficiente y se acepta. La tarifa de la licencia se calcula de forma mensual prorrateada para el primer año calendario actual.',
+  'order_from_info_4' => 'Las facturas de la licencia deben pagarse sin deducciones dentro de los 14 días a una cuenta especificada en la factura. El monto de la licencia está exento de impuestos hasta que se revoque (fecha de fundación de la GmbH) de acuerdo con la Sección 19 USTG.',
+  'managing_director' => 'Director Gerente',
+  'contact' => 'Contacto',
+  'street' => 'Calle',
+  'zip' => 'Código Postal',
+  'country' => 'País',
+  'app_name' => 'Nombre de la App',
+  'logo_no' => 'Número de Logo',
+
 );

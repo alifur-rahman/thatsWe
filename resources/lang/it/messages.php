@@ -65,4 +65,18 @@ return array(
   'criticism_and_suggestions' => 'Critica e Suggerimenti',
   'information_about_success' => 'Informazioni Sulla Succes',
   'load_info' => 'Carica Info',
+
+  'order_page_title' => 'L\'offerta si applica esclusivamente alle agenzie di viaggio!',
+  'order_page_sub_title' => 'I tour operator ricevono condizioni speciali per ogni agenzia di viaggi collegata!',
+  'order_from_info_1' => "Viene fornita un'applicazione Android (file APK). L'acquirente o il rappresentante dell'acquirente è responsabile dell'installazione dell'applicazione su dispositivi Android.",
+  'order_from_info_2' => 'Il numero di installazioni è illimitato durante il periodo di licenza, ma si applica solo all\'agenzia di viaggi che ha ordinato l\'applicazione.',
+  'order_from_info_3' => 'La licenza viene estesa di 12 mesi ogni gennaio di ogni anno, a meno che la licenza non sia annullata almeno 2 mesi prima (cioè entro il 1° novembre dell\'anno in corso). La disdetta via e-mail è sufficiente ed è accettata. La tassa di licenza è calcolata su base mensile pro rata per il primo anno civile corrente.',
+  'order_from_info_4' => 'Le fatture della licenza devono essere pagate senza detrazioni entro 14 giorni su un conto specificato nella fattura. L\'importo della licenza è esente da imposta sulle vendite fino a revoca (data di fondazione della GmbH) ai sensi dell\'articolo 19 del USTG.',
+  'managing_director' => 'Amministratore Delegato',
+  'contact' => 'Contatto',
+  'street' => 'Via',
+  'zip' => 'CAP',
+  'country' => 'Paese',
+  'app_name' => 'Nome dell\'applicazione',
+  'logo_no' => 'Numero del Logo',
 );
