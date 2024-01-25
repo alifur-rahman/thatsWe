@@ -65,4 +65,18 @@ return array(
   'criticism_and_suggestions' => 'Criticisme en Suggestions',
   'information_about_success' => 'Informatie Over Succes',
   'load_info' => 'Informatie laden',
+
+  'order_page_title' => 'Het aanbod geldt uitsluitend voor reisbureaus!',
+  'order_page_sub_title' => 'Reisorganisatoren ontvangen speciale voorwaarden voor elke aangesloten reisbureau!',
+  'order_from_info_1' => "Een Android-app (APK-bestand) wordt geleverd. De koper of de vertegenwoordiger van de koper is verantwoordelijk voor het installeren van de app op Android-apparaten.",
+  'order_from_info_2' => 'Het aantal installaties is onbeperkt tijdens de licentieperiode, maar geldt alleen voor het reisbureau dat de app heeft besteld.',
+  'order_from_info_3' => 'De licentie wordt elk jaar in januari met 12 maanden verlengd, tenzij de licentie minimaal 2 maanden van tevoren wordt opgezegd (d.w.z. vóór 1 november van het huidige jaar). Opzegging per e-mail is voldoende en wordt geaccepteerd. De licentiekosten worden pro rata per maand berekend voor het eerste lopende kalenderjaar.',
+  'order_from_info_4' => 'De licentiefacturen moeten binnen 14 dagen zonder aftrek worden betaald op een in de factuur vermeld account. Het licentiebedrag is vrijgesteld van omzetbelasting tot intrekking (datum van oprichting van de GmbH) volgens artikel 19 van de USTG.',
+  'managing_director' => 'Algemeen Directeur',
+  'contact' => 'Contact',
+  'street' => 'Straat',
+  'zip' => 'Postcode',
+  'country' => 'Land',
+  'app_name' => 'App Naam',
+  'logo_no' => 'Logo Nummer',
 );

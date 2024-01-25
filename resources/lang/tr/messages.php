@@ -66,4 +66,19 @@ return array(
   'information_about_success' => 'Basarı Hakkında Bilgi',
   'load_info' => 'Bilgiyi Yükle',
 
+  'order_page_title' => 'Teklif sadece seyahat acentelerine uygulanır!',
+  'order_page_sub_title' => 'Tur operatörleri her bağlı seyahat acentesi için özel koşullar alır!',
+  'order_from_info_1' => "Bir Android uygulaması (APK dosyası) sağlanır. Alıcı veya alıcının temsilcisi, uygulamayı Android cihazlara yüklemekten sorumludur.",
+  'order_from_info_2' => 'Lisans süresince kurulum sayısı sınırsızdır, ancak yalnızca uygulamayı sipariş eden seyahat acentesi için geçerlidir.',
+  'order_from_info_3' => 'Lisans her yıl ocak ayında 12 ay uzatılır, ancak lisans en az 2 ay öncesinden iptal edilmezse (yani mevcut yılın 1 Kasım\'ına kadar) iptal edilir. İptal için e-posta yeterlidir ve kabul edilir. Lisans ücreti, ilk geçerli takvim yılı için aylık orantılı bir şekilde hesaplanır.',
+  'order_from_info_4' => 'Lisans faturaları, faturada belirtilen bir hesaba 14 gün içinde kesintisiz ödenmelidir. Lisans bedeli, 19. madde USTG\'ye göre (GmbH\'nin kuruluş tarihi) iptal edilene kadar satış vergisinden muaf tutulur.',
+  'managing_director' => 'Genel Müdür',
+  'contact' => 'İletişim',
+  'street' => 'Cadde',
+  'zip' => 'Posta Kodu',
+  'country' => 'Ülke',
+  'app_name' => 'Uygulama Adı',
+  'logo_no' => 'Logo No',
+
+
 );
