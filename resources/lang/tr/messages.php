@@ -61,4 +61,9 @@ return array(
   'mail_address' => 'Mail Adresi',
   'your_mail_address' => 'Mail Adresiniz',
 
+  'your_information' => 'Bilgilerin',
+  'criticism_and_suggestions' => 'Kritik ve Tavsiye',
+  'information_about_success' => 'Basarı Hakkında Bilgi',
+  'load_info' => 'Bilgiyi Yükle',
+
 );

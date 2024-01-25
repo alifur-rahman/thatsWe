@@ -61,4 +61,8 @@ return array(
   'mail_address' => 'Mail Adresse',
   'your_mail_address' => 'Votre adresse mail',
 
+  'your_information' => 'Vos informations',
+  'criticism_and_suggestions' => 'Critique et suggestions',
+  'information_about_success' => 'Information sur le problème',
+  'load_info' => 'Charger les informations',
 );

@@ -37,6 +37,11 @@ class TravelController extends Controller
         return view('policy');
     }
 
+    public function order()
+    {
+        return view('order');
+    }
+
     public function submitOffer(Request $request)
     {
         // Validate the form data (add more validation rules as needed)

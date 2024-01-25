@@ -23,3 +23,4 @@ Route::get('/recommendation', [App\Http\Controllers\TravelController::class, 're
 Route::post('/recommendation/submit', [App\Http\Controllers\TravelController::class, 'submitRecommendation'])->name('submit-recommendation');
 Route::get('/policy', [App\Http\Controllers\TravelController::class, 'policy'])->name('policy-page');
 Route::get('change/lang', [App\Http\Controllers\LanguageController::class, 'switch'])->name('LangChange');
+Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->name('order-page');

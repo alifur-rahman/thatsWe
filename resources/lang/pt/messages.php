@@ -60,4 +60,9 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Endereço',
   'your_mail_address' => 'Sua Mail Endereço',
+
+  'your_information' => 'Suas Informações',
+  'criticism_and_suggestions' => 'Critica e Sugestões',
+  'information_about_success' => 'Informações sobre o Sucesso',
+  'load_info' => 'Carregar informações',
 );
