@@ -1,4 +1,11 @@
 @extends('app')
+@section('styles')
+    <style>
+        .form-check-input {
+            margin-top: 6px;
+        }
+    </style>
+@endsection
 
 @section('content')
 
@@ -37,13 +44,28 @@
 
                             <div class="col-md-2">
                                 <div class="mb-2">
-                                    <label for="travelIndustry"
-                                        class="form-label">{{ __('messages.travel_industry?') }}</label>
-                                    <select class="form-control" id="travelIndustry" name="travelIndustry">
-                                        <option value="">{{ __('messages.choose_one') }}</option>
-                                        <option value="yes">{{ __('messages.yes') }}</option>
-                                        <option value="no">{{ __('messages.no') }}</option>
-                                    </select>
+                                    <label class="form-label">{{ __('messages.travel_industry?') }}</label>
+
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="yes">
+                                                Yes
+                                            </label>
+                                            <input class="form-check-input" type="radio" name="travelIndustry"
+                                                id="yes" value="yes">
+
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="no">
+                                                No
+                                            </label>
+                                            <input class="form-check-input" type="radio" name="travelIndustry"
+                                                id="no" value="no">
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

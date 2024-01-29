@@ -1,4 +1,4 @@
-<!-- resources/views/emails/recommendation-submission.blade.php -->
+<!-- resources/views/emails/offer-submission.blade.php -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,28 +6,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ __('messages.this_site_is_amazing') }}</title>
+    <title>{{ __('messages.criticism_and_suggestions') }}</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h2 class="mt-4">{{ __('messages.hi_friend') }}</h2>
+        <h2 class="mt-4">{{ __('messages.criticism_and_suggestions') }}</h2>
         <hr>
 
-        <!-- Display recommendation form data -->
         <div class="row mt-4">
             <div class="col-md-6">
-                <strong>{{ __('messages.hello_its_me') }} | {{ $formData['yourName'] }} |</strong>
-            </div>
-            <div class="col-md-6">
-                <strong>{{ __('messages.i_found_site_2') }} <a href="https://www.thatswe.de">www.thatswe.de</a></strong>
-            </div>
-            <div class="col-md-6">
-                <strong><a href="https://www.thatswe.de">thatsWE</a></strong>
+                <strong>{{ __('messages.your_mail') }}:</strong>
+                <p>{{ $formData['your_mail'] }}</p>
             </div>
         </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <strong>{{ __('messages.your_information') }}:</strong>
+                <p>{{ $formData['information'] }}</p>
+            </div>
+        </div>
+
 
     </div>
 

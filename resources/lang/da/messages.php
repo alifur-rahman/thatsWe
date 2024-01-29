@@ -32,7 +32,7 @@ return array(
   'postal_code' => 'Postnummer',
   'your_postal_code' => 'Dit Postnummer',
   'submit' => 'Indsend',
-  'recommend_to_friend' => 'Anbefal til Ven eller Kollega',
+  'recommend_to_friend' => 'Anbefal disse websteder til en ven eller kollega',
   'your_name' => 'Dit Navn',
   'person_email' => 'Indtast Vens E-mail',
   'send' => 'Send',
@@ -68,13 +68,15 @@ return array(
 
   'order_page_title' => 'Das Angebot gilt ausschließlich für Reisebüros!',
   'order_page_sub_title' => 'Reiseveranstalter erhalten spezielle Konditionen für jede angeschlossene Reiseagentur!',
-  'order_from_info_1' => "Eine Android-App (APK-Datei) wird bereitgestellt. Der Käufer oder der Vertreter des Käufers ist für die Installation der App auf Android-Geräten verantwortlich.",
+  'order_from_info_1' => "Den årlige licensafgift er €240,00",
+  'order_from_info_2' => 'En Android-app (APK-fil) leveres. Køberen eller køberens ekspertrepræsentant er ansvarlig for at installere appen på Android-enheder.',
+  'order_from_info_3' => 'Antallet af installationer er ubegrænset i licensens varighed, men gælder kun for rejsebureauet, der har bestilt appen.',
+  'order_from_info_4' => 'Licensen forlænges med 12 måneder hvert januar, medmindre brugerlicensen annulleres mindst 2 måneder i forvejen (dvs. senest den 1. november i det nuværende kalenderår). Opsigelse af licensen via e-mail til proliz@web.de accepteres.',
+  'order_from_info_5' => 'Licensgebyret for det første kalenderår beregnes pro rata for de resterende måneder indtil årets udgang',
+  'order_from_info_6' => 'Licensfakturaerne skal betales uden fradrag inden for 14 dage med angivelse af fakturanummeret til en konto angivet i fakturaen. Licensbeløbet er fritaget for moms i henhold til § 19 UStG.',
+  'order_from_info_7' => 'Skal deltagelse i denne app-version offentliggøres for dem, der bestiller og interesserede parter på en ferietur (www.thatssoft.de)?',
+  'order_from_info_8' => 'o ja o nej',
 
-  'order_from_info_2' => 'Die Anzahl der Installationen ist während der Lizenzlaufzeit unbegrenzt, gilt jedoch nur für das Reisebüro, das die App bestellt hat.',
-
-  'order_from_info_3' => 'Die Lizenz wird jedes Jahr im Januar um 12 Monate verlängert, es sei denn, die Lizenz wird mindestens 2 Monate im Voraus gekündigt (d. h. bis zum 1. November des aktuellen Jahres). Die Kündigung per E-Mail ist ausreichend und wird akzeptiert. Die Lizenzgebühr wird für das erste aktuelle Kalenderjahr anteilig monatlich berechnet.',
-
-  'order_from_info_4' => 'Die Lizenzrechnungen sind innerhalb von 14 Tagen ohne Abzüge auf ein in der Rechnung angegebenes Konto zu zahlen. Der Lizenzbetrag ist bis auf Widerruf (Gründungsdatum der GmbH) gemäß § 19 UStG von der Umsatzsteuer befreit.',
 
   'managing_director' => 'Geschäftsführer',
   'contact' => 'Kontakt',
@@ -83,5 +85,7 @@ return array(
   'country' => 'Land',
   'app_name' => 'App-Name',
   'logo_no' => 'Logo-Nr.',
+
+  'close' => 'Ferdig',
 
 );

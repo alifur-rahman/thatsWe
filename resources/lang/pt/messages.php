@@ -32,7 +32,8 @@ return array(
   'postal_code' => 'Código Postal',
   'your_postal_code' => 'Seu Código Postal',
   'submit' => 'Enviar',
-  'recommend_to_friend' => 'Recomendar a um Amigo ou Colega',
+  'recommend_to_friend' => 'Recomende esses sites a um amigo ou colega',
+
   'your_name' => 'Seu Nome',
   'person_email' => 'Digite o E-mail do Amigo',
   'send' => 'Enviar',
@@ -68,10 +69,18 @@ return array(
 
   'order_page_title' => 'A oferta aplica-se exclusivamente a agências de viagens!',
   'order_page_sub_title' => 'Operadores turísticos recebem condições especiais para cada agência de viagens conectada!',
-  'order_from_info_1' => "É fornecido um aplicativo Android (arquivo APK). O comprador ou o representante do comprador é responsável por instalar o aplicativo em dispositivos Android.",
-  'order_from_info_2' => 'O número de instalações é ilimitado durante o período de licença, mas aplica-se apenas à agência de viagens que encomendou o aplicativo.',
-  'order_from_info_3' => 'A licença é renovada por 12 meses a cada janeiro de cada ano, a menos que seja cancelada com pelo menos 2 meses de antecedência (ou seja, até 1º de novembro do ano corrente). O cancelamento por e-mail é suficiente e é aceito. A taxa de licença é calculada de forma proporcional por mês para o primeiro ano civil atual.',
-  'order_from_info_4' => 'As faturas de licença devem ser pagas sem deduções no prazo de 14 dias para uma conta especificada na fatura. O valor da licença está isento de imposto sobre vendas até revogação (data de fundação da GmbH) de acordo com o artigo 19 do USTG.',
+
+  'order_from_info_1' => "A taxa anual de licença é de €240,00",
+  'order_from_info_2' => 'É fornecido um aplicativo Android (arquivo APK). O comprador ou o representante especializado do comprador é responsável por instalar o aplicativo em dispositivos Android.',
+  'order_from_info_3' => 'O número de instalações é ilimitado durante a vigência da licença, mas se aplica apenas à agência de viagens que encomendou o aplicativo.',
+  'order_from_info_4' => 'A licença é renovada por 12 meses a cada janeiro de cada ano, a menos que a licença do usuário seja cancelada com pelo menos 2 meses de antecedência (ou seja, até 1º de novembro do ano civil atual). O cancelamento da licença por e-mail para proliz@web.de é aceito.',
+  'order_from_info_5' => 'A taxa de licença para o primeiro ano civil é calculada proporcionalmente para os meses restantes até o final do ano.',
+  'order_from_info_6' => 'As faturas de licença devem ser pagas sem deduções dentro de 14 dias, indicando o número da fatura, para uma conta especificada na fatura. O valor da licença está isento de imposto sobre vendas de acordo com o Artigo 19 USTG.',
+  'order_from_info_7' => 'A participação nesta versão do aplicativo deve ser publicada para aqueles que encomendaram e para as partes interessadas em uma viagem de férias (www.thatssoft.de)?',
+  'order_from_info_8' => 'o sim o não',
+
+
+
   'managing_director' => 'Diretor Executivo',
   'contact' => 'Contato',
   'street' => 'Rua',
