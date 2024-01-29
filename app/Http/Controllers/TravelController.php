@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SujjectionSubmission;
 use Illuminate\Http\Request;
 use App\Mail\OfferSubmission;
 use Illuminate\Support\Facades\Mail;
@@ -113,6 +114,30 @@ class TravelController extends Controller
         $successMessage = __('messages.recommendation_submission_success', [], $userLanguage);
 
         // You can add a success message or redirect the user to a thank you page
+        return redirect()->back()->with('success', $successMessage);
+    }
+
+    public function sujjectionSubmit(Request $request)
+    {
+        // Validate the form data (add more validation rules as needed)
+
+        $validator = Validator::make($request->all(), [
+            'information' => 'required|string',
+            'your_mail' => 'required|email|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)  // Pass the validation errors to the view
+                ->withInput();           // Pass the old input data to the view
+        }
+
+        // Send email to admin
+        Mail::to('alifurcoder@gmail.com')->send(new SujjectionSubmission($request->all()));
+        // proliz@web.de
+        $userLanguage = app()->getLocale();
+        $successMessage = __('messages.info_submission_success', [], $userLanguage);
+
         return redirect()->back()->with('success', $successMessage);
     }
 

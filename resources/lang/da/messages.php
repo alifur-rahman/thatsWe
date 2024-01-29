@@ -86,4 +86,6 @@ return array(
   'app_name' => 'App-Name',
   'logo_no' => 'Logo-Nr.',
 
+  'close' => 'Ferdig',
+
 );

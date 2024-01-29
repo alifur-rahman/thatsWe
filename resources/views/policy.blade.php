@@ -3,6 +3,22 @@
 @section('content')
     <section class="bg-light al_privecy_page" id="dataProtectionImprint">
         <div class="container">
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>{{ session('success') }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <div class="al_privecy_page_wrapper">
                 <div class="row">
                     <div class="col-xl-4">
@@ -40,7 +56,7 @@
                                 <div class="card-body">
                                     <h2 class="text-center mb-2">{{ __('messages.criticism_and_suggestions') }}</h2>
 
-                                    <form action="#}" method="GET">
+                                    <form action="{{ route('sujjection-submit') }}" method="POST">
                                         @csrf
                                         <div class="mb-2 d-flex justify-content-between align-items-center">
                                             <label for="your_mail"
@@ -76,15 +92,22 @@
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
-                                                <td class="al_view_info">Mark</td>
+                                                <td class="al_view_info">Book your next vacation with us and you will
+                                                    receive your personal travel companion from us. With this digital
+                                                    companion on your vacation trip, you will document everything that is or
+                                                    was interesting on your next vacation.</td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
-                                                <td class="al_view_info">Jacob</td>
+                                                <td class="al_view_info">Go in a big way and talk to the boss. The boss can
+                                                    point out this wonderful free deal to his employees when the next
+                                                    vacation trip is booked with the travel agency "Papperlapapp & Cie</td>
                                             </tr>
                                             <tr>
                                                 <th>3</th>
-                                                <td class="al_view_info">Larry the Bird</td>
+                                                <td class="al_view_info">Distribute small cards (business card size) with
+                                                    the app information (www.thatswe.de) in places that are visited by many
+                                                    people (bank, train station, etc.)</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -105,9 +128,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
     </section>
@@ -118,41 +138,15 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Full Information</h5>
+                    <h5 class="modal-title">{{ __('messages.full_inoformation') }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti placeat cupiditate commodi
-                        omnis corrupti nam sit consequuntur odio! Magnam velit deserunt accusamus excepturi consectetur
-                        molestias, animi repellat at illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                        magni dolores nisi recusandae rem totam aspernatur odio ab, in, a dicta enim. Ducimus,
-                        necessitatibus saepe nihil ea iste enim tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Dolore architecto non ducimus repudiandae magni ut error rerum, laudantium eius, ipsam
-                        similique et? Sit, repellat dolorum debitis dolor expedita beatae ad.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti placeat cupiditate commodi
-                        omnis corrupti nam sit consequuntur odio! Magnam velit deserunt accusamus excepturi consectetur
-                        molestias, animi repellat at illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                        magni dolores nisi recusandae rem totam aspernatur odio ab, in, a dicta enim. Ducimus,
-                        necessitatibus saepe nihil ea iste enim tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Dolore architecto non ducimus repudiandae magni ut error rerum, laudantium eius, ipsam
-                        similique et? Sit, repellat dolorum debitis dolor expedita beatae ad.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti placeat cupiditate commodi
-                        omnis corrupti nam sit consequuntur odio! Magnam velit deserunt accusamus excepturi consectetur
-                        molestias, animi repellat at illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                        magni dolores nisi recusandae rem totam aspernatur odio ab, in, a dicta enim. Ducimus,
-                        necessitatibus saepe nihil ea iste enim tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Dolore architecto non ducimus repudiandae magni ut error rerum, laudantium eius, ipsam
-                        similique et? Sit, repellat dolorum debitis dolor expedita beatae ad.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti placeat cupiditate commodi
-                        omnis corrupti nam sit consequuntur odio! Magnam velit deserunt accusamus excepturi consectetur
-                        molestias, animi repellat at illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                        magni dolores nisi recusandae rem totam aspernatur odio ab, in, a dicta enim. Ducimus,
-                        necessitatibus saepe nihil ea iste enim tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Dolore architecto non ducimus repudiandae magni ut error rerum, laudantium eius, ipsam
-                        similique et? Sit, repellat dolorum debitis dolor expedita beatae ad.</p>
+                    <p class="modal-text" id="shoWMoreInfo"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">{{ __('messages.close') }}</button>
                 </div>
             </div>
         </div>
@@ -185,6 +179,12 @@
         .al_view_info {
             cursor: pointer;
             transition: .3s;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            width: 100%;
+            cursor: pointer;
         }
 
         .al_view_info:hover {
@@ -233,6 +233,7 @@
         $(document).ready(function() {
             const myModalEl = $('#exampleModal');
             $(document).on('click', '.al_view_info', function() {
+                $('#shoWMoreInfo').text($(this).text());
                 myModalEl.modal('show');
                 return false;
             });

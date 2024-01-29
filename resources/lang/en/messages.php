@@ -97,4 +97,9 @@ return array(
 
   'hello_its_me' => "Hello, it's me",
   'i_found_site_2' => "I just visited an interesting site. It's about customer loyalty and custo- mer growth and of course also about increasing sales. The page ac- cess: ",
+
+
+  'close' => 'Close',
+  'full_inoformation' => 'Full Inoformation',
+
 );

@@ -22,5 +22,6 @@ Route::post('/offer/submit', [App\Http\Controllers\TravelController::class, 'sub
 Route::get('/recommendation', [App\Http\Controllers\TravelController::class, 'recommendation'])->name('recommendation');
 Route::post('/recommendation/submit', [App\Http\Controllers\TravelController::class, 'submitRecommendation'])->name('submit-recommendation');
 Route::get('/policy', [App\Http\Controllers\TravelController::class, 'policy'])->name('policy-page');
+Route::post('/sujjection/submit', [App\Http\Controllers\TravelController::class, 'sujjectionSubmit'])->name('sujjection-submit');
 Route::get('change/lang', [App\Http\Controllers\LanguageController::class, 'switch'])->name('LangChange');
 Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->name('order-page');
