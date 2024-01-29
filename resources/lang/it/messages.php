@@ -32,7 +32,8 @@ return array(
   'postal_code' => 'Codice Postale',
   'your_postal_code' => 'Il Tuo Codice Postale',
   'submit' => 'Invia',
-  'recommend_to_friend' => 'Raccomanda a un Amico o Collega',
+  'recommend_to_friend' => 'Consiglia questi siti a un amico o collega',
+
   'your_name' => 'Il Tuo Nome',
   'person_email' => 'Inserisci l\'E-mail dell\'Amico',
   'send' => 'Invia',
@@ -68,10 +69,18 @@ return array(
 
   'order_page_title' => 'L\'offerta si applica esclusivamente alle agenzie di viaggio!',
   'order_page_sub_title' => 'I tour operator ricevono condizioni speciali per ogni agenzia di viaggi collegata!',
-  'order_from_info_1' => "Viene fornita un'applicazione Android (file APK). L'acquirente o il rappresentante dell'acquirente è responsabile dell'installazione dell'applicazione su dispositivi Android.",
-  'order_from_info_2' => 'Il numero di installazioni è illimitato durante il periodo di licenza, ma si applica solo all\'agenzia di viaggi che ha ordinato l\'applicazione.',
-  'order_from_info_3' => 'La licenza viene estesa di 12 mesi ogni gennaio di ogni anno, a meno che la licenza non sia annullata almeno 2 mesi prima (cioè entro il 1° novembre dell\'anno in corso). La disdetta via e-mail è sufficiente ed è accettata. La tassa di licenza è calcolata su base mensile pro rata per il primo anno civile corrente.',
-  'order_from_info_4' => 'Le fatture della licenza devono essere pagate senza detrazioni entro 14 giorni su un conto specificato nella fattura. L\'importo della licenza è esente da imposta sulle vendite fino a revoca (data di fondazione della GmbH) ai sensi dell\'articolo 19 del USTG.',
+
+  'order_from_info_1' => "La tariffa annuale della licenza è di €240.00",
+  'order_from_info_2' => 'Viene fornita un\'applicazione Android (file APK). L\'acquirente o il rappresentante esperto dell\'acquirente è responsabile dell\'installazione dell\'applicazione su dispositivi Android.',
+  'order_from_info_3' => 'Il numero di installazioni è illimitato per la durata della licenza, ma si applica solo all\'agenzia di viaggi che ha ordinato l\'app.',
+  'order_from_info_4' => 'La licenza si rinnova ogni 12 mesi a gennaio di ogni anno, a meno che la licenza utente venga annullata almeno 2 mesi prima (cioè entro il 1° novembre dell\'anno civile in corso). La disdetta della licenza tramite e-mail a proliz@web.de è accettata.',
+  'order_from_info_5' => 'La tariffa di licenza per il primo anno civile è calcolata in proporzione ai mesi rimanenti fino alla fine dell\'anno',
+  'order_from_info_6' => 'Le fatture della licenza devono essere pagate senza detrazioni entro 14 giorni, indicando il numero di fattura, su un conto specificato nella fattura. L\'importo della licenza è esente da IVA ai sensi dell\'articolo 19 USTG.',
+  'order_from_info_7' => 'La partecipazione a questa versione dell\'applicazione deve essere pubblicata per coloro che l\'hanno ordinata e per le parti interessate durante un viaggio di vacanza (www.thatssoft.de)?',
+  'order_from_info_8' => 'o sì o no',
+
+
+
   'managing_director' => 'Amministratore Delegato',
   'contact' => 'Contatto',
   'street' => 'Via',

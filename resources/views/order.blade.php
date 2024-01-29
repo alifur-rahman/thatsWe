@@ -96,19 +96,19 @@
                                 </h3>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="mb-2">
+                                        <div>
                                             <label for="company_name"
                                                 class="form-label">{{ __('messages.company_name') }}</label>
                                             <input type="text" class="form-control" id="company_name"
                                                 name="company_name">
                                         </div>
-                                        <div class="mb-2">
+                                        <div>
                                             <label for="street" class="form-label">{{ __('messages.street') }}</label>
                                             <input type="text" class="form-control" id="street" name="street">
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <div class="mb-2">
+                                                <div class="">
                                                     <label for="zip"
                                                         class="form-label">{{ __('messages.zip') }}</label>
                                                     <input type="text" class="form-control" id="zip"
@@ -116,7 +116,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <div class="mb-2">
+                                                <div class="">
                                                     <label for="city"
                                                         class="form-label">{{ __('messages.city') }}</label>
                                                     <input type="text" class="form-control" id="city"
@@ -124,26 +124,26 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mb-2">
+                                        <div>
                                             <label for="country" class="form-label">{{ __('messages.country') }}</label>
                                             <input type="text" class="form-control" id="country" name="country">
                                         </div>
-                                        <div class="mb-2">
+                                        <div class=">
                                             <label for="telephone"
-                                                class="form-label">{{ __('messages.telephone') }}</label>
+                                            class="form-label">{{ __('messages.telephone') }}</label>
                                             <input type="text" class="form-control" id="telephone" name="telephone">
                                         </div>
-                                        <div class="mb-2">
+                                        <div class="">
                                             <label for="www" class="form-label">WWW</label>
                                             <input type="text" class="form-control" id="www" name="www">
                                         </div>
-                                        <div class="mb-2">
+                                        <div class="">
                                             <label for="mail_address"
                                                 class="form-label">{{ __('messages.mail_address') }}</label>
                                             <input type="text" class="form-control" id="mail_address"
                                                 name="mail_address">
                                         </div>
-                                        <div class="mb-2">
+                                        <div class="">
                                             <label for="managing_director"
                                                 class="form-label">{{ __('messages.managing_director') }}/{{ __('messages.contact') }}</label>
                                             <input type="text" class="form-control" id="managing_director"
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <div class="mb-2">
+                                                <div class="">
                                                     <label for="app_name"
                                                         class="form-label">{{ __('messages.app_name') }}</label>
                                                     <input type="text" class="form-control" id="app_name"
@@ -159,7 +159,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <div class="mb-2">
+                                                <div class="">
                                                     <label for="logo_no"
                                                         class="form-label">{{ __('messages.logo_no') }}</label>
                                                     <input type="text" class="form-control" id="logo_no"
@@ -174,8 +174,12 @@
                                             <p>{{ __('messages.order_from_info_2') }}</p>
                                             <p>{{ __('messages.order_from_info_3') }}</p>
                                             <p>{{ __('messages.order_from_info_4') }}</p>
+                                            <p>{{ __('messages.order_from_info_5') }}</p>
+                                            <p>{{ __('messages.order_from_info_6') }}</p>
+                                            <p>{{ __('messages.order_from_info_7') }}</p>
+                                            <p>{{ __('messages.order_from_info_8') }}</p>
                                             <div class="text-center">
-                                                <div class="mt-5">
+                                                <div class="">
                                                     <button type="submit"
                                                         class="btn btn-primary">{{ __('messages.send') }}</button>
                                                 </div>
@@ -199,7 +203,7 @@
         .al_order_page {
             height: 100%;
             position: initial;
-            padding-bottom: 60px;
+            padding-bottom: 10px;
         }
 
         .al_logo_selection {
@@ -249,7 +253,8 @@
         }
 
         .al_order_form_info_text p {
-            font-size: 15px;
+            font-size: 13px;
+            margin-bottom: 0.4rem;
         }
     </style>
 @endsection

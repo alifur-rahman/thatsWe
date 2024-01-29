@@ -32,7 +32,8 @@ return array(
   'postal_code' => 'Code postal',
   'your_postal_code' => 'Votre code postal',
   'submit' => 'Soumettre',
-  'recommend_to_friend' => 'Recommander à un ami ou à un collègue',
+  'recommend_to_friend' => 'Recommandez ces sites à un ami ou collègue',
+
   'your_name' => 'Votre nom',
   'person_email' => 'Entrer l\'e-mail de l\'ami',
   'send' => 'Envoyer',
@@ -69,13 +70,21 @@ return array(
   'order_page_title' => "L'offre s'applique exclusivement aux agences de voyage !",
   'order_page_sub_title' => 'Les tour-opérateurs bénéficient de conditions spéciales pour chaque agence de voyage connectée !',
 
-  'order_from_info_1' => "Une application Android (fichier APK) est fournie. L'acheteur ou le représentant de l'acheteur est responsable de l'installation de l'application sur les appareils Android.",
+  'order_from_info_1' => "La redevance de licence annuelle est de €240.00",
+  'order_from_info_2' => `Une application Android (fichier APK) est fournie. L'acheteur ou le représentant expert de l'acheteur est responsable de l'installation de l'application sur les appareils Android.`,
 
-  'order_from_info_2' => "Le nombre d'installations est illimité pendant la période de licence, mais ne s'applique qu'à l'agence de voyage qui a commandé l'application.",
+  'order_from_info_3' => `Le nombre d'installations est illimité pour la durée de la licence, mais ne s'applique qu'à l'agence de voyage qui a commandé l'application.`,
 
-  'order_from_info_3' => "La licence est renouvelée de 12 mois chaque janvier de chaque année, sauf résiliation au moins 2 mois à l'avance (c'est-à-dire au plus tard le 1er novembre de l'année en cours). La résiliation par e-mail est suffisante et est acceptée. La redevance de licence est calculée au prorata mensuel pour la première année civile en cours.",
+  'order_from_info_4' => `La licence est prolongée de 12 mois chaque janvier de chaque année, sauf si la licence utilisateur est annulée au moins 2 mois à l'avance (c'est-à-dire avant le 1er novembre de l'année civile en cours). La résiliation de la licence par courrier électronique à proliz@web.de est acceptée.`,
 
-  'order_from_info_4' => "Les factures de licence doivent être payées sans déduction dans les 14 jours sur un compte spécifié dans la facture. Le montant de la licence est exonéré de taxe sur les ventes jusqu'à révocation (date de fondation de la GmbH) conformément à l'article 19 de l'USTG.",
+  'order_from_info_5' => `La redevance de licence pour la première année civile est calculée au prorata pour les mois restants jusqu'à la fin de l'année.`,
+
+  'order_from_info_6' => `Les factures de licence sont payables sans déduction dans un délai de 14 jours, en indiquant le numéro de facture, sur un compte spécifié dans la facture. Le montant de la licence est exonéré de taxe de vente conformément à l'article 19 USTG.`,
+
+  'order_from_info_7' => `La participation à cette version de l'application doit-elle être publiée pour ceux qui l'ont commandée et les parties intéressées lors d'un voyage de vacances (www.thatssoft.de)?`,
+
+  'order_from_info_8' => 'o oui o non',
+
 
   'managing_director' => 'Directeur Général',
   'contact' => 'Contact',

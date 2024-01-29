@@ -46,6 +46,10 @@
             /* Minimum height of the main content */
         }
 
+        .form-label {
+            margin-bottom: .1rem;
+        }
+
         .bg-holder {
             background-position: center center;
             background-size: cover;

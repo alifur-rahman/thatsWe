@@ -7,8 +7,8 @@
                 <div class="row">
                     <div class="col-xl-4">
                         <div class="al_sujjection_wrapper">
-                            <div class="card p-4 pt-0 pb-0 flex-1">
-                                <div class="card-body">
+                            <div class="card p-3 pt-0 pb-0 flex-1">
+                                <div class="card-body p-2">
                                     <h2 class="text-center mb-1">{{ __('messages.data_protection') }}</h2>
                                     <p>
                                         {{ __('messages.data_protection1') }}
@@ -21,7 +21,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card mt-xl-3 p-4 pb-0 ">
+                            <div class="card mt-xl-3 p-3 pb-0 ">
                                 <h2 class="text-center mb-1">{{ __('messages.imprint') }}</h2>
                                 <address>
                                     <strong>{{ __('messages.line1') }}</strong><br>

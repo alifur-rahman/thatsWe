@@ -32,7 +32,7 @@ return array(
     'postal_code' => 'Postleitzahl',
     'your_postal_code' => 'Ihre Postleitzahl',
     'submit' => 'Absenden',
-    'recommend_to_friend' => 'Empfehlen Sie einem Freund oder Kollegen',
+    'recommend_to_friend' => 'Diese Seiten einem Freund oder Kollegen empfehlen',
     'your_name' => 'Ihr Name',
     'person_email' => 'E-Mail des Freundes eingeben',
     'send' => 'Senden',
@@ -67,10 +67,19 @@ return array(
     'load_info' => 'Info Laden',
     'order_page_title' => 'Das Angebot gilt ausschließlich für Reisebüros!',
     'order_page_sub_title' => 'Reiseveranstalter erhalten spezielle Konditionen für jede angeschlossene Reiseagentur!',
-    'order_from_info_1' => "Eine Android-App (APK-Datei) wird bereitgestellt. Der Käufer oder der Vertreter des Käufers ist für die Installation der App auf Android-Geräten verantwortlich.",
-    'order_from_info_2' => 'Die Anzahl der Installationen ist während der Lizenzlaufzeit unbegrenzt, gilt jedoch nur für das Reisebüro, das die App bestellt hat.',
-    'order_from_info_3' => 'Die Lizenz wird jedes Jahr im Januar um 12 Monate verlängert, es sei denn, die Lizenz wird mindestens 2 Monate im Voraus gekündigt (d. h. bis zum 1. November des aktuellen Jahres). Die Kündigung per E-Mail ist ausreichend und wird akzeptiert. Die Lizenzgebühr wird für das erste aktuelle Kalenderjahr anteilig monatlich berechnet.',
-    'order_from_info_4' => 'Die Lizenzrechnungen sind innerhalb von 14 Tagen ohne Abzüge auf ein in der Rechnung angegebenes Konto zu zahlen. Der Lizenzbetrag ist bis auf Widerruf (Gründungsdatum der GmbH) gemäß § 19 UStG von der Umsatzsteuer befreit.',
+
+    'order_from_info_1' => "Die Jahres-Lizenzgebühr beträgt 240,00 €",
+    'order_from_info_2' => 'Es wird eine Android-App (APK-Datei) geliefert. Die Installation der App auf Android-Geräten obliegt dem Besteller oder den / dem fachkundigen Beauftragten des Bestellers.',
+    'order_from_info_3' => 'Die Installations-Anzahl ist während der Dauer der Lizenz unbegrenzt, gilt aber nur für das Reisebüro, das Besteller der App ist.',
+    'order_from_info_4' => 'Jeweils zum Januar eines Jahres verlängert sich die Lizenz um 12 Monate, es sei denn, die Nutzer-Lizenz wird spätestens 2 Monate vorher (also bis zum 1. November des laufenden Kalenderjahres) gekündigt. Die Kündigung der Lizenz per eMail an proliz@web.de wird akzeptiert.',
+
+    'order_from_info_5' => 'Die Lizenzgebühr wird für das erstelaufende Kalenderjahr anteilig für die restlichen Monate bis zum Jahresende berechnet.',
+    'order_from_info_6' => 'Die LIzenzrechnungen sind zahlbar ohne Abzug innerhalb 14 Tage mit Angabe der Rechnungsnummer auf ein in der Rechnung genanntes Konto. Der Lizenzbetrag ist gemäß § 19 USTG von der Umsatzsteuer befreit.',
+
+    'order_from_info_7' => 'Soll die Teilnahme an dieser App-Version an Besteller und Interessenten einer Urlaubsreise veröffentlicht werden (www.thatssoft.de)?',
+    'order_from_info_8' => 'o ja o nein',
+
+
     'managing_director' => 'Geschäftsführer',
     'contact' => 'Kontakt',
     'street' => 'Straße',

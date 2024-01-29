@@ -32,7 +32,8 @@ return array(
   'postal_code' => 'Postcode',
   'your_postal_code' => 'Uw Postcode',
   'submit' => 'Versturen',
-  'recommend_to_friend' => 'Aanbevelen aan Vriend of Collega',
+  'recommend_to_friend' => 'Beveel deze sites aan bij een vriend of collega',
+
   'your_name' => 'Uw Naam',
   'person_email' => 'Voer E-mail van Vriend in',
   'send' => 'Verstuur',
@@ -68,10 +69,17 @@ return array(
 
   'order_page_title' => 'Het aanbod geldt uitsluitend voor reisbureaus!',
   'order_page_sub_title' => 'Reisorganisatoren ontvangen speciale voorwaarden voor elke aangesloten reisbureau!',
-  'order_from_info_1' => "Een Android-app (APK-bestand) wordt geleverd. De koper of de vertegenwoordiger van de koper is verantwoordelijk voor het installeren van de app op Android-apparaten.",
-  'order_from_info_2' => 'Het aantal installaties is onbeperkt tijdens de licentieperiode, maar geldt alleen voor het reisbureau dat de app heeft besteld.',
-  'order_from_info_3' => 'De licentie wordt elk jaar in januari met 12 maanden verlengd, tenzij de licentie minimaal 2 maanden van tevoren wordt opgezegd (d.w.z. vóór 1 november van het huidige jaar). Opzegging per e-mail is voldoende en wordt geaccepteerd. De licentiekosten worden pro rata per maand berekend voor het eerste lopende kalenderjaar.',
-  'order_from_info_4' => 'De licentiefacturen moeten binnen 14 dagen zonder aftrek worden betaald op een in de factuur vermeld account. Het licentiebedrag is vrijgesteld van omzetbelasting tot intrekking (datum van oprichting van de GmbH) volgens artikel 19 van de USTG.',
+
+  'order_from_info_1' => "Het jaarlijkse licentietarief is €240,00",
+  'order_from_info_2' => 'Een Android-app (APK-bestand) wordt geleverd. De koper of de expertvertegenwoordiger van de koper is verantwoordelijk voor de installatie van de app op Android-apparaten.',
+  'order_from_info_3' => 'Het aantal installaties is onbeperkt gedurende de looptijd van de licentie, maar geldt alleen voor het reisbureau dat de app heeft besteld.',
+  'order_from_info_4' => 'De licentie wordt elk januari met 12 maanden verlengd, tenzij de gebruikerslicentie minstens 2 maanden van tevoren wordt geannuleerd (d.w.z. vóór 1 november van het huidige kalenderjaar). Beëindiging van de licentie per e-mail naar proliz@web.de is geaccepteerd.',
+  'order_from_info_5' => 'Het licentietarief voor het eerste kalenderjaar wordt pro rata berekend voor de resterende maanden tot het einde van het jaar.',
+  'order_from_info_6' => 'De licentiefacturen moeten zonder aftrek binnen 14 dagen worden betaald, onder vermelding van het factuurnummer, naar een in de factuur gespecificeerde rekening. Het licentiebedrag is vrijgesteld van omzetbelasting volgens artikel 19 USTG.',
+  'order_from_info_7' => 'Moet deelname aan deze app-versie worden gepubliceerd voor degenen die de app hebben besteld en geïnteresseerde partijen tijdens een vakantiereis (www.thatssoft.de)?',
+  'order_from_info_8' => 'o ja o nee',
+
+
   'managing_director' => 'Algemeen Directeur',
   'contact' => 'Contact',
   'street' => 'Straat',
