@@ -87,4 +87,8 @@ return array(
   'country' => 'Land',
   'app_name' => 'App Naam',
   'logo_no' => 'Logo Nummer',
+
+  'close' => 'Sluiten',
+  'full_information' => 'Volledige Informatie',
+
 );

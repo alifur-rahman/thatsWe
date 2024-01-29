@@ -86,4 +86,8 @@ return array(
   'app_name' => 'Nombre de la App',
   'logo_no' => 'Número de Logo',
 
+  'close' => 'Cerrar',
+  'full_information' => 'Información Completa',
+
+
 );

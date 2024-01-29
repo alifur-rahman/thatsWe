@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderSubmission;
 use App\Mail\SujjectionSubmission;
 use Illuminate\Http\Request;
 use App\Mail\OfferSubmission;
@@ -134,6 +135,42 @@ class TravelController extends Controller
 
         // Send email to admin
         Mail::to('alifurcoder@gmail.com')->send(new SujjectionSubmission($request->all()));
+        // proliz@web.de
+        $userLanguage = app()->getLocale();
+        $successMessage = __('messages.info_submission_success', [], $userLanguage);
+
+        return redirect()->back()->with('success', $successMessage);
+    }
+
+    public function orderSubmit(Request $request)
+    {
+        // Validate the form data (add more validation rules as needed)
+
+        $validator = Validator::make($request->all(), [
+            'company_name' => 'required|string|max:255',
+            'street' => 'required|string|max:255',
+            'zip' => 'required|string|max:20',
+            'city' => 'required|string|max:255',
+            'country' => 'required|string|max:255',
+            'telephone' => 'required|string|max:20',
+            'www' => 'nullable|string|max:255',
+            'mail_address' => 'required|email|max:255',
+            'managing_director' => 'required|string|max:255',
+            'app_name' => 'required|string|max:255',
+            'logo_no' => 'required|string|max:255',
+
+
+
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)  // Pass the validation errors to the view
+                ->withInput();           // Pass the old input data to the view
+        }
+
+        // Send email to admin
+        Mail::to('alifurcoder@gmail.com')->send(new OrderSubmission($request->all()));
         // proliz@web.de
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.info_submission_success', [], $userLanguage);

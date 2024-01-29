@@ -93,4 +93,8 @@ return array(
   'country' => 'Pays',
   'app_name' => 'Nom de l\'application',
   'logo_no' => 'Numéro de Logo',
+
+  'close' => 'Fermer',
+  'full_information' => 'Information Complète',
+
 );

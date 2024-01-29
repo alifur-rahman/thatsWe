@@ -86,6 +86,8 @@ return array(
   'app_name' => 'App-Name',
   'logo_no' => 'Logo-Nr.',
 
-  'close' => 'Ferdig',
+  'close' => 'Luk',
+  'full_information' => 'Fuld Information',
+
 
 );
