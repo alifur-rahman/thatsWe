@@ -87,4 +87,8 @@ return array(
     'country' => 'Land',
     'app_name' => 'App-Name',
     'logo_no' => 'Logo-Nr.',
+
+    'close' => 'Luk',
+    'full_information' => 'Fuld Information',
+
 );

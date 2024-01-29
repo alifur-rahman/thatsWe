@@ -112,15 +112,14 @@
                                         </tbody>
                                     </table>
 
-                                    <form action="#" method="GET">
-                                        @csrf
-                                        <div class="text-center al_card_footer">
-                                            <div class="mt-2">
-                                                <button type="submit"
-                                                    class="btn btn-primary">{{ __('messages.load_info') }}</button>
-                                            </div>
+
+                                    <div class="text-center al_card_footer">
+                                        <div class="mt-2">
+                                            <button type="submit"
+                                                class="btn btn-primary">{{ __('messages.load_info') }}</button>
                                         </div>
-                                    </form>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -138,7 +137,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">{{ __('messages.full_inoformation') }}</h5>
+                    <h5 class="modal-title">{{ __('messages.full_information') }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

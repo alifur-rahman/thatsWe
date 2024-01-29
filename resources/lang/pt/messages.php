@@ -89,4 +89,8 @@ return array(
   'app_name' => 'Nome do Aplicativo',
   'logo_no' => 'Número do Logotipo',
 
+  'close' => 'Fechar',
+  'full_information' => 'Informação Completa',
+
+
 );

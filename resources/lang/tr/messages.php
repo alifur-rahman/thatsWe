@@ -90,5 +90,9 @@ return array(
   'app_name' => 'Uygulama Adı',
   'logo_no' => 'Logo No',
 
+  'close' => 'Kapat',
+  'full_information' => 'Tam Bilgi',
+
+
 
 );

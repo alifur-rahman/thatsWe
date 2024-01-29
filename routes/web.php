@@ -25,3 +25,4 @@ Route::get('/policy', [App\Http\Controllers\TravelController::class, 'policy'])-
 Route::post('/sujjection/submit', [App\Http\Controllers\TravelController::class, 'sujjectionSubmit'])->name('sujjection-submit');
 Route::get('change/lang', [App\Http\Controllers\LanguageController::class, 'switch'])->name('LangChange');
 Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->name('order-page');
+Route::post('/order/submit', [App\Http\Controllers\TravelController::class, 'orderSubmit'])->name('order-submit');
