@@ -92,22 +92,89 @@
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
-                                                <td class="al_view_info">Book your next vacation with us and you will
-                                                    receive your personal travel companion from us. With this digital
-                                                    companion on your vacation trip, you will document everything that is or
-                                                    was interesting on your next vacation.</td>
+                                                <td class="al_view_info">newsletter
+                                                    <div class="al_lognText d-none">
+                                                        <p>
+                                                            What is important for a long-term and,
+                                                            of course, profitable customer connection is NOT just the
+                                                            provision of a
+                                                            digital travel companion, but rather the most lasting connection
+                                                            possible between the service provider (you as a travel agency)
+                                                            and the
+                                                            customer, but also to maintain contact with your customers and
+                                                            interested parties AFTER the trip has been booked.
+                                                        </p>
+                                                        <p>
+                                                            During the initial consultation, ask for permission to receive a
+                                                            newsletter with great information about your next vacation.
+                                                        </p>
+                                                        <p>
+                                                            Send a newsletter to existing customers to introduce the new
+                                                            digital
+                                                            travel companion and present exclusive offers for bookings.
+
+                                                        </p>
+                                                        <p>
+                                                            Additionally, use small tools (business card advertising) to
+                                                            point out the recommendation options to friends, colleagues,
+                                                            etc. on the homepage “www.thatswe.de”.
+                                                        </p>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
-                                                <td class="al_view_info">Go in a big way and talk to the boss. The boss can
-                                                    point out this wonderful free deal to his employees when the next
-                                                    vacation trip is booked with the travel agency "Papperlapapp & Cie</td>
+                                                <td class="al_view_info">Book your next vacation with us and you will
+                                                    receive your personal travel companion from us. With this digital
+                                                    companion on your vacation trip, you will document everything that is or
+                                                    was interesting on your next vacation.
+
+                                                    <div class="al_lognText d-none">
+                                                        <p>Book your next vacation with us and you will
+                                                            receive your personal travel companion from us. With this
+                                                            digital
+                                                            companion on your vacation trip, you will document everything
+                                                            that is or
+                                                            was interesting on your next vacation.
+                                                        </p>
+                                                    </div>
+
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>3</th>
+                                                <td class="al_view_info">Go in a big way and talk to the boss. The boss can
+                                                    point out this wonderful free deal to his employees when the next
+                                                    vacation trip is booked with the travel agency "Papperlapapp & Cie
+
+                                                    <div class="al_lognText d-none">
+                                                        <p>Go in a big way and talk to the boss. The boss can
+                                                            point out this wonderful free deal to his employees when the
+                                                            next
+                                                            vacation trip is booked with the travel agency "Papperlapapp &
+                                                            Cie
+                                                        </p>
+                                                    </div>
+
+                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
                                                 <td class="al_view_info">Distribute small cards (business card size) with
                                                     the app information (www.thatswe.de) in places that are visited by many
-                                                    people (bank, train station, etc.)</td>
+                                                    people (bank, train station, etc.)
+                                                    <div class="al_lognText d-none">
+                                                        <p>Distribute small cards (business card size) with
+                                                            the app information (www.thatswe.de) in places that are visited
+                                                            by
+                                                            many
+                                                            people (bank, train station, etc.)
+                                                        </p>
+                                                    </div>
+                                                </td>
+
                                             </tr>
                                         </tbody>
                                     </table>
@@ -141,7 +208,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="modal-text" id="shoWMoreInfo"></p>
+                    <div id="shoWMoreInfo"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
@@ -232,12 +299,12 @@
         $(document).ready(function() {
             const myModalEl = $('#exampleModal');
             $(document).on('click', '.al_view_info', function() {
-                $('#shoWMoreInfo').text($(this).text());
+                $('#shoWMoreInfo').html($(this).find('.al_lognText').html());
                 myModalEl.modal('show');
                 return false;
             });
             myModalEl.on('hidden.bs.modal', function(event) {
-                console.log('Modal is hidden');
+                $('#shoWMoreInfo').html('');
             });
         });
     </script>

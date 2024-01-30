@@ -44,6 +44,11 @@ class TravelController extends Controller
         return view('order');
     }
 
+    public function images()
+    {
+        return view('images');
+    }
+
     public function submitOffer(Request $request)
     {
         // Validate the form data (add more validation rules as needed)

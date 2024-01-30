@@ -26,3 +26,5 @@ Route::post('/sujjection/submit', [App\Http\Controllers\TravelController::class,
 Route::get('change/lang', [App\Http\Controllers\LanguageController::class, 'switch'])->name('LangChange');
 Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->name('order-page');
 Route::post('/order/submit', [App\Http\Controllers\TravelController::class, 'orderSubmit'])->name('order-submit');
+
+Route::get('/images', [App\Http\Controllers\TravelController::class, 'images'])->name('images-page');

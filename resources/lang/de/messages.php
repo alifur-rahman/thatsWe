@@ -91,4 +91,6 @@ return array(
     'close' => 'Luk',
     'full_information' => 'Fuld Information',
 
+    'images' => 'Billeder',
+
 );

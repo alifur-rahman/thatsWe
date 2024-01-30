@@ -109,6 +109,11 @@
                         <li class="nav-item"><a class="nav-link px-3"
                                 href="{{ url('/recommendation') }}">{{ __('messages.recommendation') }}</a>
                         </li>
+
+                        <li class="nav-item"><a class="nav-link px-3"
+                                href="{{ url('/images') }}">{{ __('messages.images') }}</a>
+                        </li>
+
                         <li class="nav-item"><a class="nav-link px-3"
                                 href="{{ url('/policy') }}">{{ __('messages.privacy_policy') }}</a></li>
 

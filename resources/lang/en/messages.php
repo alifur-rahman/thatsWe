@@ -101,5 +101,5 @@ return array(
 
   'close' => 'Close',
   'full_inoformation' => 'Full Inoformation',
-
+  'images' => 'Images',
 );
