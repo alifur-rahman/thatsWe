@@ -102,4 +102,5 @@ return array(
   'close' => 'Close',
   'full_inoformation' => 'Full Inoformation',
   'images' => 'Images',
+  'images_page_title' => 'Images from ThatsWE',
 );
