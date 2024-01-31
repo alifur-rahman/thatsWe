@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Sobre Nós',
   'home' => 'Início',
   'about_us_description' => 'Bem-vindo ao "thatsWE" - esta plataforma é exclusivamente projetada para agências de viagens oferecerem aos seus clientes uma experiência de viagem inesquecível! Exclusiva para agências de viagens, nosso aplicativo oferece funções únicas - desde informações sobre o início das suas férias até muitas situações durante as férias, incluindo o salvamento das suas experiências de viagem. Experimente a versão de teste gratuita agora e descubra o significado de exclusividade, amizade com o cliente e aumento nas vendas para a sua agência de viagens. Conquiste clientes e utilize o poder da ganância do cliente - "Eu também quero isso!"',
-
   'website_dev' => 'Desenvolvimento do Site por',
   'company_info' => 'Informações da Empresa',
   'company_name' => 'Nome da Empresa',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Seu Código Postal',
   'submit' => 'Enviar',
   'recommend_to_friend' => 'Recomende esses sites a um amigo ou colega',
-
   'your_name' => 'Seu Nome',
   'person_email' => 'Digite o E-mail do Amigo',
   'send' => 'Enviar',
@@ -61,15 +59,12 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Endereço',
   'your_mail_address' => 'Sua Mail Endereço',
-
   'your_information' => 'Suas Informações',
   'criticism_and_suggestions' => 'Critica e Sugestões',
   'information_about_success' => 'Informações sobre o Sucesso',
   'load_info' => 'Carregar informações',
-
   'order_page_title' => 'A oferta aplica-se exclusivamente a agências de viagens!',
   'order_page_sub_title' => 'Operadores turísticos recebem condições especiais para cada agência de viagens conectada!',
-
   'order_from_info_1' => "A taxa anual de licença é de €240,00",
   'order_from_info_2' => 'É fornecido um aplicativo Android (arquivo APK). O comprador ou o representante especializado do comprador é responsável por instalar o aplicativo em dispositivos Android.',
   'order_from_info_3' => 'O número de instalações é ilimitado durante a vigência da licença, mas se aplica apenas à agência de viagens que encomendou o aplicativo.',
@@ -78,9 +73,6 @@ return array(
   'order_from_info_6' => 'As faturas de licença devem ser pagas sem deduções dentro de 14 dias, indicando o número da fatura, para uma conta especificada na fatura. O valor da licença está isento de imposto sobre vendas de acordo com o Artigo 19 USTG.',
   'order_from_info_7' => 'A participação nesta versão do aplicativo deve ser publicada para aqueles que encomendaram e para as partes interessadas em uma viagem de férias (www.thatssoft.de)?',
   'order_from_info_8' => 'o sim o não',
-
-
-
   'managing_director' => 'Diretor Executivo',
   'contact' => 'Contato',
   'street' => 'Rua',
@@ -88,9 +80,8 @@ return array(
   'country' => 'País',
   'app_name' => 'Nome do Aplicativo',
   'logo_no' => 'Número do Logotipo',
-
   'close' => 'Fechar',
   'full_information' => 'Informação Completa',
-
-
+  'images' => 'Imagens',
+  'images_page_title' => 'Imagens de ThatsWE',
 );

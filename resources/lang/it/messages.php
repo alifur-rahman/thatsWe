@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Chi Siamo',
   'home' => 'Home',
   'about_us_description' => 'Benvenuti in "thatsWE" - questa piattaforma è specificamente progettata per le agenzie di viaggio per offrire ai propri clienti un\'esperienza di viaggio indimenticabile! Esclusivamente per le agenzie di viaggio, la nostra app offre funzioni uniche, dall\'informazione sull\'inizio della tua vacanza a molte situazioni durante la tua vacanza fino al salvataggio delle tue esperienze di viaggio. Prova subito la versione di prova gratuita e scopri cosa significa l\'esclusività, la cordialità nei confronti del cliente e l\'aumento delle vendite per la tua agenzia di viaggi. Conquista i clienti e sfrutta il potere della loro avidità - "Voglio quello anche io!"',
-
   'website_dev' => 'Sviluppo del Sito Web Da',
   'company_info' => 'Informazioni Aziendali',
   'company_name' => 'Nome Azienda',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Il Tuo Codice Postale',
   'submit' => 'Invia',
   'recommend_to_friend' => 'Consiglia questi siti a un amico o collega',
-
   'your_name' => 'Il Tuo Nome',
   'person_email' => 'Inserisci l\'E-mail dell\'Amico',
   'send' => 'Invia',
@@ -61,15 +59,12 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Indirizzo',
   'your_mail_address' => 'Il Tuo Indirizzo Mail',
-
   'your_information' => 'Le Tue Informazioni',
   'criticism_and_suggestions' => 'Critica e Suggerimenti',
   'information_about_success' => 'Informazioni Sulla Succes',
   'load_info' => 'Carica Info',
-
   'order_page_title' => 'L\'offerta si applica esclusivamente alle agenzie di viaggio!',
   'order_page_sub_title' => 'I tour operator ricevono condizioni speciali per ogni agenzia di viaggi collegata!',
-
   'order_from_info_1' => "La tariffa annuale della licenza è di €240.00",
   'order_from_info_2' => 'Viene fornita un\'applicazione Android (file APK). L\'acquirente o il rappresentante esperto dell\'acquirente è responsabile dell\'installazione dell\'applicazione su dispositivi Android.',
   'order_from_info_3' => 'Il numero di installazioni è illimitato per la durata della licenza, ma si applica solo all\'agenzia di viaggi che ha ordinato l\'app.',
@@ -78,9 +73,6 @@ return array(
   'order_from_info_6' => 'Le fatture della licenza devono essere pagate senza detrazioni entro 14 giorni, indicando il numero di fattura, su un conto specificato nella fattura. L\'importo della licenza è esente da IVA ai sensi dell\'articolo 19 USTG.',
   'order_from_info_7' => 'La partecipazione a questa versione dell\'applicazione deve essere pubblicata per coloro che l\'hanno ordinata e per le parti interessate durante un viaggio di vacanza (www.thatssoft.de)?',
   'order_from_info_8' => 'o sì o no',
-
-
-
   'managing_director' => 'Amministratore Delegato',
   'contact' => 'Contatto',
   'street' => 'Via',
@@ -88,8 +80,8 @@ return array(
   'country' => 'Paese',
   'app_name' => 'Nome dell\'applicazione',
   'logo_no' => 'Numero del Logo',
-
   'close' => 'Chiudi',
   'full_information' => 'Informazioni Complete',
-
+  'images' => 'Immagini',
+  'images_page_title' => 'Immagini da ThatsWE',
 );

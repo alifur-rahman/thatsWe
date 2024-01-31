@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Acerca de Nosotros',
   'home' => 'Inicio',
   'about_us_description' => 'Bienvenido a "thatsWE" - esta plataforma está específicamente diseñada para agencias de viajes para ofrecer a sus clientes una experiencia de viaje inolvidable. Exclusivamente para agencias de viajes, nuestra aplicación ofrece funciones únicas, desde información sobre el inicio de tus vacaciones hasta muchas situaciones durante tus vacaciones, y la posibilidad de guardar tus experiencias de vacaciones. Prueba la versión de prueba gratuita ahora y descubre lo que significa la exclusividad, la amabilidad hacia el cliente y el aumento de las ventas para tu agencia de viajes. Gana clientes y aprovecha el poder de la codicia del cliente: ¡"Yo también quiero eso!"',
-
   'website_dev' => 'Desarrollo del Sitio Web por',
   'company_info' => 'Información de la Empresa',
   'company_name' => 'Nombre de la Empresa',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Tu Código Postal',
   'submit' => 'Enviar',
   'recommend_to_friend' => 'Recomendar estos sitios a un amigo o colega',
-
   'your_name' => 'Tu Nombre',
   'person_email' => 'Ingresar Correo Electrónico del Amigo',
   'send' => 'Enviar',
@@ -61,12 +59,10 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Adresse',
   'your_mail_address' => 'Su Mail Adresse',
-
   'your_information' => 'Dine Informationer',
   'criticism_and_suggestions' => 'Kritik og Anbefalinger',
   'information_about_success' => 'Informationer Om Succes',
   'load_info' => 'cargar información',
-
   'order_page_title' => '¡La oferta se aplica exclusivamente a agencias de viajes!',
   'order_page_sub_title' => '¡Los operadores turísticos reciben condiciones especiales para cada agencia de viajes conectada!',
   'order_from_info_1' => "La tarifa de licencia anual es de €240.00",
@@ -77,7 +73,6 @@ return array(
   'order_from_info_6' => 'Las facturas de licencia deben pagarse sin deducciones en un plazo de 14 días, indicando el número de factura, a una cuenta especificada en la factura. El monto de la licencia está exento de impuestos sobre las ventas de acuerdo con la Sección 19 USTG.',
   'order_from_info_7' => '¿Debería publicarse la participación en esta versión de la aplicación para aquellos que la ordenaron y para las partes interesadas en un viaje de vacaciones (www.thatssoft.de)?',
   'order_from_info_8' => 'o sí o no',
-
   'managing_director' => 'Director Gerente',
   'contact' => 'Contacto',
   'street' => 'Calle',
@@ -85,9 +80,8 @@ return array(
   'country' => 'País',
   'app_name' => 'Nombre de la App',
   'logo_no' => 'Número de Logo',
-
   'close' => 'Cerrar',
   'full_information' => 'Información Completa',
-
-
+  'images' => 'Imágenes',
+  'images_page_title' => 'Imágenes de ThatsWE',
 );

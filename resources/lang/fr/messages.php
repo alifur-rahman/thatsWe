@@ -9,7 +9,6 @@ return array(
   'about_us' => 'À propos de nous',
   'home' => 'Accueil',
   'about_us_description' => 'Bienvenue sur "thatsWE" - cette plateforme est spécifiquement conçue pour les agences de voyages afin d\'offrir à leurs clients une expérience de voyage inoubliable ! Exclusivement réservée aux agences de voyages, notre application offre des fonctionnalités uniques, de l\'information sur le début de vos vacances à de nombreuses situations pendant vos vacances jusqu\'à la sauvegarde de vos expériences de vacances. Essayez la version d\'essai gratuite dès maintenant et découvrez ce que signifie l\'exclusivité, la convivialité client et l\'augmentation des ventes pour votre agence de voyages. Gagnez des clients et utilisez le pouvoir de la cupidité du client - "Je veux ça aussi !"',
-
   'website_dev' => 'Développement du site Web par',
   'company_info' => 'Informations sur l\'entreprise',
   'company_name' => 'Nom de l\'entreprise',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Votre code postal',
   'submit' => 'Soumettre',
   'recommend_to_friend' => 'Recommandez ces sites à un ami ou collègue',
-
   'your_name' => 'Votre nom',
   'person_email' => 'Entrer l\'e-mail de l\'ami',
   'send' => 'Envoyer',
@@ -61,31 +59,20 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Adresse',
   'your_mail_address' => 'Votre adresse mail',
-
   'your_information' => 'Vos informations',
   'criticism_and_suggestions' => 'Critique et suggestions',
   'information_about_success' => 'Information sur le problème',
   'load_info' => 'Charger les informations',
-
   'order_page_title' => "L'offre s'applique exclusivement aux agences de voyage !",
   'order_page_sub_title' => 'Les tour-opérateurs bénéficient de conditions spéciales pour chaque agence de voyage connectée !',
-
   'order_from_info_1' => "La redevance de licence annuelle est de €240.00",
-  'order_from_info_2' => `Une application Android (fichier APK) est fournie. L'acheteur ou le représentant expert de l'acheteur est responsable de l'installation de l'application sur les appareils Android.`,
-
-  'order_from_info_3' => `Le nombre d'installations est illimité pour la durée de la licence, mais ne s'applique qu'à l'agence de voyage qui a commandé l'application.`,
-
-  'order_from_info_4' => `La licence est prolongée de 12 mois chaque janvier de chaque année, sauf si la licence utilisateur est annulée au moins 2 mois à l'avance (c'est-à-dire avant le 1er novembre de l'année civile en cours). La résiliation de la licence par courrier électronique à proliz@web.de est acceptée.`,
-
-  'order_from_info_5' => `La redevance de licence pour la première année civile est calculée au prorata pour les mois restants jusqu'à la fin de l'année.`,
-
-  'order_from_info_6' => `Les factures de licence sont payables sans déduction dans un délai de 14 jours, en indiquant le numéro de facture, sur un compte spécifié dans la facture. Le montant de la licence est exonéré de taxe de vente conformément à l'article 19 USTG.`,
-
-  'order_from_info_7' => `La participation à cette version de l'application doit-elle être publiée pour ceux qui l'ont commandée et les parties intéressées lors d'un voyage de vacances (www.thatssoft.de)?`,
-
+  'order_from_info_2' => "Une application Android (fichier APK) est fournie. L'acheteur ou son représentant expert est responsable de l'installation de l'application sur les appareils Android.",
+  'order_from_info_3' => "Le nombre d'installations est illimité pendant toute la durée de la licence, mais ne s'applique qu'à l'agence de voyages qui a commandé l'application.",
+  'order_from_info_4' => "La licence est prolongée de 12 mois chaque janvier de chaque année, sauf si la licence d'utilisation est annulée au moins 2 mois à l'avance (c'est-à-dire avant le 1er novembre de l'année civile en cours). La résiliation de la licence par e-mail à proliz@web.de est acceptée.",
+  'order_from_info_5' => "La redevance pour la première année civile est calculée au prorata des mois restants jusqu'à la fin de l'année.",
+  'order_from_info_6' => "Les factures de licences sont payables sans escompte dans un délai de 14 jours, en mentionnant le numéro de facture, sur un compte précisé sur la facture. Le montant de la licence est exonéré de la taxe de vente conformément à l'article 19 USTG.",
+  'order_from_info_7' => "La participation à cette version de l'application doit-elle être communiquée aux donneurs d'ordre et aux personnes intéressées en voyage de vacances (www.thatssoft.de) ?",
   'order_from_info_8' => 'o oui o non',
-
-
   'managing_director' => 'Directeur Général',
   'contact' => 'Contact',
   'street' => 'Rue',
@@ -93,8 +80,8 @@ return array(
   'country' => 'Pays',
   'app_name' => 'Nom de l\'application',
   'logo_no' => 'Numéro de Logo',
-
   'close' => 'Fermer',
   'full_information' => 'Information Complète',
-
+  'images' => 'Images',
+  'images_page_title' => 'Images de ThatsWE',
 );

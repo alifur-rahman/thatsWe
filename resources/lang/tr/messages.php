@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Hakkımızda',
   'home' => 'Ana Sayfa',
   'about_us_description' => '"thatsWE" ile seyahat acenteleri için özel olarak tasarlanmış bu platforma hoş geldiniz! Sadece seyahat acenteleri için olan uygulamamız, tatilinizin başlangıcıyla ilgili bilgilerden tatiliniz sırasında birçok duruma kadar benzersiz fonksiyonlar sunuyor. Ücretsiz deneme sürümünü şimdi deneyin ve "thatsWE"nin özel avantajlarını, müşteri dostluğunu ve satışlarınızı artırmanın ne anlama geldiğini keşfedin. Müşteri kazanın ve müşteri açlığının gücünü kullanın - "Bunu ben de istiyorum!"',
-
   'website_dev' => 'Web Sitesi Geliştirme',
   'company_info' => 'Şirket Bilgisi',
   'company_name' => 'Şirket Adı',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Posta Kodunuz',
   'submit' => 'Gönder',
   'recommend_to_friend' => 'Bu siteleri bir arkadaşa veya meslektaşa öner',
-
   'your_name' => 'Adınız',
   'person_email' => 'Arkadaşın E-Posta Adresi',
   'send' => 'Gönder',
@@ -61,16 +59,12 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Adresi',
   'your_mail_address' => 'Mail Adresiniz',
-
   'your_information' => 'Bilgilerin',
   'criticism_and_suggestions' => 'Kritik ve Tavsiye',
   'information_about_success' => 'Basarı Hakkında Bilgi',
   'load_info' => 'Bilgiyi Yükle',
-
   'order_page_title' => 'Teklif sadece seyahat acentelerine uygulanır!',
   'order_page_sub_title' => 'Tur operatörleri her bağlı seyahat acentesi için özel koşullar alır!',
-
-
   'order_from_info_1' => "Yıllık lisans ücreti €240.00",
   'order_from_info_2' => 'Bir Android uygulaması (APK dosyası) sağlanır. Alıcı veya alıcının uzman temsilcisi, uygulamayı Android cihazlara kurmakla sorumludur.',
   'order_from_info_3' => 'Lisans süresince kurulum sayısı sınırsızdır, ancak sadece uygulamayı sipariş eden seyahat acentesi için geçerlidir.',
@@ -79,20 +73,14 @@ return array(
   'order_from_info_6' => 'Lisans faturaları, fatura numarası belirtilerek, faturada belirtilen bir hesaba, kesintisiz olarak 14 gün içinde ödenmelidir. Lisans miktarı, 19. madde USTG’ye göre KDV’den muaf tutulmuştur.',
   'order_from_info_7' => 'Bu uygulama sürümüne katılım, uygulamayı sipariş edenler ve tatil gezisine ilgi duyanlar için (www.thatssoft.de) yayınlanmalı mıdır?',
   'order_from_info_8' => 'o evet o hayır',
-
-
-
-
   'contact' => 'İletişim',
   'street' => 'Cadde',
   'zip' => 'Posta Kodu',
   'country' => 'Ülke',
   'app_name' => 'Uygulama Adı',
   'logo_no' => 'Logo No',
-
   'close' => 'Kapat',
   'full_information' => 'Tam Bilgi',
-
-
-
+  'images' => 'Resimler',
+  'images_page_title' => 'ThatsWE İmajları',
 );
