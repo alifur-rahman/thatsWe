@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Om Os',
   'home' => 'Hjem',
   'about_us_description' => 'Velkommen til "thatsWE" - denne platform er specifikt designet til rejsebureauer for at tilbyde deres kunder en uforglemmelig rejseoplevelse! Udelukkende for rejsebureauer tilbyder vores app unikke funktioner - fra information om starten af din ferie til mange situationer under din ferie til gemning af dine ferieoplevelser. Prøv den gratis prøveversion nu og oplev, hvad "thatsWE" eksklusivitet, kundeflits og øgede salg betyder for dit rejsebureau. Vind kunder og udnyt kundens grådigheds kraft - "Jeg vil også have det!"',
-
   'website_dev' => 'Website-udvikling af',
   'company_info' => 'Virksomhedsinformation',
   'company_name' => 'Virksomhedsnavn',
@@ -65,7 +64,6 @@ return array(
   'criticism_and_suggestions' => 'Kritik og Anbefalinger',
   'information_about_success' => 'Informationer Om Succes',
   'load_info' => 'Indlæs Info',
-
   'order_page_title' => 'Das Angebot gilt ausschließlich für Reisebüros!',
   'order_page_sub_title' => 'Reiseveranstalter erhalten spezielle Konditionen für jede angeschlossene Reiseagentur!',
   'order_from_info_1' => "Den årlige licensafgift er €240,00",
@@ -76,8 +74,6 @@ return array(
   'order_from_info_6' => 'Licensfakturaerne skal betales uden fradrag inden for 14 dage med angivelse af fakturanummeret til en konto angivet i fakturaen. Licensbeløbet er fritaget for moms i henhold til § 19 UStG.',
   'order_from_info_7' => 'Skal deltagelse i denne app-version offentliggøres for dem, der bestiller og interesserede parter på en ferietur (www.thatssoft.de)?',
   'order_from_info_8' => 'o ja o nej',
-
-
   'managing_director' => 'Geschäftsführer',
   'contact' => 'Kontakt',
   'street' => 'Straße',
@@ -85,9 +81,8 @@ return array(
   'country' => 'Land',
   'app_name' => 'App-Name',
   'logo_no' => 'Logo-Nr.',
-
   'close' => 'Luk',
   'full_information' => 'Fuld Information',
-
-
+  'images' => 'Images',
+  'images_page_title' => 'Images fra ThatsWE',
 );

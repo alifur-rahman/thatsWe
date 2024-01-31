@@ -9,7 +9,6 @@ return array(
   'about_us' => 'Over Ons',
   'home' => 'Home',
   'about_us_description' => 'Welkom bij "thatsWE" - dit platform is specifiek ontworpen voor reisbureaus om hun klanten een onvergetelijke reiservaring te bieden! Exclusief voor reisbureaus biedt onze app unieke functies - van informatie over het begin van uw vakantie tot vele situaties tijdens uw vakantie en het opslaan van uw vakantie-ervaringen. Probeer nu de gratis proefversie en ervaar wat "thatsWE" exclusiviteit, klantvriendelijkheid en verhoogde verkoop betekenen voor uw reisbureau. Win klanten en maak gebruik van de kracht van klantengierigheid - "Dat wil ik ook!"',
-
   'website_dev' => 'Website-ontwikkeling door',
   'company_info' => 'Bedrijfsinformatie',
   'company_name' => 'Bedrijfsnaam',
@@ -33,7 +32,6 @@ return array(
   'your_postal_code' => 'Uw Postcode',
   'submit' => 'Versturen',
   'recommend_to_friend' => 'Beveel deze sites aan bij een vriend of collega',
-
   'your_name' => 'Uw Naam',
   'person_email' => 'Voer E-mail van Vriend in',
   'send' => 'Verstuur',
@@ -61,15 +59,12 @@ return array(
   'mail' => 'Mail',
   'mail_address' => 'Mail Adres',
   'your_mail_address' => 'Uw Mail Adres',
-
   'your_information' => 'Uw Informatie',
   'criticism_and_suggestions' => 'Criticisme en Suggestions',
   'information_about_success' => 'Informatie Over Succes',
   'load_info' => 'Informatie laden',
-
   'order_page_title' => 'Het aanbod geldt uitsluitend voor reisbureaus!',
   'order_page_sub_title' => 'Reisorganisatoren ontvangen speciale voorwaarden voor elke aangesloten reisbureau!',
-
   'order_from_info_1' => "Het jaarlijkse licentietarief is €240,00",
   'order_from_info_2' => 'Een Android-app (APK-bestand) wordt geleverd. De koper of de expertvertegenwoordiger van de koper is verantwoordelijk voor de installatie van de app op Android-apparaten.',
   'order_from_info_3' => 'Het aantal installaties is onbeperkt gedurende de looptijd van de licentie, maar geldt alleen voor het reisbureau dat de app heeft besteld.',
@@ -78,8 +73,6 @@ return array(
   'order_from_info_6' => 'De licentiefacturen moeten zonder aftrek binnen 14 dagen worden betaald, onder vermelding van het factuurnummer, naar een in de factuur gespecificeerde rekening. Het licentiebedrag is vrijgesteld van omzetbelasting volgens artikel 19 USTG.',
   'order_from_info_7' => 'Moet deelname aan deze app-versie worden gepubliceerd voor degenen die de app hebben besteld en geïnteresseerde partijen tijdens een vakantiereis (www.thatssoft.de)?',
   'order_from_info_8' => 'o ja o nee',
-
-
   'managing_director' => 'Algemeen Directeur',
   'contact' => 'Contact',
   'street' => 'Straat',
@@ -87,8 +80,8 @@ return array(
   'country' => 'Land',
   'app_name' => 'App Naam',
   'logo_no' => 'Logo Nummer',
-
   'close' => 'Sluiten',
   'full_information' => 'Volledige Informatie',
-
+  'images' => 'Afbeeldingen',
+  'images_page_title' => 'Afbeeldingen van ThatsWE',
 );
