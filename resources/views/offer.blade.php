@@ -49,7 +49,7 @@
                                     <div class="d-flex align-items-center gap-4">
                                         <div class="form-check">
                                             <label class="form-check-label" for="yes">
-                                                Yes
+                                                {{ __('messages.yes') }}
                                             </label>
                                             <input class="form-check-input" type="radio" name="travelIndustry"
                                                 id="yes" value="yes">
@@ -57,7 +57,7 @@
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label" for="no">
-                                                No
+                                                {{ __('messages.no') }}
                                             </label>
                                             <input class="form-check-input" type="radio" name="travelIndustry"
                                                 id="no" value="no">

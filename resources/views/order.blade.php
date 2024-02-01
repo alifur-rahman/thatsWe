@@ -246,7 +246,26 @@
                                             <p>{{ __('messages.order_from_info_5') }}</p>
                                             <p>{{ __('messages.order_from_info_6') }}</p>
                                             <p>{{ __('messages.order_from_info_7') }}</p>
-                                            <p>{{ __('messages.order_from_info_8') }}</p>
+                                            {{-- <p>{{ __('messages.order_from_info_8') }}</p> --}}
+
+                                            <div class="d-flex align-items-center gap-4">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="yes">
+                                                        {{ __('messages.yes') }}
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="published"
+                                                        id="yes" value="yes">
+
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="no">
+                                                        {{ __('messages.no') }}
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="published"
+                                                        id="no" value="no">
+
+                                                </div>
+                                            </div>
                                             <div class="text-center">
                                                 <div class="">
                                                     <button type="submit"
