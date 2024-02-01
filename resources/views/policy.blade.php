@@ -92,56 +92,39 @@
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
-                                                <td class="al_view_info"><span class="info_title">Newsletter</span>
+                                                <td class="al_view_info"><span
+                                                        class="info_title">{{ __('success_message.newsletter') }}</span>
                                                     <div class="al_lognText d-none">
                                                         <p>
-                                                            What is important for long-term and, of course, profitable
-                                                            customer loyalty is
-                                                            NOT just the provision of a digital travel companion, but rather
-                                                            a connection
-                                                            that is as long-lasting as possible between the service provider
-                                                            (you as a travel agency) and the customer, but also to maintain
-                                                            contact with your customers and interested parties AFTER booking
-                                                            the trip.
+                                                            {{ __('success_message.newsletter_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            During the initial consultation, ask permission to receive a
-                                                            newsletter with great information about your next vacation.
+                                                            {{ __('success_message.newsletter_msg_2') }}
                                                         </p>
                                                         <p>
-                                                            Send a newsletter to existing customers to introduce the new
-                                                            digital
-                                                            travel companion and present exclusive offers for bookings.
+                                                            {{ __('success_message.newsletter_msg_3') }}
 
                                                         </p>
                                                         <p>
-                                                            Additionally, use small tools (business card advertising) to
-                                                            point out the recommendation options to friends, colleagues,
-                                                            etc. on the homepage “www.thatswe.de”.
+                                                            {{ __('success_message.newsletter_msg_4') }}
                                                         </p>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
-                                                <td class="al_view_info"> <span class="info_title">Exclusivity</span>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.exclusivity') }}</span>
 
                                                     <div class="al_lognText d-none">
-                                                        <p>Offer your customers an exclusive travel experience with the
-                                                            'thatsWE' app
-                                                            Your personalized travel companion, only available through your
-                                                            travel agent.
+                                                        <p>
+                                                            {{ __('success_message.exclusivity_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            To my knowledge, this type of digital holiday guidance has not
-                                                            existed before
-                                                            and with this app on your mobile phone or “holiday tablet” your
-                                                            holiday customer has complete attention.
+                                                            {{ __('success_message.exclusivity_msg_2') }}
                                                         </p>
                                                         <p>
-                                                            And not just on vacation, but beforehand in conversations with
-                                                            friends, work
-                                                            colleagues, etc.
+                                                            {{ __('success_message.exclusivity_msg_3') }}
                                                         </p>
                                                     </div>
 
@@ -149,39 +132,31 @@
                                             </tr>
                                             <tr>
                                                 <th>3</th>
-                                                <td class="al_view_info"> <span class="info_title">Customer growth</span>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.customer_growth') }}</span>
 
                                                     <div class="al_lognText d-none">
-                                                        <p>This digital holiday companion offers you these options, which
-                                                            you should use consistently!
-                                                        </p>
-                                                        <p>a) You acquire new customers with this digital app!</p>
                                                         <p>
-                                                            With the logo of your travel agency and the app name you want -
-                                                            from “Pepe”
-                                                            to “Mira” to “Tom” to any other name)
+                                                            {{ __('success_message.customer_growth_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            b) You activate your customers from the inventory of travel
-                                                            bookings from the
-                                                            last few years!
+                                                            {{ __('success_message.customer_growth_msg_2') }}
                                                         </p>
                                                         <p>
-                                                            c) If you use the options in the “Recommendations to friends and
-                                                            colleagues” department, you will reach further potential
-                                                            customers. Simply point out these referral opportunities to
-                                                            EVERY visitor to your office.
+                                                            {{ __('success_message.customer_growth_msg_3') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.customer_growth_msg_4') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.customer_growth_msg_5') }}
                                                         </p>
                                                         <p>
 
-                                                            If you also register as a regional participant in this app
-                                                            campaign, you will be
-                                                            able to make further contacts.
+                                                            {{ __('success_message.customer_growth_msg_6') }}
                                                         </p>
                                                         <p>
-                                                            In summary: With 'thatsWE' you offer unique added value that
-                                                            leaves your
-                                                            competitors behind."
+                                                            {{ __('success_message.customer_growth_msg_7') }}
                                                         </p>
                                                     </div>
 
@@ -189,91 +164,69 @@
                                             </tr>
                                             <tr>
                                                 <th>4</th>
-                                                <td class="al_view_info"> <span class="info_title"> Increase in sales
+                                                <td class="al_view_info"> <span class="info_title">
+                                                        {{ __('success_message.increase_in_sales') }}
                                                     </span>
                                                     <div class="al_lognText d-none">
-                                                        <p>It needs to be explained why, for you as a travel agency, your
-                                                            competitor in
-                                                            the neighboring town is NOT your competitor in the true sense!
+                                                        <p>
+                                                            {{ __('success_message.increase_in_sales_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            The fact is that every travel agency works and has to work
-                                                            against the comfort of other people. Simply because with the
-                                                            possibilities of online services,
-                                                            booking at home from your sofa is MUCH more convenient.
+                                                            {{ __('success_message.increase_in_sales_msg_2') }}
 
                                                         </p>
                                                         <p>
-                                                            That's a fact and EVERY travel agency looks forward to EVERY
-                                                            person interested in booking who comes to the office and wants
-                                                            advice.
+                                                            {{ __('success_message.increase_in_sales_msg_3') }}
 
                                                         </p>
                                                         <p>
-                                                            By participating in the holiday companion version of thatsWE,
-                                                            you have exclusive access to all the online travel centers and
-                                                            every other travel agency -
-                                                            whether in your neighborhood or in a neighboring town!
-
+                                                            {{ __('success_message.increase_in_sales_msg_4') }}
                                                         </p>
                                                         <p>
-                                                            Increase your sales with every booking!
+                                                            {{ __('success_message.increase_in_sales_msg_5') }}
                                                         </p>
                                                         <p>
-                                                            “thatsWE” enables additional income through exclusive functions
-                                                            and personalized services for your customers.
+                                                            {{ __('success_message.increase_in_sales_msg_6') }}
                                                         </p>
                                                         <p>
-                                                            Old customers, new customers and interested parties will be
-                                                            willing to consult
-                                                            you simply because of your offer:
+                                                            {{ __('success_message.increase_in_sales_msg_7') }}
                                                         </p>
                                                         <p>
-                                                            The holiday companion app as a give-away for holiday booking.
+                                                            {{ __('success_message.increase_in_sales_msg_8') }}
                                                         </p>
                                                         <p>
-                                                            As a travel agency, you determine the minimum booking price and
-                                                            which additional services you offer (mobile phone, tablet, etc.)
+                                                            {{ __('success_message.increase_in_sales_msg_9') }}
                                                         </p>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th>5</th>
-                                                <td class="al_view_info"> <span class="info_title"> Use of customer greed
-                                                        (“I want that too”)</span>
+                                                <td class="al_view_info"> <span class="info_title">
+                                                        {{ __('success_message.use_of_customer_greed') }}</span>
                                                     <div class="al_lognText d-none">
-                                                        <p>A lot of people have this feeling. No matter your profession,
-                                                            marital status, income, etc.
+                                                        <p>
+                                                            {{ __('success_message.use_of_customer_greed_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            Just take a look at the green market, where the fruit dealer is
-                                                            handing out
-                                                            free apples.
+                                                            {{ __('success_message.use_of_customer_greed_msg_2') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.use_of_customer_greed_msg_3') }}
 
                                                         </p>
                                                         <p>
-                                                            Or at the store opening, where shopping bags are distributed
-                                                            alongside free
-                                                            bratwurst.
+                                                            {{ __('success_message.use_of_customer_greed_msg_4') }}
 
                                                         </p>
                                                         <p>
-                                                            So with “thatsWE” you awaken the greed “I want that too!”.
-
+                                                            {{ __('success_message.use_of_customer_greed_msg_5') }}
                                                         </p>
                                                         <p>
-                                                            This happens in connection with an action that has to be planned
-                                                            within the
-                                                            family anyway. The vacation trip - at least the thought - is
-                                                            coming up!
+                                                            {{ __('success_message.use_of_customer_greed_msg_6') }}
                                                         </p>
                                                         <p>
-                                                            Awaken your customers' desire to travel!
-                                                        </p>
-                                                        <p>
-                                                            "thatsWE" isn't just an app - it's the ultimate experience that
-                                                            keeps your customers coming back to you."
+                                                            {{ __('success_message.use_of_customer_greed_msg_7') }}
                                                         </p>
 
                                                     </div>
@@ -281,39 +234,104 @@
                                             </tr>
                                             <tr>
                                                 <th>6</th>
-                                                <td class="al_view_info"> <span class="info_title"> Customer loyalty</span>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.customer_loyalty') }}</span>
                                                     <div class="al_lognText d-none">
-                                                        <p>All it takes for a dissatisfied customer is ONE negative comment
-                                                            during the
-                                                            booking or on vacation (which your travel agent strongly
-                                                            advised)!
+                                                        <p>
+                                                            {{ __('success_message.customer_loyalty_msg_1') }}
                                                         </p>
                                                         <p>
-                                                            The customer has to be worked on and convinced quite intensively
-                                                            so that he
-                                                            remains your customer!
+                                                            {{ __('success_message.customer_loyalty_msg_2') }}
 
                                                         </p>
                                                         <p>
-                                                            So there is only one strategy left, which you should maintain
-                                                            continuously and
-                                                            over the years:
+                                                            {{ __('success_message.customer_loyalty_msg_3') }}
 
                                                         </p>
                                                         <p>
-                                                            Make sure that the customer is in a good mood because he has
-                                                            found the
-                                                            RIGHT advice with you. And not only that, he will also be
-                                                            relying on a continuation of the holiday consultations in the
-                                                            following year, because
+                                                            {{ __('success_message.customer_loyalty_msg_4') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.customer_loyalty_msg_5') }} <br>
+                                                            {{ __('success_message.customer_loyalty_msg_6') }}
+
+                                                        </p>
+
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>7</th>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.increased_efficiency') }}</span>
+                                                    <div class="al_lognText d-none">
+                                                        <p>
+                                                            {{ __('success_message.increased_efficiency_msg_1') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.increased_efficiency_msg_2') }}
 
                                                         </p>
                                                         <p>
-                                                            - he is completely satisfied and <br>
-                                                            - was also rewarded with the digital holiday advisor for his
-                                                            decision
+                                                            {{ __('success_message.increased_efficiency_msg_3') }}
+
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.increased_efficiency_msg_4') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.increased_efficiency_msg_5') }}
+
                                                         </p>
 
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>8</th>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.inovative_travel_experiences') }}</span>
+                                                    <div class="al_lognText d-none">
+                                                        <p>
+                                                            {{ __('success_message.inovative_travel_experiences_msg_1') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.inovative_travel_experiences_msg_2') }}
+
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.inovative_travel_experiences_msg_3') }}
+
+                                                        </p>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>9</th>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.digital_transformation') }}</span>
+                                                    <div class="al_lognText d-none">
+                                                        <p>
+                                                            {{ __('success_message.digital_transformation_msg_1') }}
+                                                        </p>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>10</th>
+                                                <td class="al_view_info"> <span
+                                                        class="info_title">{{ __('success_message.marketing_opportunities') }}</span>
+                                                    <div class="al_lognText d-none">
+                                                        <p>
+                                                            {{ __('success_message.marketing_opportunities_msg_1') }}
+                                                        </p>
+                                                        <p>
+                                                            {{ __('success_message.marketing_opportunities_msg_2') }}
+                                                        </p>
 
                                                     </div>
                                                 </td>

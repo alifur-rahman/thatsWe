@@ -71,6 +71,10 @@
                 <strong>{{ __('messages.logo_no') }}:</strong>
                 <p>{{ $formData['logo_no'] }}</p>
             </div>
+            <div class="col-md-6">
+                <strong>published:</strong>
+                <p>{{ $formData['published'] }}</p>
+            </div>
         </div>
 
 
