@@ -107,24 +107,31 @@ class TravelController extends Controller
     public function submitOffer(Request $request)
     {
         // Validate the form data (add more validation rules as needed)
-
         $validator = Validator::make($request->all(), [
             'companyName' => 'required|string|max:255',
-            'travelIndustry' => 'required|string|in:yes,no',
             'telephone' => 'required|string|max:20',
             'website' => 'nullable|string|max:255',
             'contactPerson' => 'required|string|max:255',
             'address' => 'required|string|max:255',
             'city' => 'required|string|max:255',
-            'postalCode' => 'required|string|max:20',
+            'postalCode' => 'nullable|string|max:20',
             'your_mail' => 'required|email|max:255',
+            'travelIndustry' => 'required|string|in:yes,no',
         ]);
+
+        // Manually add custom error message for the 'travelIndustry' field if validation fails
+        if ($validator->fails() && !$validator->errors()->has('travelIndustry')) {
+            $validator->errors()->add('travelIndustry', 'The travel industry field must be either "yes" or "no".');
+        }
 
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)  // Pass the validation errors to the view
                 ->withInput();           // Pass the old input data to the view
         }
+
+
+
 
         // Send email to admin
         Mail::to('alifurcoder@gmail.com')->send(new OfferSubmission($request->all()));
@@ -218,6 +225,7 @@ class TravelController extends Controller
             'managing_director' => 'required|string|max:255',
             'app_name' => 'required|string|max:255',
             'logo_no' => 'required|string|max:255',
+            'published' => 'required|string|in:yes',
 
 
 

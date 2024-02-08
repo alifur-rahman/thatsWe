@@ -3,16 +3,7 @@
 @section('content')
     <section class="bg-light al_privecy_page" id="dataProtectionImprint">
         <div class="container">
-            @if (count($errors) > 0)
-                <div class="alert alert-danger">
-                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+
             @if (session('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>{{ session('success') }}</strong>
@@ -58,18 +49,31 @@
 
                                     <form action="{{ route('sujjection-submit') }}" method="POST">
                                         @csrf
-                                        <div class="mb-2 d-flex justify-content-between align-items-center">
-                                            <label for="your_mail"
-                                                class="form-label w-25">{{ __('messages.your_mail') }}</label>
-                                            <input type="text" class="form-control" id="your_mail" name="your_mail"
-                                                placeholder="{{ __('messages.your_mail') }}">
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <label for="your_mail"
+                                                    class="form-label w-25">{{ __('messages.your_mail') }}</label>
+                                                <input type="text" class="form-control" id="your_mail" name="your_mail"
+                                                    placeholder="{{ __('messages.your_mail') }}">
+
+                                            </div>
+                                            @error('your_mail')
+                                                <span class="text-danger">{{ $message }} </span>
+                                            @enderror
                                         </div>
 
-                                        <div class="mb-2 d-flex justify-content-between ">
-                                            <label for="information"
-                                                class="form-label">{{ __('messages.your_information') }}</label>
-                                            <textarea class="form-control al_textarea" name="information" id="information"></textarea>
+                                        <div class="mb-2">
+                                            <div class=" d-flex justify-content-between ">
+                                                <label for="information"
+                                                    class="form-label">{{ __('messages.your_information') }}</label>
+                                                <textarea class="form-control al_textarea" name="information" id="information"></textarea>
+
+                                            </div>
+                                            @error('information')
+                                                <span class="text-danger">{{ $message }} </span>
+                                            @enderror
                                         </div>
+
 
                                         <div class="text-center al_card_footer">
                                             <div class="mt-2">
@@ -450,6 +454,11 @@
                 flex-direction: column;
             }
 
+        }
+
+        .text-danger {
+            font-size: 12px;
+            display: block;
         }
     </style>
 @endsection
