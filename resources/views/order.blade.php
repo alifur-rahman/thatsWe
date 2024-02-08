@@ -4,17 +4,6 @@
     <section class="bg-light al_order_page" id="dataProtectionImprint">
         <div class="container">
 
-
-            @if (count($errors) > 0)
-                <div class="alert alert-danger">
-                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
             @if (session('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>{{ session('success') }}</strong>
@@ -170,10 +159,18 @@
                                                 class="form-label">{{ __('messages.company_name') }}</label>
                                             <input type="text" class="form-control" id="company_name"
                                                 name="company_name">
+
+                                            @error('company_name')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+
                                         </div>
                                         <div>
                                             <label for="street" class="form-label">{{ __('messages.street') }}</label>
                                             <input type="text" class="form-control" id="street" name="street">
+                                            @error('street')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4">
@@ -182,6 +179,10 @@
                                                         class="form-label">{{ __('messages.zip') }}</label>
                                                     <input type="text" class="form-control" id="zip"
                                                         name="zip">
+                                                    @error('zip')
+                                                        <span class="text-danger">ZIP*</span>
+                                                    @enderror
+
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
@@ -190,33 +191,51 @@
                                                         class="form-label">{{ __('messages.city') }}</label>
                                                     <input type="text" class="form-control" id="city"
                                                         name="city">
+                                                    @error('city')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
                                             <label for="country" class="form-label">{{ __('messages.country') }}</label>
                                             <input type="text" class="form-control" id="country" name="country">
+                                            @error('country')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
-                                        <div class="form-label">
-                                            <label for="telephone"
-                                                class="form-label">{{ __('messages.telephone') }}</label>
+                                        <div class="">
+                                            <label
+                                                for="telephone"class="form-label">{{ __('messages.telephone') }}</label>
                                             <input type="text" class="form-control" id="telephone" name="telephone">
+                                            @error('telephone')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="">
                                             <label for="www" class="form-label">WWW</label>
                                             <input type="text" class="form-control" id="www" name="www">
+                                            @error('www')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="">
                                             <label for="mail_address"
                                                 class="form-label">{{ __('messages.mail_address') }}</label>
                                             <input type="text" class="form-control" id="mail_address"
                                                 name="mail_address">
+                                            @error('mail_address')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="">
                                             <label for="managing_director"
                                                 class="form-label">{{ __('messages.managing_director') }}/{{ __('messages.contact') }}</label>
                                             <input type="text" class="form-control" id="managing_director"
                                                 name="managing_director">
+                                            @error('managing_director')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="row">
                                             <div class="col-md-8">
@@ -225,6 +244,9 @@
                                                         class="form-label">{{ __('messages.app_name') }}</label>
                                                     <input type="text" class="form-control" id="app_name"
                                                         name="app_name">
+                                                    @error('app_name')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -233,46 +255,61 @@
                                                         class="form-label">{{ __('messages.logo_no') }}</label>
                                                     <input type="text" class="form-control" id="logo_no"
                                                         name="logo_no">
+                                                    @error('logo_no')
+                                                        <span class="text-danger">Logo No *</span>
+                                                    @enderror
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="al_order_form_info_text">
-                                            <p>{{ __('messages.order_from_info_1') }}</p>
-                                            <p>{{ __('messages.order_from_info_2') }}</p>
-                                            <p>{{ __('messages.order_from_info_3') }}</p>
-                                            <p>{{ __('messages.order_from_info_4') }}</p>
-                                            <p>{{ __('messages.order_from_info_5') }}</p>
-                                            <p>{{ __('messages.order_from_info_6') }}</p>
-                                            <p>{{ __('messages.order_from_info_7') }}</p>
-                                            {{-- <p>{{ __('messages.order_from_info_8') }}</p> --}}
+                                        <div class="d-flex flex-column justify-content-between h-100">
+                                            <div class="al_order_form_info_text">
+                                                <p>{{ __('messages.order_from_info_1') }}</p>
+                                                <p>{{ __('messages.order_from_info_2') }}</p>
+                                                <p>{{ __('messages.order_from_info_3') }}</p>
+                                                <p>{{ __('messages.order_from_info_4') }}</p>
+                                                <p>{{ __('messages.order_from_info_5') }}</p>
+                                                <p>{{ __('messages.order_from_info_6') }}</p>
+                                                <p>{{ __('messages.order_from_info_7') }}</p>
+                                                {{-- <p>{{ __('messages.order_from_info_8') }}</p> --}}
 
-                                            <div class="d-flex align-items-center gap-4">
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="yes">
-                                                        {{ __('messages.yes') }}
-                                                    </label>
-                                                    <input class="form-check-input" type="radio" name="published"
-                                                        id="yes" value="yes">
+                                                <div class="">
 
+                                                    <div class="d-flex align-items-center gap-4">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="yes">
+                                                                {{ __('messages.yes') }}
+                                                            </label>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="published" id="yes" value="yes"
+                                                                onchange="toggleSubmit()">
+
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="no">
+                                                                {{ __('messages.no') }}
+                                                            </label>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="published" id="no" value="no"
+                                                                onchange="toggleSubmit()">
+                                                        </div>
+
+                                                    </div>
+                                                    @error('published')
+                                                        <span class="text-danger">{{ $message }} Please select!</span>
+                                                    @enderror
                                                 </div>
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="no">
-                                                        {{ __('messages.no') }}
-                                                    </label>
-                                                    <input class="form-check-input" type="radio" name="published"
-                                                        id="no" value="no">
 
-                                                </div>
                                             </div>
                                             <div class="text-center">
                                                 <div class="">
-                                                    <button type="submit"
+                                                    <button type="submit" id="submitButton"
                                                         class="btn btn-primary">{{ __('messages.send') }}</button>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -372,6 +409,11 @@
             font-size: 13px;
             margin-bottom: 0.4rem;
         }
+
+        .text-danger {
+            font-size: 12px;
+            display: block;
+        }
     </style>
 @endsection
 
@@ -384,6 +426,17 @@
                 $('#app_name').val(apName);
                 $('#logo_no').val(logoNo);
             });
-        })
+        });
+
+        function toggleSubmit() {
+            var publishedValue = document.querySelector('input[name="published"]:checked').value;
+            var submitButton = document.getElementById('submitButton');
+
+            if (publishedValue === "no") {
+                submitButton.disabled = true;
+            } else {
+                submitButton.disabled = false;
+            }
+        }
     </script>
 @endsection

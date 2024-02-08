@@ -84,6 +84,6 @@ return array(
     'logo_no' => 'Logo-Nr.',
     'close' => 'Luk',
     'full_information' => 'Fuld Information',
-    'images' => 'Images',
-    'images_page_title' => 'Images fra ThatsWE',
+    'images' => 'Bilder',
+    'images_page_title' => 'Bilder fra ThatsWE',
 );

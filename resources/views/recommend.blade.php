@@ -1,20 +1,18 @@
 @extends('app')
 
+@section('styles')
+    <style>
+        .text-danger {
+            font-size: 12px;
+            display: block;
+        }
+    </style>
+@endsection
+
 @section('content')
-
-
     <section class="bg-200" id="recommend">
         <div class="container">
-            @if (count($errors) > 0)
-                <div class="alert alert-danger">
-                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+
             @if (session('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>{{ session('success') }}</strong>
@@ -34,6 +32,9 @@
                                     <label for="yourName" class="form-label">{{ __('messages.your_name') }}</label>
                                     <input type="text" class="form-control" id="yourName" name="yourName"
                                         placeholder="{{ __('messages.your_name') }}">
+                                    @error('yourName')
+                                        <span class="text-danger">{{ $message }} </span>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -44,6 +45,11 @@
                                         #1</label>
                                     <input type="email" class="form-control" id="personEmail1" name="personEmail1"
                                         placeholder="{{ __('messages.person_email') }} #1">
+
+                                    @error('personEmail1')
+                                        <span class="text-danger">At least enter one friend's email </span>
+                                    @enderror
+
                                 </div>
                             </div>
                         </div>
@@ -55,6 +61,9 @@
                                         #2</label>
                                     <input type="email" class="form-control" id="personEmail2" name="personEmail2"
                                         placeholder="{{ __('messages.person_email') }} #2">
+                                    @error('personEmail2')
+                                        <span class="text-danger">{{ $message }} </span>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -110,5 +119,4 @@
             </div>
         </div>
     </section>
-
 @endsection

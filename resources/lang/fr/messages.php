@@ -8,7 +8,9 @@ return array(
   'recommendation' => 'Recommandation',
   'about_us' => 'À propos de nous',
   'home' => 'Accueil',
-  'about_us_description' => 'Bienvenue sur "thatsWE" - cette plateforme est spécifiquement conçue pour les agences de voyages afin d\'offrir à leurs clients une expérience de voyage inoubliable ! Exclusivement réservée aux agences de voyages, notre application offre des fonctionnalités uniques, de l\'information sur le début de vos vacances à de nombreuses situations pendant vos vacances jusqu\'à la sauvegarde de vos expériences de vacances. Essayez la version d\'essai gratuite dès maintenant et découvrez ce que signifie l\'exclusivité, la convivialité client et l\'augmentation des ventes pour votre agence de voyages. Gagnez des clients et utilisez le pouvoir de la cupidité du client - "Je veux ça aussi !"',
+  'about_us_description' => 'Bienvenue sur "thatsWE" - cette plateforme est spécifiquement conçue pour les agences de voyage afin d\'offrir à leurs clients une expérience de voyage inoubliable ! Exclusivement pour les agences de voyage, notre application offre des fonctionnalités uniques, de l\'information sur le début de vos vacances à de nombreuses situations pendant vos vacances pour sauvegarder vos expériences vacancières. Découvrez ce que signifie l\'exclusivité, la convivialité et l\'augmentation des ventes pour votre agence de voyages avec "thatsWE". Attirez les clients et tirez parti du pouvoir de la cupidité des clients - "Je veux ça aussi !" ',
+
+
   'website_dev' => 'Développement du site Web par',
   'company_info' => 'Informations sur l\'entreprise',
   'company_name' => 'Nom de l\'entreprise',

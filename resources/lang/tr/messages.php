@@ -8,7 +8,8 @@ return array(
   'recommendation' => 'Öneri',
   'about_us' => 'Hakkımızda',
   'home' => 'Ana Sayfa',
-  'about_us_description' => '"thatsWE" ile seyahat acenteleri için özel olarak tasarlanmış bu platforma hoş geldiniz! Sadece seyahat acenteleri için olan uygulamamız, tatilinizin başlangıcıyla ilgili bilgilerden tatiliniz sırasında birçok duruma kadar benzersiz fonksiyonlar sunuyor. Ücretsiz deneme sürümünü şimdi deneyin ve "thatsWE"nin özel avantajlarını, müşteri dostluğunu ve satışlarınızı artırmanın ne anlama geldiğini keşfedin. Müşteri kazanın ve müşteri açlığının gücünü kullanın - "Bunu ben de istiyorum!"',
+  'about_us_description' => ' "thatsWE" \'e hoş geldiniz - bu platform seyahat acentelerinin müşterilerine unutulmaz bir seyahat deneyimi sunmak için özel olarak tasarlanmıştır! Seyahat acenteleri için özel olarak tasarlanan uygulamamız, tatilinizin başlangıcı hakkında bilgilerden tatiliniz sırasındaki birçok duruma kadar tatil deneyimlerinizi kaydetmeye kadar benzersiz işlevler sunar. "thatsWE" \'in özel, müşteri dostu ve artan satış anlamına geldiğini yaşayın. Müşterileri kazanın ve müşteri hırsının gücünü kullanın - "Ben de istiyorum!"',
+
   'website_dev' => 'Web Sitesi Geliştirme',
   'company_info' => 'Şirket Bilgisi',
   'company_name' => 'Şirket Adı',

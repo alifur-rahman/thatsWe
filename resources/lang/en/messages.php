@@ -8,7 +8,7 @@ return array(
   'recommendation' => 'Recommendation',
   'about_us' => 'About Us',
   'home' => 'Home',
-  'about_us_description' => 'Welcome to “thatsWE” – this platform specifically for travel agencies to offer their customers an unforgettable travel experience! Exclusively for travel agencies, our app offers unique functions - from information about the start of your vacation to many situations during your vacation to saving your vacation experiences Try the free trial version now and experience what “thatsWE” exclusivity, customer friendliness and increased sales mean for your travel agency. Winning customers and using the power of customer greed – “I want that too!”',
+  'about_us_description' => 'Welcome to "thatsWE" - this platform specifically for travel agencies to offer their customers an unforgettable travel expe- rience! Exclusively for travel agencies, our app offers unique functions - from information about the start of your vacation to many situations during your vacation to saving your vacation experiences Experience what "thatsWE" exclusivity, customer friendliness and increased sales mean for your travel agency. Winning customers and using the power of customer greed - "I want that too!"',
   'website_dev' => 'Website Development By',
   'company_info' => 'Company Information',
   'company_name' => 'Company Name',

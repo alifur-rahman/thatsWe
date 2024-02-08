@@ -8,7 +8,8 @@ return array(
   'recommendation' => 'Recomendação',
   'about_us' => 'Sobre Nós',
   'home' => 'Início',
-  'about_us_description' => 'Bem-vindo ao "thatsWE" - esta plataforma é exclusivamente projetada para agências de viagens oferecerem aos seus clientes uma experiência de viagem inesquecível! Exclusiva para agências de viagens, nosso aplicativo oferece funções únicas - desde informações sobre o início das suas férias até muitas situações durante as férias, incluindo o salvamento das suas experiências de viagem. Experimente a versão de teste gratuita agora e descubra o significado de exclusividade, amizade com o cliente e aumento nas vendas para a sua agência de viagens. Conquiste clientes e utilize o poder da ganância do cliente - "Eu também quero isso!"',
+  'about_us_description' => 'Bem-vindo ao "thatsWE" - esta plataforma é especificamente projetada para agências de viagens oferecerem aos seus clientes uma experiência de viagem inesquecível! Exclusivamente para agências de viagens, nosso aplicativo oferece funções únicas, desde informações sobre o início de suas férias até muitas situações durante suas férias para salvar suas experiências de viagem. Experimente o que "thatsWE" exclusividade, simpatia ao cliente e aumento de vendas significam para sua agência de viagens. Conquiste clientes e use o poder da ganância do cliente - "Eu também quero isso!"',
+
   'website_dev' => 'Desenvolvimento do Site por',
   'company_info' => 'Informações da Empresa',
   'company_name' => 'Nome da Empresa',

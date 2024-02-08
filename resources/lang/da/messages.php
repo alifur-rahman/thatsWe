@@ -8,7 +8,8 @@ return array(
   'recommendation' => 'Anbefaling',
   'about_us' => 'Om Os',
   'home' => 'Hjem',
-  'about_us_description' => 'Velkommen til "thatsWE" - denne platform er specifikt designet til rejsebureauer for at tilbyde deres kunder en uforglemmelig rejseoplevelse! Udelukkende for rejsebureauer tilbyder vores app unikke funktioner - fra information om starten af din ferie til mange situationer under din ferie til gemning af dine ferieoplevelser. Prøv den gratis prøveversion nu og oplev, hvad "thatsWE" eksklusivitet, kundeflits og øgede salg betyder for dit rejsebureau. Vind kunder og udnyt kundens grådigheds kraft - "Jeg vil også have det!"',
+  'about_us_description' => 'Velkommen til "thatsWE" - denne platform er specifikt designet til rejsebureauer, så de kan tilbyde deres kunder en uforglemmelig rejseoplevelse! Udelukkende for rejsebureauer tilbyder vores app unikke funktioner - fra information om starten på din ferie til mange situationer under din ferie til at gemme dine ferieoplevelser. Oplev, hvad "thatsWE" eksklusivitet, kundevenlighed og øgede salg betyder for dit rejsebureau. Vind kunder og udnyt kundens grådighed - "Jeg vil også have det!"',
+
   'website_dev' => 'Website-udvikling af',
   'company_info' => 'Virksomhedsinformation',
   'company_name' => 'Virksomhedsnavn',
