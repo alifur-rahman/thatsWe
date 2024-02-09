@@ -66,7 +66,7 @@ return array(
   'load_info' => 'Informatie laden',
   'order_page_title' => 'Het aanbod geldt uitsluitend voor reisbureaus!',
   'order_page_sub_title' => 'Reisorganisatoren ontvangen speciale voorwaarden voor elke aangesloten reisbureau!',
-  'order_from_info_1' => "Het jaarlijkse licentietarief is €240,00",
+  'order_from_info_1' => "De app-installatie (logo, naam, juridische kennisgeving, gegevensbescherming) kost € 60,00 per installatie. De jaarlijkse licentiekosten bedragen € 120,00",
   'order_from_info_2' => 'Een Android-app (APK-bestand) wordt geleverd. De koper of de expertvertegenwoordiger van de koper is verantwoordelijk voor de installatie van de app op Android-apparaten.',
   'order_from_info_3' => 'Het aantal installaties is onbeperkt gedurende de looptijd van de licentie, maar geldt alleen voor het reisbureau dat de app heeft besteld.',
   'order_from_info_4' => 'De licentie wordt elk januari met 12 maanden verlengd, tenzij de gebruikerslicentie minstens 2 maanden van tevoren wordt geannuleerd (d.w.z. vóór 1 november van het huidige kalenderjaar). Beëindiging van de licentie per e-mail naar proliz@web.de is geaccepteerd.',

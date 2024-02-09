@@ -66,7 +66,7 @@ return array(
   'load_info' => 'Bilgiyi Yükle',
   'order_page_title' => 'Teklif sadece seyahat acentelerine uygulanır!',
   'order_page_sub_title' => 'Tur operatörleri her bağlı seyahat acentesi için özel koşullar alır!',
-  'order_from_info_1' => "Yıllık lisans ücreti €240.00",
+  'order_from_info_1' => "Uygulama kurulumunun (logo, isim, yasal bildirim, veri koruma) kurulum başına maliyeti 60,00 €'dur. Yıllık lisans ücreti 120,00 €'dur",
   'order_from_info_2' => 'Bir Android uygulaması (APK dosyası) sağlanır. Alıcı veya alıcının uzman temsilcisi, uygulamayı Android cihazlara kurmakla sorumludur.',
   'order_from_info_3' => 'Lisans süresince kurulum sayısı sınırsızdır, ancak sadece uygulamayı sipariş eden seyahat acentesi için geçerlidir.',
   'order_from_info_4' => 'Lisans, her yıl ocak ayında 12 ay süreyle uzatılır, kullanıcı lisansı en az 2 ay önceden iptal edilmediği sürece (yani mevcut takvim yılı Kasım 1 tarihine kadar). Lisansın proliz@web.de adresine e-posta ile sonlandırılması kabul edilir.',

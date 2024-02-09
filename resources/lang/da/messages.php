@@ -67,7 +67,7 @@ return array(
   'load_info' => 'Indlæs Info',
   'order_page_title' => 'Das Angebot gilt ausschließlich für Reisebüros!',
   'order_page_sub_title' => 'Reiseveranstalter erhalten spezielle Konditionen für jede angeschlossene Reiseagentur!',
-  'order_from_info_1' => "Den årlige licensafgift er €240,00",
+  'order_from_info_1' => "App-opsætningen (logo, navn, juridisk meddelelse, databeskyttelse) koster €60,00 pr. opsætning. Det årlige licensgebyr er €120,00",
   'order_from_info_2' => 'En Android-app (APK-fil) leveres. Køberen eller køberens ekspertrepræsentant er ansvarlig for at installere appen på Android-enheder.',
   'order_from_info_3' => 'Antallet af installationer er ubegrænset i licensens varighed, men gælder kun for rejsebureauet, der har bestilt appen.',
   'order_from_info_4' => 'Licensen forlænges med 12 måneder hvert januar, medmindre brugerlicensen annulleres mindst 2 måneder i forvejen (dvs. senest den 1. november i det nuværende kalenderår). Opsigelse af licensen via e-mail til proliz@web.de accepteres.',
