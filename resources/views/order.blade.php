@@ -304,8 +304,8 @@
                                             </div>
                                             <div class="text-center">
                                                 <div class="">
-                                                    <button type="submit" id="submitButton"
-                                                        class="btn btn-primary">{{ __('messages.send') }}</button>
+                                                    <button type="submit" id="submitButton" class="btn btn-primary"
+                                                        disabled>{{ __('messages.send') }}</button>
                                                 </div>
                                             </div>
                                         </div>
