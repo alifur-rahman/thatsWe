@@ -67,7 +67,7 @@ return array(
   'load_info' => 'Carica Info',
   'order_page_title' => 'L\'offerta si applica esclusivamente alle agenzie di viaggio!',
   'order_page_sub_title' => 'I tour operator ricevono condizioni speciali per ogni agenzia di viaggi collegata!',
-  'order_from_info_1' => "La tariffa annuale della licenza è di €240.00",
+  'order_from_info_1' => "La configurazione dell'app (logo, nome, note legali, protezione dei dati) costa € 60,00 per configurazione. Il canone annuo è di € 120,00",
   'order_from_info_2' => 'Viene fornita un\'applicazione Android (file APK). L\'acquirente o il rappresentante esperto dell\'acquirente è responsabile dell\'installazione dell\'applicazione su dispositivi Android.',
   'order_from_info_3' => 'Il numero di installazioni è illimitato per la durata della licenza, ma si applica solo all\'agenzia di viaggi che ha ordinato l\'app.',
   'order_from_info_4' => 'La licenza si rinnova ogni 12 mesi a gennaio di ogni anno, a meno che la licenza utente venga annullata almeno 2 mesi prima (cioè entro il 1° novembre dell\'anno civile in corso). La disdetta della licenza tramite e-mail a proliz@web.de è accettata.',

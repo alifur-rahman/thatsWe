@@ -406,7 +406,7 @@
         }
 
         .al_order_form_info_text p {
-            font-size: 13px;
+            font-size: 12px;
             margin-bottom: 0.4rem;
         }
 

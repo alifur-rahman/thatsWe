@@ -66,7 +66,7 @@ return array(
   'load_info' => 'Load Info',
   'order_page_title' => 'The offer applies exclusively to travel agencies!',
   'order_page_sub_title' => 'Tour operators receive special conditions for each connected travel agency!',
-  'order_from_info_1' => "The annual license fee is €240.00",
+  'order_from_info_1' => "The app setup (logo, name, legal notice, data protection) costs €60.00 per setup. The annual license fee is €120.00",
   'order_from_info_2' => "An Android app (APK file) is supplied. The purchaser or the purchaser's expert representative is responsible for installing the app on Android devices.",
   'order_from_info_3' => 'The number of installations is unlimited for the duration of the license, but only applies to the travel agency that ordered the app.',
   'order_from_info_4' => 'The license is extended by 12 months every January of each year, unless the user license is canceled at least 2 months in advance (i.e. by November 1st of the current calendar year). Termination of the license by email to proliz@web.de is accepted.',

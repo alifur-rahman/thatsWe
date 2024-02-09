@@ -67,7 +67,7 @@ return array(
   'load_info' => 'Charger les informations',
   'order_page_title' => "L'offre s'applique exclusivement aux agences de voyage !",
   'order_page_sub_title' => 'Les tour-opérateurs bénéficient de conditions spéciales pour chaque agence de voyage connectée !',
-  'order_from_info_1' => "La redevance de licence annuelle est de €240.00",
+  'order_from_info_1' => "La configuration de l'application (logo, nom, mentions légales, protection des données) coûte 60,00 € par configuration. La redevance annuelle est de 120,00 €",
   'order_from_info_2' => "Une application Android (fichier APK) est fournie. L'acheteur ou son représentant expert est responsable de l'installation de l'application sur les appareils Android.",
   'order_from_info_3' => "Le nombre d'installations est illimité pendant toute la durée de la licence, mais ne s'applique qu'à l'agence de voyages qui a commandé l'application.",
   'order_from_info_4' => "La licence est prolongée de 12 mois chaque janvier de chaque année, sauf si la licence d'utilisation est annulée au moins 2 mois à l'avance (c'est-à-dire avant le 1er novembre de l'année civile en cours). La résiliation de la licence par e-mail à proliz@web.de est acceptée.",
