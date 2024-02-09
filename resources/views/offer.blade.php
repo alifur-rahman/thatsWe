@@ -50,7 +50,7 @@
                                                 {{ __('messages.yes') }}
                                             </label>
                                             <input class="form-check-input" type="radio" name="travelIndustry"
-                                                id="yes" value="yes">
+                                                id="yes" value="yes" onchange="toggleSubmit()">
 
                                         </div>
                                         <div class="form-check">
@@ -58,13 +58,14 @@
                                                 {{ __('messages.no') }}
                                             </label>
                                             <input class="form-check-input" type="radio" name="travelIndustry"
-                                                id="no" value="no">
+                                                id="no" value="no" onchange="toggleSubmit()">
 
                                         </div>
 
                                     </div>
+                                    <span>Please select!</span>
                                     @error('travelIndustry')
-                                        <span class="text-danger">{{ $message }} Please select!</span>
+                                        <span class="text-danger">{{ $message }}</span>
                                     @enderror
 
 
@@ -161,7 +162,8 @@
 
                         <div class="col-md-12 text-center">
                             <div class="mt-2">
-                                <button type="submit" class="btn btn-primary">{{ __('messages.submit') }}</button>
+                                <button id="submitButton" type="submit" class="btn btn-primary"
+                                    disabled>{{ __('messages.submit') }}</button>
                             </div>
                         </div>
                     </form>
@@ -169,51 +171,19 @@
             </div>
         </div>
     </section>
+@endsection
 
-    {{-- <section class="bg-200" id="recommend" style="padding-top: 0rem;">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="text-center mb-4">{{ __('messages.recommend_to_friend') }}</h2>
+@section('script')
+    <script>
+        function toggleSubmit() {
+            var publishedValue = document.querySelector('input[name="travelIndustry"]:checked').value;
+            var submitButton = document.getElementById('submitButton');
 
-                <form action="{{ route('submit-recommendation') }}" method="POST">
-                    @csrf
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="yourName" class="form-label">{{ __('messages.your_name') }}</label>
-                                <input type="text" class="form-control" id="yourName" name="yourName" placeholder="{{ __('messages.your_name') }}">
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="personEmail" class="form-label">{{ __('messages.person_email') }}</label>
-                                <input type="email" class="form-control" id="personEmail" name="personEmail" placeholder="{{ __('messages.person_email') }}">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="personEmail" class="form-label">{{ __('messages.person_email') }}</label>
-                                <input type="email" class="form-control" id="personEmail" name="personEmail" placeholder="{{ __('messages.person_email') }}">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="personEmail" class="form-label">{{ __('messages.person_email') }}</label>
-                                <input type="email" class="form-control" id="personEmail" name="personEmail" placeholder="{{ __('messages.person_email') }}">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mt-3">
-                            <div class="">
-                                <button type="submit" class="btn btn-primary">{{ __('messages.send') }}</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section> --}}
+            if (publishedValue === "no") {
+                submitButton.disabled = true;
+            } else {
+                submitButton.disabled = false;
+            }
+        }
+    </script>
 @endsection
