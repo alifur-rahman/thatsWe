@@ -24,7 +24,7 @@ class SujjectionSubmission extends Mailable
     {
         $userLanguage = app()->getLocale();
 
-        $subject = __('messages.criticism_and_suggestions', [], $userLanguage);
+        $subject = __('Criticism and Suggestions', [], $userLanguage);
         return $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.sujjection-submission');
     }
 }

@@ -86,4 +86,12 @@ return array(
   'full_information' => 'Fuld Information',
   'images' => 'Images',
   'images_page_title' => 'Images fra ThatsWE',
+
+
+  'hello_its_me' => "Hej, det er mig",
+  'i_found_site_1' => "Jeg har lige besøgt en meget interessant hjemmeside.",
+  'i_found_site_2' => "Det handler om kundetilvækst, kundebinding og selvfølgelig også øget salg.",
+  'travel_agency_msg' => "Adgang til hjemmesiden for rejsebureauer:",
+  "holiday_customer_msg" => "Adgang til hjemmesiden for feriekunder:",
+
 );

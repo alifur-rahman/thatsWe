@@ -24,7 +24,7 @@ class OrderSubmission extends Mailable
     {
         $userLanguage = app()->getLocale();
 
-        $subject = __('messages.order', [], $userLanguage);
+        $subject = __('Order', [], $userLanguage);
         return $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.order-submission');
     }
 }

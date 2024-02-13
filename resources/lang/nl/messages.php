@@ -85,4 +85,10 @@ return array(
   'full_information' => 'Volledige Informatie',
   'images' => 'Afbeeldingen',
   'images_page_title' => 'Afbeeldingen van ThatsWE',
+  'hello_its_me' => "Hallo, ik ben het",
+  'i_found_site_1' => "Ik heb zojuist een zeer interessante website bezocht.",
+  'i_found_site_2' => "Het gaat over klantenwerving, klantenbinding en natuurlijk ook om verhoogde verkoop.",
+  'travel_agency_msg' => "Toegang tot de website voor reisbureaus:",
+  "holiday_customer_msg" => "Toegang tot de website voor vakantieklanten:",
+
 );

@@ -28,7 +28,7 @@ return array(
   'your_address' => 'Your Address',
   'city' => 'City',
   'your_city' => 'Your City',
-  'postal_code' => 'Postal Cose',
+  'postal_code' => 'Postal Code',
   'your_postal_code' => 'Your Postal Code',
   'submit' => 'Submit',
   'recommend_to_friend' => 'Recommend these sites to a friend or colleague',
@@ -81,8 +81,16 @@ return array(
   'country' => 'Country',
   'app_name' => 'App Name',
   'logo_no' => 'Logo No',
+
   'hello_its_me' => "Hello, it's me",
-  'i_found_site_2' => "I just visited an interesting site. It's about customer loyalty and custo- mer growth and of course also about increasing sales. The page ac- cess: ",
+  'i_found_site_1' => "I just visited a very interesting site. ",
+  'i_found_site_2' => "It's about customer acquisition, customer retention and Customer growth and of course also increased sales. ",
+
+  'travel_agency_msg' => "The site access for travel agencies: ",
+  "holiday_customer_msg" => "The site access for holiday customers: ",
+
+
+
   'close' => 'Close',
   'full_inoformation' => 'Full Inoformation',
   'images' => 'Images',

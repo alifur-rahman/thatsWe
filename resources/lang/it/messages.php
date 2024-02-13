@@ -86,4 +86,10 @@ return array(
   'full_information' => 'Informazioni Complete',
   'images' => 'Immagini',
   'images_page_title' => 'Immagini da ThatsWE',
+  'hello_its_me' => "Ciao, sono io",
+  'i_found_site_1' => "Ho appena visitato un sito molto interessante.",
+  'i_found_site_2' => "Si tratta di acquisizione clienti, customer retention e naturalmente aumento delle vendite.",
+  'travel_agency_msg' => "L'accesso al sito per le agenzie di viaggio:",
+  "holiday_customer_msg" => "L'accesso al sito per i clienti in vacanza:",
+
 );

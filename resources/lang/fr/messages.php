@@ -86,4 +86,10 @@ return array(
   'full_information' => 'Information Complète',
   'images' => 'Images',
   'images_page_title' => 'Images de ThatsWE',
+  'hello_its_me' => "Bonjour, c'est moi",
+  'i_found_site_1' => "Je viens de visiter un site très intéressant.",
+  'i_found_site_2' => "Il s'agit de l'acquisition de clients, de la fidélisation des clients et bien sûr de l'augmentation des ventes.",
+  'travel_agency_msg' => "L'accès au site pour les agences de voyage :",
+  "holiday_customer_msg" => "L'accès au site pour les clients en vacances :",
+
 );
