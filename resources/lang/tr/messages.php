@@ -84,4 +84,10 @@ return array(
   'full_information' => 'Tam Bilgi',
   'images' => 'Resimler',
   'images_page_title' => 'ThatsWE İmajları',
+  'hello_its_me' => "Merhaba, benim adım",
+  'i_found_site_1' => "Çok ilginç bir siteyi ziyaret ettim.",
+  'i_found_site_2' => "Müşteri edinimi, müşteri sadakati ve tabii ki artan satışlar hakkında.",
+  'travel_agency_msg' => "Seyahat acenteleri için site erişimi:",
+  "holiday_customer_msg" => "Tatil müşterileri için site erişimi:",
+
 );

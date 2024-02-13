@@ -24,7 +24,7 @@ class OfferSubmission extends Mailable
     {
         $userLanguage = app()->getLocale();
 
-        $subject = __('messages.info_material', [], $userLanguage);
+        $subject = __('Information Material', [], $userLanguage);
         return $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.offer-submission');
     }
 }

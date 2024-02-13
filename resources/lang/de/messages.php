@@ -86,4 +86,11 @@ return array(
     'full_information' => 'Fuld Information',
     'images' => 'Bilder',
     'images_page_title' => 'Bilder fra ThatsWE',
+
+    'hello_its_me' => "Hallo, hier bin ich",
+    'i_found_site_1' => "Ich habe gerade eine sehr interessante Website besucht.",
+    'i_found_site_2' => "Es geht um Kundengewinnung, Kundenbindung und natürlich auch um Umsatzsteigerung.",
+    'travel_agency_msg' => "Der Zugang zur Website für Reisebüros:",
+    "holiday_customer_msg" => "Der Zugang zur Website für Urlaubskunden:",
+
 );

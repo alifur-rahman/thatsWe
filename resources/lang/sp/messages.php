@@ -82,10 +82,14 @@ return array(
   'country' => 'País',
   'app_name' => 'Nombre de la Aplicación',
   'logo_no' => 'Número de Logo',
-  'hello_its_me' => 'Hola, soy yo',
-  'i_found_site_2' => 'Acabo de visitar un sitio interesante. Se trata de la lealtad del cliente y el crecimiento del cliente y, por supuesto, también sobre el aumento de las ventas. El acceso a la página: ',
   'close' => 'Cerrar',
   'full_information' => 'Información Completa',
   'images' => 'Imágenes',
   'images_page_title' => 'Imágenes de ThatsWE',
+  'hello_its_me' => "Hola, soy yo",
+  'i_found_site_1' => "Acabo de visitar un sitio web muy interesante.",
+  'i_found_site_2' => "Trata sobre la adquisición de clientes, la retención de clientes y por supuesto también el aumento de ventas.",
+  'travel_agency_msg' => "El acceso al sitio web para agencias de viajes:",
+  "holiday_customer_msg" => "El acceso al sitio web para clientes de vacaciones:",
+
 );

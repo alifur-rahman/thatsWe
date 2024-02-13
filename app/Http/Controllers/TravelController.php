@@ -48,53 +48,69 @@ class TravelController extends Controller
     {
         $images = [
             (object) [
-                'url' => 'https://img.freepik.com/premium-vector/3d-glossy-red-logo-shape-letter-with-sharp-ends_95164-5117.jpg',
-                'name' => 'Image 1'
+                'url' => asset('/assets/img/screen-logo/01-My-Booking.png'),
+                'name' => 'My Bookings',
+                'screen_url' => asset('/assets/img/screen-logo/001-My-Bookings.png'),
             ],
             (object) [
-                'url' => 'https://img.freepik.com/premium-vector/modern-coding-logo-designs-concept-vector-programmer-technology-logo-icon-vector_624194-126.jpg',
-                'name' => 'Image 2'
+                'url' => asset('/assets/img/screen-logo/02-Arrival-Departure.png'),
+                'name' => 'Arrival Departure',
+                'screen_url' => asset('/assets/img/screen-logo/002-Arrival-Departure.png'),
+            ],
+
+            (object) [
+                'url' => asset('/assets/img/screen-logo/03-Preparation.png'),
+                'name' => 'The preparation',
+                'screen_url' => asset('/assets/img/screen-logo/003-The-preparation.png'),
             ],
             (object) [
-                'url' => 'https://img.freepik.com/free-vector/flat-design-fn-nf-logo-template_23-2149255662.jpg',
-                'name' => 'Image 3'
+                'url' => asset('/assets/img/screen-logo/04-Accommodation.png'),
+                'name' => 'Accommodation',
+                'screen_url' => '',
             ],
             (object) [
-                'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sXuGNj1-HdMZcA4S9h8r8QkKOseCXc3hNFPzc6YeS3mw78h50aKyo1xf2OVr7EHgym8&usqp=CAU',
-                'name' => 'Image 4'
+                'url' => asset('/assets/img/screen-logo/05-Location-Info.png'),
+                'name' => 'Location',
+                'screen_url' => asset('/assets/img/screen-logo/005-Location.png'),
             ],
             (object) [
-                'url' => 'https://st.depositphotos.com/69103596/60712/v/450/depositphotos_607122882-stock-illustration-logo-best-investment-vector-logo.jpg',
-                'name' => 'Image 5'
+                'url' => asset('/assets/img/screen-logo/06-Vicinity.png'),
+                'name' => 'Vicinity',
+                'screen_url' => asset('/assets/img/screen-logo/006-Environment-1.png'),
             ],
             (object) [
-                'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXNqz0ZiD8tg2WA-37Ek_napCPa-cRbDamOWMoNewmG7nauoWMnV1RtfhqmMKhhV7n2Jo&usqp=CAU',
-                'name' => 'Image 6'
+                'url' => asset('/assets/img/screen-logo/07-I-am-looking.png'),
+                'name' => 'I am looking for',
+                'screen_url' => asset('/assets/img/screen-logo/007-I-am-looking-for.png'),
+            ],
+
+            (object) [
+                'url' => asset('/assets/img/screen-logo/08-Conversations.png'),
+                'name' => 'Conversations',
+                'screen_url' => asset('/assets/img/screen-logo/008-Conversations.png'),
             ],
             (object) [
-                'url' => 'https://img.freepik.com/free-vector/design-studio-logo-template_23-2148661992.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais',
-                'name' => 'Image 7'
+                'url' => asset('/assets/img/screen-logo/09-My-diary.png'),
+                'name' => 'My Diary',
+                'screen_url' => asset('/assets/img/screen-logo/009-My-diary.png'),
             ],
             (object) [
-                'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgE5aO-gWfQNI04y2ib3L_eoAATrP1yVD513auGRaiUdABNSH_Gn6ym9KakILjQ0OWfQo&usqp=CAU',
-                'name' => 'Image 8'
+                'url' => asset('/assets/img/screen-logo/10-Sick.png'),
+                'name' => 'Sick',
+                'screen_url' => asset('/assets/img/screen-logo/010-sick.png'),
             ],
             (object) [
-                'url' => 'https://img.freepik.com/premium-vector/minimal-dj-font-logo-design-with-gradient-colors_720439-9.jpg',
-                'name' => 'Image 9'
+                'url' => asset('/assets/img/screen-logo/11-PDF-Prints.png'),
+                'name' => 'PDF Prints',
+                'screen_url' => asset('/assets/img/screen-logo/011-PDF-PRINTS.png'),
             ],
             (object) [
-                'url' => 'https://us.123rf.com/450wm/mdranahamid/mdranahamid2009/mdranahamid200900540/156295984-creative-letter-jd-logo-design-vector-template-initial-linked-letter-jd-logo-design.jpg?ver=6',
-                'name' => 'Image 10'
+                'url' => asset('/assets/img/screen-logo/12-Travel-Partners.png'),
+                'name' => 'Data Protection',
+                'screen_url' => asset('/assets/img/screen-logo/012-Data-Protection.png'),
             ],
-            (object) [
-                'url' => 'https://t3.ftcdn.net/jpg/05/92/21/22/360_F_592212217_TWahwp6zXJXL1qcDbuLUa7VSqXAPWHbk.jpg',
-                'name' => 'Image 11'
-            ],
-            (object) [
-                'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwmALuU19xPRQx_5_ZQK8QqG5HpA79AD5Iw&usqp=CAU',
-                'name' => 'Image 12'
-            ],
+
+
 
             // Add more images as needed
         ];
@@ -134,7 +150,7 @@ class TravelController extends Controller
 
 
         // Send email to admin
-        Mail::to('alifurcoder@gmail.com')->send(new OfferSubmission($request->all()));
+        Mail::to(env('MAIL_TO_ADDRESS'))->send(new OfferSubmission($request->all()));
         // proliz@web.de
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
@@ -201,7 +217,7 @@ class TravelController extends Controller
         }
 
         // Send email to admin
-        Mail::to('alifurcoder@gmail.com')->send(new SujjectionSubmission($request->all()));
+        Mail::to(env('MAIL_TO_ADDRESS'))->send(new SujjectionSubmission($request->all()));
         // proliz@web.de
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
@@ -238,7 +254,7 @@ class TravelController extends Controller
         }
 
         // Send email to admin
-        Mail::to('alifurcoder@gmail.com')->send(new OrderSubmission($request->all()));
+        Mail::to(env('MAIL_TO_ADDRESS'))->send(new OrderSubmission($request->all()));
         // proliz@web.de
         $userLanguage = app()->getLocale();
         $successMessage = __('messages.info_submission_success', [], $userLanguage);

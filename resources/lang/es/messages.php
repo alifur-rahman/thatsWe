@@ -84,4 +84,10 @@ return array(
   'full_information' => 'Información Completa',
   'images' => 'Imágenes',
   'images_page_title' => 'Imágenes de ThatsWE',
+  'hello_its_me' => "Hola, soy yo",
+  'i_found_site_1' => "Acabo de visitar un sitio web muy interesante.",
+  'i_found_site_2' => "Trata sobre la adquisición de clientes, la retención de clientes y por supuesto también el aumento de ventas.",
+  'travel_agency_msg' => "El acceso al sitio web para agencias de viajes:",
+  "holiday_customer_msg" => "El acceso al sitio web para clientes de vacaciones:",
+
 );
