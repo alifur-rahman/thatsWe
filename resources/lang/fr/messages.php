@@ -92,4 +92,12 @@ return array(
   'travel_agency_msg' => "L'accès au site pour les agences de voyage :",
   "holiday_customer_msg" => "L'accès au site pour les clients en vacances :",
 
+  'success' => 'Succès',
+  'thank_you' => 'Merci',
+  'company_submition_message1' => "Nous avons reçu les informations de votre entreprise\nNous vous répondrons bientôt.",
+
+  'sujjection_submition_message1' => "Nous avons reçu vos critiques et suggestions\nNous les examinerons bientôt.",
+  'order_submition_message1' => "Nous avons reçu les informations de votre commande\nNous vous répondrons bientôt.",
+
+
 );

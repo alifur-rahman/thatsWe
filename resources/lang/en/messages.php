@@ -95,4 +95,11 @@ return array(
   'full_inoformation' => 'Full Inoformation',
   'images' => 'Images',
   'images_page_title' => 'Images from ThatsWE',
+  'success' => 'Success',
+  'thank_you' => 'Thank You',
+  'company_submition_message1' => "We received your Company Information\n We will get back to you soon.",
+
+  'sujjection_submition_message1' => "We received your Criticism and Suggestions\n We will review it soon.",
+  'order_submition_message1' => "We received your Order Information\n We will get back to you soon.",
+
 );

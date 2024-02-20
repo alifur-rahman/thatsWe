@@ -282,8 +282,7 @@
                                                                 {{ __('messages.yes') }}
                                                             </label>
                                                             <input class="form-check-input" type="radio"
-                                                                name="published" id="yes" value="yes"
-                                                                onchange="toggleSubmit()">
+                                                                name="published" id="yes" value="yes">
 
                                                         </div>
                                                         <div class="form-check">
@@ -291,8 +290,7 @@
                                                                 {{ __('messages.no') }}
                                                             </label>
                                                             <input class="form-check-input" type="radio"
-                                                                name="published" id="no" value="no"
-                                                                onchange="toggleSubmit()">
+                                                                name="published" id="no" value="no">
                                                         </div>
 
                                                     </div>
@@ -304,8 +302,8 @@
                                             </div>
                                             <div class="text-center">
                                                 <div class="">
-                                                    <button type="submit" id="submitButton" class="btn btn-primary"
-                                                        disabled>{{ __('messages.send') }}</button>
+                                                    <button type="submit" id="submitButton"
+                                                        class="btn btn-primary">{{ __('messages.send') }}</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,16 +425,5 @@
                 $('#logo_no').val(logoNo);
             });
         });
-
-        function toggleSubmit() {
-            var publishedValue = document.querySelector('input[name="published"]:checked').value;
-            var submitButton = document.getElementById('submitButton');
-
-            if (publishedValue === "no") {
-                submitButton.disabled = true;
-            } else {
-                submitButton.disabled = false;
-            }
-        }
     </script>
 @endsection

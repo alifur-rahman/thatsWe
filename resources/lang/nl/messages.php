@@ -91,4 +91,11 @@ return array(
   'travel_agency_msg' => "Toegang tot de website voor reisbureaus:",
   "holiday_customer_msg" => "Toegang tot de website voor vakantieklanten:",
 
+  'success' => 'Succes',
+  'thank_you' => 'Dank je',
+  'company_submition_message1' => "We hebben uw bedrijfsinformatie ontvangen\nWe nemen binnenkort contact met u op.",
+
+  'sujjection_submition_message1' => "We hebben uw kritiek en suggesties ontvangen\nWe zullen deze binnenkort bekijken.",
+  'order_submition_message1' => "We hebben uw bestelinformatie ontvangen\nWe nemen binnenkort contact met u op.",
+
 );

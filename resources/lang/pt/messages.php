@@ -91,4 +91,12 @@ return array(
   'travel_agency_msg' => "Acesso ao site para agências de viagens:",
   "holiday_customer_msg" => "Acesso ao site para clientes de férias:",
 
+  'success' => 'Sucesso',
+  'thank_you' => 'Obrigado',
+  'company_submition_message1' => "Recebemos as informações da sua empresa\nEntraremos em contato em breve.",
+
+  'sujjection_submition_message1' => "Recebemos sua crítica e sugestões\nVamos revisar em breve.",
+  'order_submition_message1' => "Recebemos as informações do seu pedido\nEntraremos em contato em breve.",
+
+
 );

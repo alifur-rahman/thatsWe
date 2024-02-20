@@ -9,7 +9,8 @@ return array(
     'recommendation' => 'Empfehlung',
     'about_us' => 'Über uns',
     'home' => 'Start',
-    'about_us_description' => 'Willkommen bei "thatsWE" – dieser Plattform speziell für Reisebüros, um ihren Kunden ein unvergessliches Reiseerlebnis zu bieten! Exklusiv für Reisebüros bietet unsere App einzigartige Funktionen - von Informationen über den Beginn Ihres Urlaubs bis zu vielen Situationen während Ihres Urlaubs bis hin zum Speichern Ihrer Urlaubserlebnisse. Probieren Sie jetzt die kostenlose Testversion aus und erleben Sie, was Exklusivität, Kundenfreundlichkeit und Umsatzsteigerung für Ihr Reisebüro bedeuten. Kunden gewinnen und die Kraft der Kundenbegierde nutzen – "Das will ich auch!"',
+    'about_us_description' => 'Willkommen bei "thatsWE" – dieser Plattform speziell für Reisebüros, um ihren Kunden ein unvergessliches Reiseerlebnis zu bieten! Exklusiv für Reisebüros bietet unsere App einzigartige Funktionen - von Informationen über den Beginn Ihres Urlaubs bis zu vielen Situationen während Ihres Urlaubs bis hin zum Speichern Ihrer Urlaubserlebnisse. Erleben Sie, was „thatsWE“-Exklusivität, Kundenfreundlichkeit und Umsatzsteigerung für Ihr Reisebüro bedeuten. Kunden gewinnen und die Macht der Kundengier nutzen – „Das will ich auch!“',
+
     'website_dev' => 'Webseitenentwicklung durch',
     'company_info' => 'Unternehmensinformationen',
     'company_name' => 'Firmenname',
@@ -92,5 +93,13 @@ return array(
     'i_found_site_2' => "Es geht um Kundengewinnung, Kundenbindung und natürlich auch um Umsatzsteigerung.",
     'travel_agency_msg' => "Der Zugang zur Website für Reisebüros:",
     "holiday_customer_msg" => "Der Zugang zur Website für Urlaubskunden:",
+
+    'success' => 'Erfolg',
+    'thank_you' => 'Vielen Dank',
+    'company_submition_message1' => "Wir haben Ihre Unternehmensinformationen erhalten\nWir werden uns bald bei Ihnen melden.",
+
+    'sujjection_submition_message1' => "Wir haben Ihre Kritik und Vorschläge erhalten\nWir werden sie bald überprüfen.",
+    'order_submition_message1' => "Wir haben Ihre Bestellinformationen erhalten\nWir werden uns bald bei Ihnen melden.",
+
 
 );

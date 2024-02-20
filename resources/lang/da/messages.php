@@ -94,4 +94,12 @@ return array(
   'travel_agency_msg' => "Adgang til hjemmesiden for rejsebureauer:",
   "holiday_customer_msg" => "Adgang til hjemmesiden for feriekunder:",
 
+  'success' => 'Succes',
+  'thank_you' => 'Tak',
+  'company_submition_message1' => "Vi har modtaget dine virksomhedsoplysninger\nVi vender tilbage til dig snart.",
+
+  'sujjection_submition_message1' => "Vi har modtaget din kritik og forslag\nVi vil gennemgå det snart.",
+  'order_submition_message1' => "Vi har modtaget dine bestillingsoplysninger\nVi vender tilbage til dig snart.",
+
+
 );
