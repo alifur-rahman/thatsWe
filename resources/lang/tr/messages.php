@@ -90,4 +90,12 @@ return array(
   'travel_agency_msg' => "Seyahat acenteleri için site erişimi:",
   "holiday_customer_msg" => "Tatil müşterileri için site erişimi:",
 
+  'success' => 'Başarı',
+  'thank_you' => 'Teşekkürler',
+  'company_submition_message1' => "Şirket bilgilerinizi aldık\nYakında size döneceğiz.",
+
+  'sujjection_submition_message1' => "Eleştirilerinizi ve önerilerinizi aldık\nYakında gözden geçireceğiz.",
+  'order_submition_message1' => "Sipariş bilgilerinizi aldık\nYakında size döneceğiz.",
+
+
 );

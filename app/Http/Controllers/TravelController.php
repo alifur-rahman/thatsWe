@@ -6,6 +6,7 @@ use App\Mail\OrderSubmission;
 use App\Mail\SujjectionSubmission;
 use Illuminate\Http\Request;
 use App\Mail\OfferSubmission;
+use App\Mail\SuccessMessage;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RecommendationSubmission;
 use Illuminate\Support\Facades\Validator;
@@ -48,67 +49,53 @@ class TravelController extends Controller
     {
         $images = [
             (object) [
-                'url' => asset('/assets/img/screen-logo/01-My-Booking.png'),
-                'name' => 'My Bookings',
-                'screen_url' => asset('/assets/img/screen-logo/001-My-Bookings.png'),
+                'url' => asset('/assets/img/screen-logo/1-Start.png'),
+                'name' => 'Start',
+                'screen_url' => asset('/assets/img/screen-logo/1A-Start.png'),
             ],
             (object) [
-                'url' => asset('/assets/img/screen-logo/02-Arrival-Departure.png'),
-                'name' => 'Arrival Departure',
-                'screen_url' => asset('/assets/img/screen-logo/002-Arrival-Departure.png'),
+                'url' => asset('/assets/img/screen-logo/2-booking.png'),
+                'name' => 'Booking',
+                'screen_url' => asset('/assets/img/screen-logo/2A-booking.png'),
             ],
 
             (object) [
-                'url' => asset('/assets/img/screen-logo/03-Preparation.png'),
-                'name' => 'The preparation',
-                'screen_url' => asset('/assets/img/screen-logo/003-The-preparation.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/04-Accommodation.png'),
+                'url' => asset('/assets/img/screen-logo/3-Accommodation.png'),
                 'name' => 'Accommodation',
-                'screen_url' => '',
+                'screen_url' => asset('/assets/img/screen-logo/3A-Accommodation.png'),
             ],
             (object) [
-                'url' => asset('/assets/img/screen-logo/05-Location-Info.png'),
-                'name' => 'Location',
-                'screen_url' => asset('/assets/img/screen-logo/005-Location.png'),
+                'url' => asset('/assets/img/screen-logo/4-Search.png'),
+                'name' => 'Search',
+                'screen_url' => asset('/assets/img/screen-logo/4A-Search.png'),
             ],
             (object) [
-                'url' => asset('/assets/img/screen-logo/06-Vicinity.png'),
-                'name' => 'Vicinity',
-                'screen_url' => asset('/assets/img/screen-logo/006-Environment-1.png'),
+                'url' => asset('/assets/img/screen-logo/5-Conversations.png'),
+                'name' => 'Conversations',
+                'screen_url' => asset('/assets/img/screen-logo/5A-conversations.png'),
             ],
             (object) [
-                'url' => asset('/assets/img/screen-logo/07-I-am-looking.png'),
-                'name' => 'I am looking for',
-                'screen_url' => asset('/assets/img/screen-logo/007-I-am-looking-for.png'),
+                'url' => asset('/assets/img/screen-logo/6-diarys.png'),
+                'name' => 'Diarys',
+                'screen_url' => asset('/assets/img/screen-logo/6A-diarys.png'),
+            ],
+            (object) [
+                'url' => asset('/assets/img/screen-logo/7-Health.png'),
+                'name' => 'Health',
+                'screen_url' => asset('/assets/img/screen-logo/7A-Health.png'),
             ],
 
             (object) [
-                'url' => asset('/assets/img/screen-logo/08-Conversations.png'),
-                'name' => 'Conversations',
-                'screen_url' => asset('/assets/img/screen-logo/008-Conversations.png'),
+                'url' => asset('/assets/img/screen-logo/8-PDF-prints.png'),
+                'name' => 'PDF prints',
+                'screen_url' => asset('/assets/img/screen-logo/8A-PDF-prints.png'),
             ],
             (object) [
-                'url' => asset('/assets/img/screen-logo/09-My-diary.png'),
-                'name' => 'My Diary',
-                'screen_url' => asset('/assets/img/screen-logo/009-My-diary.png'),
+                'url' => asset('/assets/img/screen-logo/9-Settings.png'),
+                'name' => 'Settings',
+                'screen_url' => asset('/assets/img/screen-logo/9A-Settings.png'),
             ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/10-Sick.png'),
-                'name' => 'Sick',
-                'screen_url' => asset('/assets/img/screen-logo/010-sick.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/11-PDF-Prints.png'),
-                'name' => 'PDF Prints',
-                'screen_url' => asset('/assets/img/screen-logo/011-PDF-PRINTS.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/12-Travel-Partners.png'),
-                'name' => 'Data Protection',
-                'screen_url' => asset('/assets/img/screen-logo/012-Data-Protection.png'),
-            ],
+
 
 
 
@@ -149,12 +136,21 @@ class TravelController extends Controller
 
 
 
+        $userLanguage = app()->getLocale();
         // Send email to admin
         Mail::to(env('MAIL_TO_ADDRESS'))->send(new OfferSubmission($request->all()));
-        // proliz@web.de
-        $userLanguage = app()->getLocale();
+        // Send email to user
+        $messagesData = [
+            'title' => __('messages.company_info', [], $userLanguage),
+            'head_title' => __('messages.success', [], $userLanguage),
+            'messages' => [
+                '1' => __('messages.company_submition_message1', [], $userLanguage),
+                '0' => __('messages.thank_you', [], $userLanguage),
+            ]
+        ];
+        Mail::to($request->your_mail)->send(new SuccessMessage($request->all(), $messagesData));
+        // show message to blade
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
-
         return redirect()->back()->with('success', $successMessage);
     }
 
@@ -218,8 +214,19 @@ class TravelController extends Controller
 
         // Send email to admin
         Mail::to(env('MAIL_TO_ADDRESS'))->send(new SujjectionSubmission($request->all()));
-        // proliz@web.de
+        // Send email to user
         $userLanguage = app()->getLocale();
+        $messagesData = [
+            'title' => __('messages.criticism_and_suggestions', [], $userLanguage),
+            'head_title' => __('messages.success', [], $userLanguage),
+            'messages' => [
+                '1' => __('messages.sujjection_submition_message1', [], $userLanguage),
+                '0' => __('messages.thank_you', [], $userLanguage),
+            ]
+        ];
+        Mail::to($request->your_mail)->send(new SuccessMessage($request->all(), $messagesData));
+        // show message to blade
+
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
 
         return redirect()->back()->with('success', $successMessage);
@@ -255,8 +262,18 @@ class TravelController extends Controller
 
         // Send email to admin
         Mail::to(env('MAIL_TO_ADDRESS'))->send(new OrderSubmission($request->all()));
-        // proliz@web.de
+        // Send email to user
         $userLanguage = app()->getLocale();
+        $messagesData = [
+            'title' => __('messages.order', [], $userLanguage),
+            'head_title' => __('messages.success', [], $userLanguage),
+            'messages' => [
+                '1' => __('messages.order_submition_message1', [], $userLanguage),
+                '0' => __('messages.thank_you', [], $userLanguage),
+            ]
+        ];
+        Mail::to($request->mail_address)->send(new SuccessMessage($request->all(), $messagesData));
+        // show message to blade
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
 
         return redirect()->back()->with('success', $successMessage);
