@@ -14,17 +14,30 @@ class OrderSubmission extends Mailable
     use Queueable, SerializesModels;
 
     public $formData;
+    public $pdfData;
 
-    public function __construct($formData)
+
+
+    public function __construct($formData, $pdfData = null)
     {
         $this->formData = $formData;
+        $this->pdfData = $pdfData;
     }
+
 
     public function build()
     {
         $userLanguage = app()->getLocale();
 
         $subject = __('Order', [], $userLanguage);
-        return $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.order-submission');
+        $mail = $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.order-submission');
+
+        if ($this->pdfData) {
+            $mail->attachData($this->pdfData, 'order_confirmation.pdf', [
+                'mime' => 'application/pdf',
+            ]);
+        }
+
+        return $mail;
     }
 }

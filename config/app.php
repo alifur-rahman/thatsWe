@@ -159,7 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Barryvdh\DomPDF\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -182,7 +182,11 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        // 'PDF' => Barryvdh\DomPDF\Facade::class,
         // 'Example' => App\Facades\Example::class,
+
+        'Pdf' => Barryvdh\DomPDF\Facade\Pdf::class,
+        'PDF' => Barryvdh\DomPDF\Facade\Pdf::class,
     ])->toArray(),
 
 ];
