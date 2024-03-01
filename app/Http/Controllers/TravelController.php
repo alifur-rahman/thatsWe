@@ -47,6 +47,8 @@ class TravelController extends Controller
         return view('order');
     }
 
+
+
     public function images()
     {
         $images = [
@@ -251,7 +253,7 @@ class TravelController extends Controller
             'managing_director' => 'required|string|max:255',
             'app_name' => 'required|string|max:255',
             'logo_no' => 'required|string|max:255',
-            'published' => 'required|string|in:yes',
+            'published' => 'required|string',
 
 
 

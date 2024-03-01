@@ -206,8 +206,8 @@
                             <tr>
                                 <td>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault">
+                                        <input class="" {{ $published == 'yes' ? 'checked' : '' }}
+                                            type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Ja
                                         </label>
@@ -215,8 +215,8 @@
                                 </td>
                                 <td class="pe-2">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault3">
+                                        <input class="" {{ $published == 'no' ? 'checked' : '' }} type="checkbox"
+                                            value="" id="flexCheckDefault3">
                                         <label class="form-check-label" for="flexCheckDefault3">
                                             Nein
                                         </label>
