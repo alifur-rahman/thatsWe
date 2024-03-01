@@ -17,16 +17,27 @@ class SuccessMessage extends Mailable
 
     public $messagesData;
 
-    public function __construct($formData, $messagesData)
+    public $pdfData;
+
+    public function __construct($formData, $messagesData, $pdfData = null)
     {
         $this->formData = $formData;
         $this->messagesData = $messagesData;
+        $this->pdfData = $pdfData;
     }
 
     public function build()
     {
 
         $subject = $this->messagesData['title'];
-        return $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.success-message');
+        $mail = $this->from(config('mail.from.address'), config('mail.from.name'))->subject($subject)->view('emails.success-message');
+
+        if ($this->pdfData) {
+            $mail->attachData($this->pdfData, 'order_confirmation.pdf', [
+                'mime' => 'application/pdf',
+            ]);
+        }
+
+        return $mail;
     }
 }

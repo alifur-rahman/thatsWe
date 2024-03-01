@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Barryvdh\DomPDF\Facade\Pdf;
+
 use App\Mail\OrderSubmission;
 use App\Mail\SujjectionSubmission;
 use Illuminate\Http\Request;
@@ -44,6 +46,8 @@ class TravelController extends Controller
     {
         return view('order');
     }
+
+
 
     public function images()
     {
@@ -104,6 +108,7 @@ class TravelController extends Controller
 
         return view('images')->with('images', $images);
     }
+
 
 
 
@@ -248,7 +253,7 @@ class TravelController extends Controller
             'managing_director' => 'required|string|max:255',
             'app_name' => 'required|string|max:255',
             'logo_no' => 'required|string|max:255',
-            'published' => 'required|string|in:yes',
+            'published' => 'required|string',
 
 
 
@@ -260,8 +265,12 @@ class TravelController extends Controller
                 ->withInput();           // Pass the old input data to the view
         }
 
-        // Send email to admin
-        Mail::to(env('MAIL_TO_ADDRESS'))->send(new OrderSubmission($request->all()));
+        // Generate PDF
+        $pdf = PDF::loadView('pdf/order', $request->all());
+        $pdfData = $pdf->output();
+
+        // Send email
+        Mail::to(env('MAIL_TO_ADDRESS'))->send(new OrderSubmission($request->all(), $pdfData));
         // Send email to user
         $userLanguage = app()->getLocale();
         $messagesData = [
@@ -272,7 +281,7 @@ class TravelController extends Controller
                 '0' => __('messages.thank_you', [], $userLanguage),
             ]
         ];
-        Mail::to($request->mail_address)->send(new SuccessMessage($request->all(), $messagesData));
+        Mail::to($request->mail_address)->send(new SuccessMessage($request->all(), $messagesData, $pdfData));
         // show message to blade
         $successMessage = __('messages.info_submission_success', [], $userLanguage);
 
