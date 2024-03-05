@@ -13,12 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['guest'])->group(function () {
-    Route::get('/cms/login', [App\Http\Controllers\auth\AuthController::class, 'login_page'])->name('login-page');
-    Route::post('/login/submit', [App\Http\Controllers\auth\AuthController::class, 'login'])->name('login');
-});
-
-
 
 Route::get('/', [App\Http\Controllers\TravelController::class, 'welcome'])->name('welcome-page');
 Route::get('/about', [App\Http\Controllers\TravelController::class, 'about'])->name('about-page');
@@ -33,11 +27,3 @@ Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->n
 Route::post('/order/submit', [App\Http\Controllers\TravelController::class, 'orderSubmit'])->name('order-submit');
 
 Route::get('/images', [App\Http\Controllers\TravelController::class, 'images'])->name('images-page');
-// auth 
-Route::get('/cms/login', [App\Http\Controllers\auth\AuthController::class, 'login_page'])->name('login-page');
-Route::any('/cms/logout', [App\Http\Controllers\auth\AuthController::class, 'logout'])->name('logout');
-Route::post('/login/submit', [App\Http\Controllers\auth\AuthController::class, 'login'])->name('login');
-
-Route::middleware(['auth', 'user-access:admin'])->group(function () {
-    Route::get('/cms/dashboard', [App\Http\Controllers\admin\DashboardController::class, 'dashboard'])->name('dashboard');
-});
