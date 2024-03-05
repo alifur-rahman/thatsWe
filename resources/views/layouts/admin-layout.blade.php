@@ -13,14 +13,20 @@
     <meta name="author" content="ThatsWE">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>{{ strtoupper(config('app.name')) }} - @yield('title') </title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('trader-assets/assets/img/favicon.png') }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
         rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/app-assets/vendors/css/vendors.min.css') }}">
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('admin-assets/app-assets/vendors/css/charts/apexcharts.css') }}">
+
     <link rel="stylesheet" type="text/css"
         href="{{ asset('admin-assets/app-assets/vendors/css/extensions/toastr.min.css') }}">
     @yield('vendor-css')
@@ -51,8 +57,7 @@
         href="{{ asset('admin-assets/app-assets/css/plugins/extensions/ext-component-sweet-alerts.css') }}">
     <link rel="stylesheet" type="text/css"
         href="{{ asset('admin-assets/app-assets/css/plugins/forms/form-validation.css') }}">
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('admin-assets/app-assets/css/plugins/extensions/shepherd.min.css') }}">
+
     <link rel="stylesheet" type="text/css"
         href="{{ asset('admin-assets/app-assets/css/plugins/extensions/shepherd.min.css') }}">
     <link rel="stylesheet" type="text/css"
@@ -88,6 +93,13 @@
 
         .main-menu .navbar-header .navbar-brand {
             margin: 0;
+        }
+
+        .main-menu.menu-light .navigation>li.open:not(.menu-item-closing)>a,
+        .main-menu.menu-light .navigation>li.sidebar-group-active>a {
+            color: #565360;
+            background: #161d31;
+            border-radius: 6px;
         }
     </style>
     @yield('custom-css')
@@ -296,12 +308,43 @@
                         <span class="menu-item text-truncate" data-i18n="Configuration">{{ __('Dashboard') }}</span>
                     </a>
                 </li>
-                <!-- END: manager settings -->
+                <!-- END: Dashboard -->
+                <li class=" navigation-header">
+                    <span>{{ __('Content Menagements') }}</span>
+                    <i data-feather="more-horizontal"></i>
+                </li>
                 <!-- START: content management -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#">
+                <li class="nav-item {{ Request::is('cms/content/*') ? 'open' : '' }}">
+                    <a class="d-flex align-items-center" href="#">
+                        <i data-feather='columns'></i>
+                        <span class="menu-title text-truncate" data-i18n="Manage Accounts">
+                            {{ __('Manage Content') }}
+                        </span>
+                    </a>
+                    <ul class="menu-content">
+                        <li class="{{ Route::is('content.success-info') ? 'active' : '' }}">
+                            <a class="d-flex align-items-center" href="{{ route('content.success-info') }}">
+                                <i data-feather="circle"></i>
+                                <span class="menu-item text-truncate" data-i18n="Live Trading Account List">
+                                    {{ __('Success Info') }} </span>
+                            </a>
+                        </li>
+                        <li class="{{ Route::is('content.app-images') ? 'active' : '' }}">
+                            <a class="d-flex align-items-center" href="{{ route('content.app-images') }}">
+                                <i data-feather="circle"></i>
+                                <span class="menu-item text-truncate" data-i18n="Demo Trading Account List">
+                                    {{ __('App Images') }} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END: content management -->
+                <!-- START: Agency management -->
+                <li class=" nav-item  {{ Request::is('cms/agency/*') ? 'open' : '' }}"><a
+                        class="d-flex align-items-center" href="#">
                         <i data-feather='activity'></i>
                         <span class="menu-title text-truncate" data-i18n="Manage Accounts">
-                            {{ __('Content Management') }}
+                            {{ __('Manage Agency ') }}
                         </span>
                     </a>
                     <ul class="menu-content">
@@ -324,32 +367,15 @@
                     </ul>
                 </li>
 
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#">
-                        <i data-feather='activity'></i>
-                        <span class="menu-title text-truncate" data-i18n="Manage Accounts">
-                            {{ __('Image Management') }}
-                        </span>
-                    </a>
-                    <ul class="menu-content">
-                        <li class="{{ Request::is('admin/trading-account-details-live') ? 'active' : '' }}">
-                            <a class="d-flex align-items-center"
-                                href="{{ url('admin/trading-account-details-live') }}">
-                                <i data-feather="circle"></i>
-                                <span class="menu-item text-truncate" data-i18n="Live Trading Account List">
-                                    {{ __('admin-menue-left.Live_Trading_Account_List') }} </span>
-                            </a>
-                        </li>
-                        <li class="{{ Request::is('admin/trading-account-details-demo') ? 'active' : '' }}">
-                            <a class="d-flex align-items-center"
-                                href="{{ url('admin/trading-account-details-demo') }}">
-                                <i data-feather="circle"></i>
-                                <span class="menu-item text-truncate" data-i18n="Demo Trading Account List">
-                                    {{ __('admin-menue-left.Demo_Trading_Account_List') }} </span>
-                            </a>
-                        </li>
-                    </ul>
+                <li class=" navigation-header">
+                    <span>{{ __('Order Menagements') }}</span>
+                    <i data-feather="more-horizontal"></i>
                 </li>
 
+                <li class=" navigation-header">
+                    <span>{{ __('Email Menagements') }}</span>
+                    <i data-feather="more-horizontal"></i>
+                </li>
 
             </ul>
         </div>
