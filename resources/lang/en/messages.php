@@ -88,6 +88,8 @@ return array(
 
   'travel_agency_msg' => "The site access for travel agencies: ",
   "holiday_customer_msg" => "The site access for holiday customers: ",
+  'copyMsg' => "(copy the link and paste it into the address bar)",
+
 
 
 

@@ -93,6 +93,7 @@ return array(
   'i_found_site_2' => "Det handler om kundetilvækst, kundebinding og selvfølgelig også øget salg.",
   'travel_agency_msg' => "Adgang til hjemmesiden for rejsebureauer:",
   "holiday_customer_msg" => "Adgang til hjemmesiden for feriekunder:",
+  'copyMsg' => "(kopiér linket og indsæt det i adresselinjen)",
 
   'success' => 'Succes',
   'thank_you' => 'Tak',

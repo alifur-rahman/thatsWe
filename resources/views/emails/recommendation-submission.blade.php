@@ -35,6 +35,7 @@
                     <strong> {{ __('messages.holiday_customer_msg') }} <a
                             href="www.thatssoft.de">www.thatssoft.de</a></strong>
                 </p>
+                <p>{{ __('messages.copyMsg') }}</p>
             </div>
 
             <div class="col-md-6 ">
