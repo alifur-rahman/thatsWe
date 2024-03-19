@@ -90,6 +90,7 @@ return array(
   'i_found_site_2' => "Het gaat over klantenwerving, klantenbinding en natuurlijk ook om verhoogde verkoop.",
   'travel_agency_msg' => "Toegang tot de website voor reisbureaus:",
   "holiday_customer_msg" => "Toegang tot de website voor vakantieklanten:",
+  'copyMsg' => "(den Link kopieren und in die Adress-zeile einfügen)",
 
   'success' => 'Succes',
   'thank_you' => 'Dank je',

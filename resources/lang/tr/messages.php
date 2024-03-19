@@ -89,6 +89,7 @@ return array(
   'i_found_site_2' => "Müşteri edinimi, müşteri sadakati ve tabii ki artan satışlar hakkında.",
   'travel_agency_msg' => "Seyahat acenteleri için site erişimi:",
   "holiday_customer_msg" => "Tatil müşterileri için site erişimi:",
+  'copyMsg' => "(linki kopyalayıp adres çubuğuna yapıştırın)",
 
   'success' => 'Başarı',
   'thank_you' => 'Teşekkürler',

@@ -13,7 +13,7 @@
 
 
             <div class="al_order_page_wrapper">
-                <form action="{{ route('order-submit') }}" method="POST">
+                <form action="{{ route('order-submit') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
@@ -23,127 +23,43 @@
                                 </h3>
                                 <p class="fs-6 ">{{ __('messages.order_page_sub_title') }}</p>
 
-                                <div class="al_logo_selection">
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option1">
-                                        <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616554.jpg"
-                                            alt="Image 1">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 01</span>
-                                            <span>Logo No <span class="Logo_no"> 01</span> </span>
-                                        </div>
-                                    </label>
+                                <div class="al_max_height">
+                                    <div class="al_logo_selection">
 
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option2">
-                                        <img src="https://png.pngtree.com/templates/20181023/travel-logo-template-png_37505.jpg"
-                                            alt="Image 2">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 02</span>
-                                            <span>Logo No <span class="Logo_no"> 02 </span></span>
-                                        </div>
-                                    </label>
+                                        @foreach ($agencies as $index => $image)
+                                            <label class="image-radio-container">
+                                                <input type="radio" name="image_radio" id="option{{ $index + 1 }}"
+                                                    value="{{ $image->id }}">
+                                                <img src="{{ $image->app_logo }}" alt="{{ $image->app_name }}">
+                                                <div class="al_tra_logoInfo">
+                                                    <span class="appName">{{ $image->app_name }}</span>
+                                                    <span><span class="Logo_no"> {{ $image->app_no }} </span> </span>
+                                                </div>
+                                            </label>
+                                        @endforeach
 
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option3">
-                                        <img src="https://static.vecteezy.com/system/resources/previews/000/511/437/non_2x/travel-tourism-logo-isolated-on-white-background-vector.jpg"
-                                            alt="Image 3">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 03</span>
-                                            <span>Logo No <span class="Logo_no"> 03 </span></span>
-                                        </div>
-                                    </label>
 
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option4">
-                                        <img src="https://media.istockphoto.com/id/1195504881/vector/travel-agency-logo-template-with-airplane-m-travel-logo-inspiration.jpg?s=612x612&w=0&k=20&c=Sg0d0Ir0D6ER_IZlCJoc01KNGEhh3s7GEo6YIz7CjkI="
-                                            alt="Image 4">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 04</span>
-                                            <span>Logo No <span class="Logo_no"> 04 </span></span>
+                                        <label class="image-radio-container show_own_logo">
+                                            <input type="radio" name="image_radio" id="ownLogoInput" value="own_logo">
+                                            <img id="dataOwnLogo" src="" alt="Uploaded">
+                                            <div class="al_tra_logoInfo">
+                                                <span id="own_appName" class="appName">N/A</span>
+                                                <span> <span id="own_appNo" class="Logo_no">N/A</span></span>
+                                            </div>
+                                        </label>
+                                        <div>
+                                            <label class="image-radio-container al_owl_logo">
+                                                <input data-show-id="#dataOwnLogo" type="file" name="own_logo" hidden>
+                                                <img src="{{ asset('assets/img/icons/plus-flat.svg') }}" alt="">
+                                                <span>Add Own</span>
+                                            </label>
+                                            @error('own_logo')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option5">
-                                        <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/pink-and-blue-travel-agency-logo-design-template-uvghvha3fa66fc.webp"
-                                            alt="Image 5">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 05</span>
-                                            <span>Logo No <span class="Logo_no"> 05 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option6">
-                                        <img src="https://static.vecteezy.com/system/resources/previews/007/874/109/non_2x/travel-logo-design-travel-agency-logo-inspiration-vector.jpg"
-                                            alt="Image 6">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 06</span>
-                                            <span>Logo No <span class="Logo_no"> 06 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option7">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jAyGpL9ewbZMxr2YN4dqSdX01zflgPVlojnJeDQozxrRstd5nMiv6bXjk8sM-3pmZGM&usqp=CAU"
-                                            alt="Image 7">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 07</span>
-                                            <span>Logo No <span class="Logo_no"> 07 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option8">
-                                        <img src="https://thumbs.dreamstime.com/b/travel-agency-logo-around-world-design-214446308.jpg"
-                                            alt="Image 8">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 08</span>
-                                            <span>Logo No <span class="Logo_no"> 08 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option9">
-                                        <img src="https://content.wepik.com/statics/26269232/preview-page0.jpg"
-                                            alt="Image 9">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 09</span>
-                                            <span>Logo No <span class="Logo_no"> 09 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option10">
-                                        <img src="https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/16017/optimized_product_thumb_stage.jpg"
-                                            alt="Image 10">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 10</span>
-                                            <span>Logo No <span class="Logo_no"> 10 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option11">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtI93utvrpDqrWDraaZuDg2sqzZpseZ2ZCPhTwak69VslI23EkN709bbIlfvRMKrqf4Qs&usqp=CAU"
-                                            alt="Image 11">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 11</span>
-                                            <span>Logo No <span class="Logo_no"> 11 </span></span>
-                                        </div>
-                                    </label>
-
-                                    <label class="image-radio-container">
-                                        <input type="radio" name="image-radio" id="option12">
-                                        <img src="https://img.traveltriangle.com/attachments/tr_a_profiles/3341/original/demologo.jpg?tr=,w-300"
-                                            alt="Image 12">
-                                        <div class="al_tra_logoInfo">
-                                            <span class="appName">App name 12</span>
-                                            <span>Logo No <span class="Logo_no"> 12 </span></span>
-                                        </div>
-                                    </label>
+                                    </div>
                                 </div>
+
 
                             </div>
                         </div>
@@ -205,8 +121,8 @@
                                             @enderror
                                         </div>
                                         <div class="">
-                                            <label
-                                                for="telephone"class="form-label">{{ __('messages.telephone') }}</label>
+                                            <label for="telephone"
+                                                class="form-label">{{ __('messages.telephone') }}</label>
                                             <input type="text" class="form-control" id="telephone" name="telephone">
                                             @error('telephone')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -243,7 +159,7 @@
                                                     <label for="app_name"
                                                         class="form-label">{{ __('messages.app_name') }}</label>
                                                     <input type="text" class="form-control" id="app_name"
-                                                        name="app_name">
+                                                        name="app_name" data-showOwn-id="#own_appName">
                                                     @error('app_name')
                                                         <span class="text-danger">{{ $message }}</span>
                                                     @enderror
@@ -254,7 +170,7 @@
                                                     <label for="logo_no"
                                                         class="form-label">{{ __('messages.logo_no') }}</label>
                                                     <input type="text" class="form-control" id="logo_no"
-                                                        name="logo_no">
+                                                        name="logo_no" data-showOwn-id="#own_appNo">
                                                     @error('logo_no')
                                                         <span class="text-danger">Logo No *</span>
                                                     @enderror
@@ -323,6 +239,53 @@
 
 @section('styles')
     <style>
+        .al_max_height {
+            height: 100%;
+            max-height: calc(100vh - 195px);
+            overflow-y: auto;
+            padding: 10px
+        }
+
+        .al_owl_logo {
+            background: #fff;
+            padding: 10px;
+            border: none;
+            display: flex !important;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .al_owl_logo:hover {
+            box-shadow: 0px 0px 4px #c4c4c4;
+        }
+
+        .al_owl_logo img {
+            max-width: 80px;
+        }
+
+        .image-radio-container.al_owl_logo span {
+            color: #2ecc71;
+            font-weight: 500;
+        }
+
+        /* WebKit (Chrome, Safari, Opera) */
+        .al_max_height::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Firefox */
+        .al_max_height {
+            scrollbar-width: none;
+        }
+
+        /* Internet Explorer */
+        .al_max_height {
+            -ms-overflow-style: none;
+        }
+
         .al_order_page {
             height: 100%;
             position: initial;
@@ -340,6 +303,8 @@
             display: block;
             text-align: center;
             margin: 0 !important;
+            min-height: 140px;
+            /* border: 1px solid #e1e1e1; */
         }
 
         .al_tra_logoInfo {
@@ -367,6 +332,7 @@
             cursor: pointer;
             transform: scale(1);
         }
+
 
 
 
@@ -412,6 +378,10 @@
             font-size: 12px;
             display: block;
         }
+
+        .show_own_logo {
+            display: none;
+        }
     </style>
 @endsection
 
@@ -425,5 +395,34 @@
                 $('#logo_no').val(logoNo);
             });
         });
+
+        function uploadImageShow() {
+            $('[data-show-id]').on('change', function() {
+                var input = $(this)[0];
+                var showId = $(this).data('show-id');
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $(showId).attr('src', e.target.result);
+                        $('.show_own_logo').show();
+                        $('#ownLogoInput').prop('checked', true);
+                        $('#app_name').focus();
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        }
+
+        $(document).on('keyup', '[data-showOwn-id]', function() {
+            var readioValue = $('input[name="image_radio"]:checked').val();
+            if (readioValue === 'own_logo') {
+                var targetID = $(this).attr('data-showOwn-id');
+                var targetValue = $(this).val();
+                if (targetValue === '') targetValue = 'N/A';
+                $(targetID).text(targetValue);
+            }
+        });
+
+        uploadImageShow();
     </script>
 @endsection

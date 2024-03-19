@@ -91,7 +91,7 @@ return array(
   'i_found_site_2' => "Il s'agit de l'acquisition de clients, de la fidélisation des clients et bien sûr de l'augmentation des ventes.",
   'travel_agency_msg' => "L'accès au site pour les agences de voyage :",
   "holiday_customer_msg" => "L'accès au site pour les clients en vacances :",
-
+  'copyMsg' => "(copiez le lien et collez-le dans la barre d'adresse)",
   'success' => 'Succès',
   'thank_you' => 'Merci',
   'company_submition_message1' => "Nous avons reçu les informations de votre entreprise\nNous vous répondrons bientôt.",

@@ -12,6 +12,11 @@ use App\Mail\SuccessMessage;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RecommendationSubmission;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+use App\Models\SuccessInfo;
+use App\Models\appImages;
+use App\Models\agencies;
+use App\Models\order;
 
 class TravelController extends Controller
 {
@@ -39,76 +44,46 @@ class TravelController extends Controller
 
     public function policy()
     {
-        return view('policy');
+        $userLanguage = app()->getLocale();
+
+    // Selecting columns dynamically based on the user's language
+    $columns = [
+        'assign_to',
+        'save_as',
+        'title_' . $userLanguage . ' as title',
+        'desc_' . $userLanguage . ' as description',
+    ];
+
+    // Retrieving data based on the selected columns and other conditions
+    $successInfo = SuccessInfo::where('assign_to', 'ThatsWE')
+                                ->where('save_as', 'active')
+                                ->select($columns)
+                                ->get();
+
+
+        return view('policy', ['successInfo' => $successInfo]);
     }
 
     public function order()
     {
-        return view('order');
+        $agencies = agencies::where('show', 'active')->get();
+        return view('order')->with('agencies', $agencies);
     }
 
 
 
     public function images()
     {
-        $images = [
-            (object) [
-                'url' => asset('/assets/img/screen-logo/1-Start.png'),
-                'name' => 'Start',
-                'screen_url' => asset('/assets/img/screen-logo/1A-Start.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/2-booking.png'),
-                'name' => 'Booking',
-                'screen_url' => asset('/assets/img/screen-logo/2A-booking.png'),
-            ],
-
-            (object) [
-                'url' => asset('/assets/img/screen-logo/3-Accommodation.png'),
-                'name' => 'Accommodation',
-                'screen_url' => asset('/assets/img/screen-logo/3A-Accommodation.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/4-Search.png'),
-                'name' => 'Search',
-                'screen_url' => asset('/assets/img/screen-logo/4A-Search.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/5-Conversations.png'),
-                'name' => 'Conversations',
-                'screen_url' => asset('/assets/img/screen-logo/5A-conversations.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/6-diarys.png'),
-                'name' => 'Diarys',
-                'screen_url' => asset('/assets/img/screen-logo/6A-diarys.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/7-Health.png'),
-                'name' => 'Health',
-                'screen_url' => asset('/assets/img/screen-logo/7A-Health.png'),
-            ],
-
-            (object) [
-                'url' => asset('/assets/img/screen-logo/8-PDF-prints.png'),
-                'name' => 'PDF prints',
-                'screen_url' => asset('/assets/img/screen-logo/8A-PDF-prints.png'),
-            ],
-            (object) [
-                'url' => asset('/assets/img/screen-logo/9-Settings.png'),
-                'name' => 'Settings',
-                'screen_url' => asset('/assets/img/screen-logo/9A-Settings.png'),
-            ],
-
-
-
-
-            // Add more images as needed
-        ];
-
+        $images = appImages::all();
         return view('images')->with('images', $images);
     }
 
+
+    public function pdfView(Request $request) {
+        $ipAddress = $request->server('REMOTE_ADDR');
+        return view('pdf.order', ['ipAddress' => $ipAddress]);
+    }
+    
 
 
 
@@ -254,20 +229,56 @@ class TravelController extends Controller
             'app_name' => 'required|string|max:255',
             'logo_no' => 'required|string|max:255',
             'published' => 'required|string',
-
-
-
+           'own_logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
+        
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)  // Pass the validation errors to the view
                 ->withInput();           // Pass the old input data to the view
         }
+        $agencId  = $request->input('image_radio');
+        $timestamp = now()->timestamp;
+        if($request->image_radio == 'own_logo') {
+            $title = $request->input('app_name');
+            $screen_logo_filename = Str::slug($title) . '-' . $timestamp . '-app-logo.' . $request->file('own_logo')->getClientOriginalExtension();
+            // Move files to upload directory
+            $request->file('own_logo')->move(base_path('upload-files/agency/'), $screen_logo_filename);
+            $data['app_logo'] = 'upload-files/agency/' . $screen_logo_filename;
+            $data['app_no'] = $request->input('logo_no');
+            $data['app_name'] = $request->input('app_name');
+            $successInfo = agencies::create($data);
+            $agencId = $successInfo->id;
+        }
 
+        $ipAddress = $request->getClientIp();
         // Generate PDF
-        $pdf = PDF::loadView('pdf/order', $request->all());
+        $pdf = PDF::loadView('pdf/order', ['data' => $request->all(), 'ipAddress' => $ipAddress]);
         $pdfData = $pdf->output();
+
+        $savePath = 'upload-files/order-pdf/';
+        $filename = Str::slug($request->input('app_name')) . '-' . $timestamp . '.pdf';
+        $pdf->save(base_path($savePath) . $filename);
+
+
+        $orderData =[
+            'company_name' => $request->input('company_name'),
+            'street' => $request->input('street'),
+            'zip' => $request->input('zip'),
+            'city' => $request->input('city'),
+            'country' => $request->input('country'),
+            'telephone' => $request->input('telephone'),
+            'www' => $request->input('www'),
+            'mail_address' => $request->input('mail_address'),
+            'managing_director' => $request->input('managing_director'),
+            'agency_id' => $agencId,
+            'ip' => $ipAddress,
+            'pdf_url' => $savePath . $filename,
+        ];
+
+       $createdOrder =  order::create($orderData);
+
 
         // Send email
         Mail::to(env('MAIL_TO_ADDRESS'))->send(new OrderSubmission($request->all(), $pdfData));

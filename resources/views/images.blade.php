@@ -31,8 +31,8 @@
 
                         <div class="al_image_show_grid">
                             @foreach ($images as $image)
-                                <div class="al_single_images" data-hover-img="{{ $image->screen_url }}">
-                                    <img src="{{ $image->url }}" alt="{{ $image->name }}">
+                                <div class="al_single_images" data-hover-img="{{ $image->screenshot }}">
+                                    <img src="{{ $image->screen_logo }}" alt="{{ $image->title }}">
                                 </div>
                             @endforeach
                         </div>

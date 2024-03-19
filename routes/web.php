@@ -27,3 +27,4 @@ Route::get('/order', [App\Http\Controllers\TravelController::class, 'order'])->n
 Route::post('/order/submit', [App\Http\Controllers\TravelController::class, 'orderSubmit'])->name('order-submit');
 
 Route::get('/images', [App\Http\Controllers\TravelController::class, 'images'])->name('images-page');
+Route::get('/pdf', [App\Http\Controllers\TravelController::class, 'pdfView'])->name('pdf-view');

@@ -93,6 +93,7 @@ return array(
     'i_found_site_2' => "Es geht um Kundengewinnung, Kundenbindung und natürlich auch um Umsatzsteigerung.",
     'travel_agency_msg' => "Der Seitenzugang für Reisebüros:",
     "holiday_customer_msg" => "Der Site-Zugang für Ferienkunden:",
+    'copyMsg' => "(den Link kopieren und in die Adress-zeile einfügen)",
 
     'success' => 'Erfolg',
     'thank_you' => 'Vielen Dank',

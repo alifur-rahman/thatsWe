@@ -89,6 +89,7 @@ return array(
   'i_found_site_2' => "Trata sobre la adquisición de clientes, la retención de clientes y por supuesto también el aumento de ventas.",
   'travel_agency_msg' => "El acceso al sitio web para agencias de viajes:",
   "holiday_customer_msg" => "El acceso al sitio web para clientes de vacaciones:",
+  'copyMsg' => "(copia el enlace y pégalo en la barra de direcciones)",
 
   'success' => 'Éxito',
   'thank_you' => 'Gracias',
