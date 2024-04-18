@@ -181,14 +181,25 @@
                                     <div class="col-md-6">
                                         <div class="d-flex flex-column justify-content-between h-100">
                                             <div class="al_order_form_info_text">
-                                                <p>{{ __('messages.order_from_info_1') }}</p>
+                                                {{-- <p>{{ __('messages.order_from_info_1') }}</p>
                                                 <p>{{ __('messages.order_from_info_2') }}</p>
                                                 <p>{{ __('messages.order_from_info_3') }}</p>
                                                 <p>{{ __('messages.order_from_info_4') }}</p>
                                                 <p>{{ __('messages.order_from_info_5') }}</p>
                                                 <p>{{ __('messages.order_from_info_6') }}</p>
-                                                <p>{{ __('messages.order_from_info_7') }}</p>
+                                                <p>{{ __('messages.order_from_info_7') }}</p> --}}
                                                 {{-- <p>{{ __('messages.order_from_info_8') }}</p> --}}
+
+                                                @foreach ($coOrderInfo as $index => $info)
+                                                    @php
+                                                        $lines = explode("\n", $info->msg);
+                                                    @endphp
+                                                    @foreach ($lines as $line)
+                                                        <p>{!! $line !!}</p>
+                                                    @endforeach
+                                                @endforeach
+
+
 
                                                 <div class="">
 

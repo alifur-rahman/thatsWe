@@ -124,10 +124,12 @@
                         <form action="{{ route('LangChange') }}" method="GET">
                             @csrf
                             <select class="form-control Langchange" name="locale" onchange="this.form.submit()">
+
+                                <option value="de" {{ app()->getLocale() == 'de' ? 'selected' : '' }}>German
+                                </option>
                                 <option value="en" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English
                                 </option>
-                                <option value="de" {{ app()->getLocale() == 'de' ? 'selected' : '' }}>Deutsch
-                                </option>
+                               
                                 <option value="fr" {{ app()->getLocale() == 'fr' ? 'selected' : '' }}>Français
                                 </option>
                                 <option value="es" {{ app()->getLocale() == 'es' ? 'selected' : '' }}>Español

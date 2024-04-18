@@ -39,11 +39,12 @@
         }
 
         p {
-            font-size: 14px;
-            margin-bottom: 18px;
+            font-size: 13px;
             color: black;
             text-align: justify;
             /* font-weight: 500; */
+            margin-bottom: 7px;
+            line-height: 17px;
         }
 
         h6 {
@@ -193,40 +194,38 @@
         </div>
 
         <div class="text-center mt-4">
-            <h2 class="text-center">Das Angebot gilt ausschließlich für Reisebüros!</h2>
-            <p class="text-center" style="font-size: 14px">Reiseveranstalter erhalten Sonderkonditionen für jede
-                angeschlossene Reiseagentur!
-            </p>
+            <h2 class="text-center">{{ optional($pdfContents[0])->title }}</h2>
+            <p class="text-center" style="font-size: 14px">{{ optional($pdfContents[0])->subTitle }}</p>
         </div>
         <table>
             <tr>
                 <td class="pe-2">
-                    <h3>Bestellen</h3>
+                    <h3>{{ __('messages.order') }}</h3>
                     <div class="left-section">
                         <div class="">
-                            <label for="">Firmenname</label>
+                            <label for="">{{ __('messages.company_name') }}</label>
                             <h6> {{ isset($data['company_name']) ? $data['company_name'] : 'Demo Company' }} </h6>
                         </div>
                         <div class="">
-                            <label for="">Straße</label>
+                            <label for="">{{ __('messages.street') }}</label>
                             <h6>{{ isset($data['street']) ? $data['street'] : 'Demo Street' }} </h6>
                         </div>
                         <div class="">
-                            <label for="">PLZ</label>
+                            <label for="">{{ __('messages.zip') }}</label>
                             <h6>{{ isset($data['zip']) ? $data['zip'] : 'Demo Zip' }}</h6>
                         </div>
 
                         <div class="">
-                            <label for="">Stadt</label>
+                            <label for="">{{ __('messages.city') }}</label>
                             <h6>{{ isset($data['city']) ? $data['city'] : 'Demo City' }}</h6>
                         </div>
 
                         <div class="">
-                            <label for="">Land</label>
+                            <label for="">{{ __('messages.country') }}</label>
                             <h6> {{ isset($data['country']) ? $data['country'] : 'Demo Country' }} </h6>
                         </div>
                         <div class="">
-                            <label for="">Telefon</label>
+                            <label for="">{{ __('messages.telephone') }}</label>
                             <h6>{{ isset($data['telephone']) ? $data['telephone'] : 'Demo Telephone' }}</h6>
                         </div>
                         <div class="">
@@ -234,22 +233,23 @@
                             <h6>{{ isset($data['www']) ? $data['www'] : 'Demo WWW' }}</h6>
                         </div>
                         <div class="">
-                            <label for="">Mail Adresse</label>
+                            <label for="">{{ __('messages.mail_address') }}</label>
                             <h6> {{ isset($data['mail_address']) ? $data['mail_address'] : 'Demo Mail Address' }} </h6>
                         </div>
                         <div class="">
-                            <label for="">Geschäftsführer/Kontakt</label>
+                            <label
+                                for="">{{ __('messages.managing_director') }}/{{ __('messages.contact') }}</label>
                             <h6> {{ isset($data['managing_director']) ? $data['managing_director'] : 'Demo Managing Director' }}
                             </h6>
                         </div>
 
                         <div class="">
-                            <label for="">App-Name</label>
+                            <label for="">{{ __('messages.app_name') }}</label>
                             <h6>{{ isset($data['app_name']) ? $data['app_name'] : 'Demo App Name' }}</h6>
                         </div>
 
                         <div class="">
-                            <label for="">Logo-Nr.</label>
+                            <label for="">{{ __('messages.logo_no') }}</label>
                             <h6>{{ isset($data['logo_no']) ? $data['logo_no'] : 'Demo Logo No' }}</h6>
                         </div>
 
@@ -289,7 +289,7 @@
                                                     {{ isset($data['published']) && $data['published'] == 'yes' ? 'checked' : '' }}
                                                     id="first_radio1">
                                                 <label class="form-check-label" for="first_radio1">
-                                                    Ja
+                                                    {{ __('messages.yes') }}
                                                 </label>
                                             </div>
                                         </td>
@@ -300,7 +300,7 @@
                                                     {{ isset($data['published']) && $data['published'] == 'no' ? 'checked' : '' }}
                                                     id="first_radio2" name="first-radio">
                                                 <label class="form-check-label" for="first_radio2">
-                                                    Nein
+                                                    {{ __('messages.no') }}
                                                 </label>
                                             </div>
                                         </td>
@@ -314,44 +314,29 @@
                 </td>
                 <td class="ps-2">
                     <div class="right-section">
-                        <h3 class="pb-2">Aktion 2024 - Ende 31.12.2024</h3>
-                        <p>1. Die App-Einrichtung (Logo, Name, Impres- sum, Datenschutz) kostet pro Einrichtung 60,00 €.
-                            Die jährliche Lizenzgebühr beträgt 120,00 €.
-                        </p>
-                        <p>
-                            2. Mit dieser befristeten Aktion wird auf die Li- zenzgebühr im ersten Lizenzjahr
-                            verzichtet.
-                        </p>
-                        <p>
-                            3. Es wird eine Android-App (APK-Datei) gelie- fert. Die Installation der App auf
-                            Android-Gerä- ten obliegt dem Besteller oder dem fachkundi- gen Beauftragten des Bestellers.
+                        <h3 class="pb-2">{{ optional($pdfContents[0])->licenseDetails }} </h3>
 
-                        <p>
-                            4. Die Installations-Anzahl ist während der Dauer der Lizenz unbegrenzt, gilt aber exclusiv
-                            für das Reisebüro, das Besteller der App ist.
-                        </p>
-                        <p>
-                            5. Jeweils zum Januar eines Jahres verlängert sich die Lizenz um 12 Monate, es sei denn, die
-                            Nutzer-Lizenz wird spätestens 2 Monate vorher gekündigt.
-                        </p>
-                        <p>
-                            6. Die Kündigung der Lizenz per eMail an pro- liz@web.de wird akzeptiert.
-                        </p>
-                        <p>
-                            7. Die Lizenzgebühr wird für das erste laufende Kalenderjahr wird anteilig für die
-                            restlichen Monate bis zum Jahresende berechnet.
-                        </p>
-                        <p class="">
-                            8. Die Lizenzrechnungen sind zahlbar ohne Ab- zug innerhalb 14 Tage mit Angabe der Rech-
-                            nungsnummer auf ein in der Rechnung ge- nanntes Konto. Der Lizenzbetrag ist gemäß § 19 USTG
-                            von der Umsatzsteuer befreit.
-                        </p>
+                        @foreach ($pdfContents as $index => $info)
+                            @php
+                                $lines = explode("\n", $info->msg);
+                                $footerMsg = explode("\n", $info->footerMsg);
+                            @endphp
+                            @foreach ($lines as $line)
+                                <p>{!! $line !!}</p>
+                            @endforeach
+                        @endforeach
+
+
+
 
                         <span class="divider "></span>
-                        <p class="">
-                            Soll die Teilnahme an dieser App-Version an Interessenten einer Urlaubsreise veröffentlicht
-                            werden (www.thatssoft.de)?
-                        </p>
+
+                        @if ($footerMsg)
+                            @foreach ($footerMsg as $line)
+                                <p>{{ $line }}</p>
+                            @endforeach
+                        @endif
+
 
 
                         <table style="width: 100%; max-width: 70%; margin: 0 auto" class="mb-3">
@@ -363,7 +348,7 @@
                                             {{ isset($data['published']) && $data['published'] == 'yes' ? 'checked' : '' }}
                                             value="" id="flexCheckDefault" name="second-radio">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Ja
+                                            {{ __('messages.yes') }}
                                         </label>
                                     </div>
                                 </td>
@@ -373,7 +358,7 @@
                                             {{ isset($data['published']) && $data['published'] == 'no' ? 'checked' : '' }}
                                             type="radio" value="" name="second-radio" id="flexCheckDefault3">
                                         <label class="form-check-label" for="flexCheckDefault3">
-                                            Nein
+                                            {{ __('messages.no') }}
                                         </label>
                                     </div>
                                 </td>
