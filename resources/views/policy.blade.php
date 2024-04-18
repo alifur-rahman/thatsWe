@@ -17,7 +17,7 @@
                             <div class="card p-3 pt-0 pb-0 flex-1">
                                 <div class="card-body p-2">
                                     <h2 class="text-center mb-1">{{ __('messages.data_protection') }}</h2>
-                                    <p>
+                                    {{-- <p>
                                         {{ __('messages.data_protection1') }}
                                     </p>
                                     <p>
@@ -25,17 +25,31 @@
                                     </p>
                                     <p class="pb-0 mb-0">
                                         {{ __('messages.data_protection3') }}
-                                    </p>
+                                    </p> --}}
+
+
+                                    @foreach ($CoPolicyData as $index => $info)
+                                        @php
+                                            $lines = explode("\n", $info->data_protection_msg);
+                                        @endphp
+                                        @foreach ($lines as $line)
+                                            <p>{!! $line !!}</p>
+                                        @endforeach
+                                    @endforeach
+
                                 </div>
                             </div>
                             <div class="card mt-xl-3 p-3 pb-0 ">
                                 <h2 class="text-center mb-1">{{ __('messages.imprint') }}</h2>
                                 <address>
-                                    <strong>{{ __('messages.line1') }}</strong><br>
+                                    {{-- <strong>{{ __('messages.line1') }}</strong><br>
                                     Bockhorner Weg 90<br>
                                     28779 Bremen<br>
                                     <a href="http://www.thatswe.de" target="_blank">www.thatswe.de</a><br>
-                                    Email: <a href="mailto:proliz@web.de">proliz@web.de</a>
+                                    Email: <a href="mailto:proliz@web.de">proliz@web.de</a> --}}
+
+                                    {!! optional($CoPolicyData[0])->imprint_msg !!}
+
                                 </address>
                             </div>
                         </div>
@@ -228,6 +242,10 @@
         .text-danger {
             font-size: 12px;
             display: block;
+        }
+
+        address p {
+            margin: 0;
         }
     </style>
 @endsection

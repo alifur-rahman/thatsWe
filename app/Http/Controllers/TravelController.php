@@ -14,9 +14,12 @@ use App\Mail\RecommendationSubmission;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use App\Models\SuccessInfo;
+use App\Models\co_order;
 use App\Models\appImages;
 use App\Models\agencies;
 use App\Models\order;
+use App\Models\CoPolicy;
+use App\Models\coPdf;
 
 class TravelController extends Controller
 {
@@ -45,29 +48,43 @@ class TravelController extends Controller
     public function policy()
     {
         $userLanguage = app()->getLocale();
+        // Data Protection content 
+        $columnsOfContent = [
+            'dp_' . $userLanguage . ' as data_protection_msg',
+            'im_' . $userLanguage . ' as imprint_msg',
+        ];
+        $CoPolicyData = CoPolicy::select($columnsOfContent)->limit(1)->get();
 
-    // Selecting columns dynamically based on the user's language
-    $columns = [
-        'assign_to',
-        'save_as',
-        'title_' . $userLanguage . ' as title',
-        'desc_' . $userLanguage . ' as description',
-    ];
+        // Selecting columns dynamically based on the user's language
+        $columns = [
+            'assign_to',
+            'save_as',
+            'title_' . $userLanguage . ' as title',
+            'desc_' . $userLanguage . ' as description',
+        ];
 
-    // Retrieving data based on the selected columns and other conditions
-    $successInfo = SuccessInfo::where('assign_to', 'ThatsWE')
-                                ->where('save_as', 'active')
-                                ->select($columns)
+        // Retrieving data based on the selected columns and other conditions
+        $successInfo = SuccessInfo::where('assign_to', 'ThatsWE')
+                                    ->where('save_as', 'active')
+                                    ->select($columns)
                                 ->get();
 
 
-        return view('policy', ['successInfo' => $successInfo]);
+        return view('policy', ['successInfo' => $successInfo], ['CoPolicyData' => $CoPolicyData]);
     }
 
     public function order()
     {
+        $userLanguage = app()->getLocale();
+
+        // Selecting columns dynamically based on the user's language
+        $columns = [
+            'txt_' . $userLanguage . ' as msg',
+        ];
+        $coOrderInfo = co_order::select($columns)->limit(1)->get();
         $agencies = agencies::where('show', 'active')->get();
-        return view('order')->with('agencies', $agencies);
+        // return view('order')->with('agencies', $agencies);
+        return view('order',['agencies' => $agencies], ['coOrderInfo' => $coOrderInfo]);
     }
 
 
@@ -80,8 +97,20 @@ class TravelController extends Controller
 
 
     public function pdfView(Request $request) {
+        $userLanguage = app()->getLocale();
+
+        // Selecting columns dynamically based on the user's language
+        $columns = [
+            'title_' . $userLanguage . ' as title',
+            'subt_' . $userLanguage . ' as subTitle', 
+            'ld_' . $userLanguage . ' as licenseDetails',
+            'txt_' . $userLanguage . ' as msg',
+            'ftxt_' . $userLanguage . ' as footerMsg',
+        ];
+        $pdfContents = coPdf::select($columns)->limit(1)->get();
+
         $ipAddress = $request->server('REMOTE_ADDR');
-        return view('pdf.order', ['ipAddress' => $ipAddress]);
+        return view('pdf.order', ['ipAddress' => $ipAddress], ['pdfContents' => $pdfContents]);
     }
     
 
@@ -253,8 +282,19 @@ class TravelController extends Controller
         }
 
         $ipAddress = $request->getClientIp();
+        $userLanguage = app()->getLocale();
+        $columns = [
+            'title_' . $userLanguage . ' as title',
+            'subt_' . $userLanguage . ' as subTitle', 
+            'ld_' . $userLanguage . ' as licenseDetails',
+            'txt_' . $userLanguage . ' as msg',
+            'ftxt_' . $userLanguage . ' as footerMsg',
+        ];
+        $pdfContents = coPdf::select($columns)->limit(1)->get();
+
+
         // Generate PDF
-        $pdf = PDF::loadView('pdf/order', ['data' => $request->all(), 'ipAddress' => $ipAddress]);
+        $pdf = PDF::loadView('pdf/order', ['data' => $request->all(), 'ipAddress' => $ipAddress, 'pdfContents' => $pdfContents]);
         $pdfData = $pdf->output();
 
         $savePath = 'upload-files/order-pdf/';
