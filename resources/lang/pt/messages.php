@@ -99,5 +99,6 @@ return array(
   'sujjection_submition_message1' => "Recebemos sua crítica e sugestões\nVamos revisar em breve.",
   'order_submition_message1' => "Recebemos as informações do seu pedido\nEntraremos em contato em breve.",
 
+  'image_radio_error' => 'Por favor, selecione uma agência de viagens ou adicione a sua própria!',
 
 );

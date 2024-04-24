@@ -102,5 +102,6 @@ return array(
     'sujjection_submition_message1' => "Wir haben Ihre Kritik und Vorschläge erhalten\nWir werden sie bald überprüfen.",
     'order_submition_message1' => "Wir haben Ihre Bestellinformationen erhalten\nWir werden uns bald bei Ihnen melden.",
 
+    'image_radio_error' => 'Bitte wählen Sie ein Reisebüro aus oder fügen Sie Ihr eigenes hinzu!',
 
 );

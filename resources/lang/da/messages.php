@@ -102,5 +102,6 @@ return array(
   'sujjection_submition_message1' => "Vi har modtaget din kritik og forslag\nVi vil gennemgå det snart.",
   'order_submition_message1' => "Vi har modtaget dine bestillingsoplysninger\nVi vender tilbage til dig snart.",
 
+  'image_radio_error' => 'Vælg venligst et rejsebureau eller tilføj dit eget bureau!',
 
 );
