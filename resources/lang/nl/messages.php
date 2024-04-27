@@ -98,5 +98,6 @@ return array(
 
   'sujjection_submition_message1' => "We hebben uw kritiek en suggesties ontvangen\nWe zullen deze binnenkort bekijken.",
   'order_submition_message1' => "We hebben uw bestelinformatie ontvangen\nWe nemen binnenkort contact met u op.",
+  'image_radio_error' => 'Selecteer alstublieft een reisbureau of voeg uw eigen bureau toe!',
 
 );

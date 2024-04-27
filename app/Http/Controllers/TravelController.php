@@ -258,7 +258,7 @@ class TravelController extends Controller
             'app_name' => 'required|string|max:255',
             'logo_no' => 'required|string|max:255',
             'published' => 'required|string',
-           'own_logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
+           'own_logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         
@@ -279,6 +279,8 @@ class TravelController extends Controller
             $data['app_name'] = $request->input('app_name');
             $successInfo = agencies::create($data);
             $agencId = $successInfo->id;
+        }else if($request->image_radio === null) {
+            return redirect()->back()->with('error', __('messages.image_radio_error'));
         }
 
         $ipAddress = $request->getClientIp();
@@ -300,7 +302,6 @@ class TravelController extends Controller
         $savePath = 'upload-files/order-pdf/';
         $filename = Str::slug($request->input('app_name')) . '-' . $timestamp . '.pdf';
         $pdf->save(base_path($savePath) . $filename);
-
 
         $orderData =[
             'company_name' => $request->input('company_name'),

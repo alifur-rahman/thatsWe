@@ -97,6 +97,7 @@ return array(
 
   'sujjection_submition_message1' => "Eleştirilerinizi ve önerilerinizi aldık\nYakında gözden geçireceğiz.",
   'order_submition_message1' => "Sipariş bilgilerinizi aldık\nYakında size döneceğiz.",
+  'image_radio_error' => 'Lütfen bir seyahat acentesi seçin veya kendi acentenizi ekleyin!',
 
 
 );

@@ -104,4 +104,6 @@ return array(
   'sujjection_submition_message1' => "We received your Criticism and Suggestions\n We will review it soon.",
   'order_submition_message1' => "We received your Order Information\n We will get back to you soon.",
 
+  'image_radio_error' => 'Please select and travel agency or add your own agency !',
+
 );
