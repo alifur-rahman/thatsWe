@@ -153,9 +153,42 @@
         /* Radio button - checked state */
         input[type="radio"]:checked {
             background-color: #007bff;
-            /* Change this to the desired color */
             border-color: #909090;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
+
+
+        .while {
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border-radius: 50px;
+            border: 2px solid #909090;
+            float: left;
+            margin-top: 0px;
+            margin-right: 3px;
+        }
+
+        /* .while_mid {
+            height: 5px;
+            background: #fff;
+            border-radius: 50px;
+            width: 100%;
+            max-width: 6px;
+            margin: 0 auto;
+            margin-top: 2px;
+        } */
+
+        .while.active {
+            border: 2px solid #0b68f2;
+            background: #0b68f2;
+        }
+
+        /* .while.active .while_mid {
+            background: #0b68f2;
+        } */
 
 
         /* Print-specific styles */
@@ -176,6 +209,18 @@
             td {
                 width: 50%;
                 vertical-align: top;
+            }
+            input[type="radio"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+            input[type="radio"]:checked {
+                background-color: #007bff;
+                border-color: #909090;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
             }
         }
     </style>
@@ -284,24 +329,32 @@
                                         <td>
                                             <div
                                                 class="form-check al {{ !isset($data['published']) ? 'active' : '' }} {{ isset($data['published']) && $data['published'] == 'yes' ? 'active' : '' }}">
-                                                <input class="" type="radio" value="" name="first-radio"
+                                                <input class="" type="radio" value="" name="first-radio" hidden
                                                     {{ !isset($data['published']) ? 'checked' : '' }}
                                                     {{ isset($data['published']) && $data['published'] == 'yes' ? 'checked' : '' }}
                                                     id="first_radio1">
                                                 <label class="form-check-label" for="first_radio1">
                                                     {{ __('messages.yes') }}
                                                 </label>
+                                                <div
+                                            class="while  al {{ !isset($data['published']) ? 'active' : '' }} {{ isset($data['published']) && $data['published'] == 'yes' ? 'active' : '' }}"  style="margin-right: -15px; margin-left: 5px; ">
+                                           
+                                        </div>
                                             </div>
                                         </td>
                                         <td class="pe-2">
                                             <div
                                                 class="form-check al {{ isset($data['published']) && $data['published'] == 'no' ? 'active' : '' }}">
-                                                <input class="" type="radio" value=""
+                                                <input class="" type="radio" value="" hidden
                                                     {{ isset($data['published']) && $data['published'] == 'no' ? 'checked' : '' }}
                                                     id="first_radio2" name="first-radio">
                                                 <label class="form-check-label" for="first_radio2">
                                                     {{ __('messages.no') }}
                                                 </label>
+                                                <div
+                                            class="while  al {{ !isset($data['published']) ? 'active' : '' }} {{ isset($data['published']) && $data['published'] == 'no' ? 'active' : '' }}"  style="margin-right: -15px; margin-left: 5px; ">
+                                           
+                                        </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -340,26 +393,34 @@
 
 
                         <table style="width: 100%; max-width: 70%; margin: 0 auto" class="mb-3">
-                            <tr>
+                             <tr>
                                 <td>
-                                    <div class="form-check">
-                                        <input class="" type="radio"
+                                    <div class="form-check position-relative">
+                                        <input class="" type="radio" hidden
                                             {{ !isset($data['published']) ? 'checked' : '' }}
                                             {{ isset($data['published']) && $data['published'] == 'yes' ? 'checked' : '' }}
                                             value="" id="flexCheckDefault" name="second-radio">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             {{ __('messages.yes') }}
                                         </label>
+                                        <div
+                                            class="while  al {{ !isset($data['published']) ? 'active' : '' }} {{ isset($data['published']) && $data['published'] == 'yes' ? 'active' : '' }}">
+                                           
+                                        </div>
                                     </div>
                                 </td>
                                 <td class="pe-2">
-                                    <div class="form-check">
-                                        <input class=""
+                                    <div class="form-check position-relative">
+                                        <input class="" hidden
                                             {{ isset($data['published']) && $data['published'] == 'no' ? 'checked' : '' }}
                                             type="radio" value="" name="second-radio" id="flexCheckDefault3">
                                         <label class="form-check-label" for="flexCheckDefault3">
                                             {{ __('messages.no') }}
                                         </label>
+                                        <div
+                                            class="while al {{ isset($data['published']) && $data['published'] == 'no' ? 'active' : '' }}">
+                                          
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
